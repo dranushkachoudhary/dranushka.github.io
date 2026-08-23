@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dranushkachoudhary.github.io/dranushka.github.io/sitemap.xml
