@@ -7,30 +7,24 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Website Favicon -->
     <link rel="icon" type="image/jpeg" href="dental tooth image.jpg">
 
-    <title>About Dr. Anushka | Dentistry, Explained Simply</title>
+    <title>About Dr. Anushka Choudhary, BDS | Dentist</title>
 
     <meta name="description"
-    content="Learn more about Dr. Anushka Choudhary, BDS dentist and dental educator.">
+    content="Learn more about Dr. Anushka Choudhary, BDS, a dentist passionate about patient education and making dental information simple, honest and easy to understand.">
+
+    <meta name="author" content="Dr. Anushka Choudhary">
+
+    <meta name="robots" content="index, follow">
 
     <style>
-
-        /* ==============================
-           RESET
-        ============================== */
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-
-        /* ==============================
-           MAIN WEBSITE
-        ============================== */
 
         body {
             background: #FAF7F2;
@@ -39,27 +33,25 @@
             line-height: 1.8;
         }
 
+        a {
+            text-decoration: none;
+        }
 
-        /* ==============================
-           HEADER
-        ============================== */
+
+        /* HEADER */
 
         header {
             padding: 20px 60px;
-            background: #FAF7F2;
             border-bottom: 1px solid #DDD8D2;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background: #FAF7F2;
 
             position: sticky;
             top: 0;
             z-index: 100;
         }
-
-
-        /* LOGO */
 
         .logo {
             font-size: 21px;
@@ -68,21 +60,16 @@
             color: #29483F;
         }
 
-
-        /* NAVIGATION */
-
         nav {
             display: flex;
             gap: 30px;
         }
 
         nav a {
-            text-decoration: none;
             color: #29483F;
             font-size: 13px;
             letter-spacing: 1px;
             text-transform: uppercase;
-            transition: color 0.3s ease;
         }
 
         nav a:hover {
@@ -90,126 +77,213 @@
         }
 
 
-        /* ==============================
-           MAIN CONTENT
-        ============================== */
+        /* HERO */
 
-        main {
+        .about-hero {
             max-width: 1100px;
             margin: auto;
-            padding: 90px 30px;
+            padding: 100px 40px 90px;
+
+            display: grid;
+            grid-template-columns: 0.85fr 1.15fr;
+            gap: 80px;
+            align-items: center;
         }
 
-
-        /* EYEBROW */
+        .about-image img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: auto;
+            border-radius: 4px;
+        }
 
         .eyebrow {
             color: #7F9C8D;
-            text-transform: uppercase;
-            letter-spacing: 3px;
             font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
             margin-bottom: 20px;
         }
 
-
-        /* MAIN HEADING */
-
         h1 {
             font-family: Georgia, serif;
-            font-size: 60px;
-            line-height: 1.1;
+            font-size: 55px;
+            line-height: 1.15;
+            font-weight: 600;
+            color: #5A4A48;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-family: Georgia, serif;
+            font-size: 23px;
+            line-height: 1.6;
+            color: #65706A;
+            margin-bottom: 25px;
+        }
+
+        .about-hero p {
+            color: #5D6761;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+
+
+        /* STORY */
+
+        .story {
+            background: #F1EEE8;
+            padding: 95px 25px;
+        }
+
+        .story-inner {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .story h2 {
+            font-family: Georgia, serif;
+            font-size: 40px;
             font-weight: normal;
             color: #5A4A48;
             margin-bottom: 30px;
         }
 
-
-        /* INTRO */
-
-        .intro {
-            font-family: Georgia, serif;
-            font-size: 24px;
+        .story p {
             color: #5D6761;
-            max-width: 800px;
-            margin-bottom: 50px;
-        }
-
-
-        /* CONTENT WIDTH */
-
-        .content {
-            max-width: 800px;
-        }
-
-
-        /* ==============================
-           SECTION HEADINGS
-        ============================== */
-
-        h2 {
-            font-family: Georgia, serif;
-            color: #5A4A48;
-            font-size: 32px;
-            font-weight: normal;
-
-            margin-top: 60px;
+            font-size: 17px;
+            line-height: 1.95;
             margin-bottom: 25px;
         }
 
-
-        /* PARAGRAPHS */
-
-        p {
-            color: #5D6761;
-            font-size: 17px;
-            margin-bottom: 22px;
-        }
-
-
-        /* ==============================
-           CREDENTIALS BOX
-        ============================== */
-
-        .credentials {
-            background: #F1EEE8;
-
-            border-left: 4px solid #D8A6A1;
-
-            padding: 30px;
-
-            margin-top: 50px;
-        }
-
-        .credentials strong {
-            color: #29483F;
-        }
-
-
-        /* ==============================
-           FOOTER
-        ============================== */
-
-        footer {
-            background: #29483F;
-            color: #FAF7F2;
-
-            text-align: center;
-
-            padding: 50px;
-        }
-
-        footer p {
-            color: #E8DDD8;
-            margin-top: 8px;
+        .story p:last-child {
             margin-bottom: 0;
         }
 
 
-        /* ==============================
-           MOBILE
-        ============================== */
+        /* PHILOSOPHY */
 
-        @media (max-width: 700px) {
+        .philosophy {
+            max-width: 900px;
+            margin: auto;
+            padding: 100px 30px;
+            text-align: center;
+        }
+
+        .philosophy h2 {
+            font-family: Georgia, serif;
+            font-size: 40px;
+            font-weight: normal;
+            color: #5A4A48;
+            margin-bottom: 25px;
+        }
+
+        .philosophy > p {
+            max-width: 700px;
+            margin: auto;
+            color: #5D6761;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+
+
+        /* VALUES */
+
+        .values {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 55px;
+        }
+
+        .value {
+            background: #F1EEE8;
+            padding: 35px 25px;
+        }
+
+        .value h3 {
+            font-family: Georgia, serif;
+            font-size: 23px;
+            font-weight: normal;
+            color: #5A4A48;
+            margin-bottom: 12px;
+        }
+
+        .value p {
+            color: #747C77;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+
+        /* CLOSING */
+
+        .closing {
+            background: #29483F;
+            color: #FAF7F2;
+            padding: 90px 25px;
+            text-align: center;
+        }
+
+        .closing h2 {
+            font-family: Georgia, serif;
+            font-size: 40px;
+            font-weight: normal;
+            line-height: 1.35;
+            margin-bottom: 25px;
+        }
+
+        .closing p {
+            max-width: 680px;
+            margin: auto;
+            color: #E7E4DE;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 28px;
+            border: 1px solid #D8A6A1;
+            color: #FAF7F2;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .button:hover {
+            background: #D8A6A1;
+            color: #29483F;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #D8A6A1;
+            color: #29483F;
+            padding: 45px 25px;
+            text-align: center;
+        }
+
+        footer strong {
+            font-size: 17px;
+            letter-spacing: 2px;
+        }
+
+        footer p {
+            color: #29483F;
+            margin-top: 8px;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+
+        /* MOBILE */
+
+        @media(max-width:800px) {
 
             header {
                 padding: 20px 25px;
@@ -219,32 +293,68 @@
                 display: none;
             }
 
-            main {
-                padding: 65px 25px;
+            .logo {
+                font-size: 17px;
+            }
+
+            .about-hero {
+                grid-template-columns: 1fr;
+                padding: 70px 25px;
+                gap: 50px;
+                text-align: center;
+            }
+
+            .about-image {
+                order: 2;
+            }
+
+            .about-image img {
+                max-width: 350px;
+            }
+
+            .about-text {
+                order: 1;
             }
 
             h1 {
-                font-size: 44px;
+                font-size: 43px;
             }
 
-            .intro {
-                font-size: 21px;
+            .subtitle {
+                font-size: 20px;
             }
 
-            h2 {
-                font-size: 29px;
-            }
-
-            p {
+            .about-hero p {
                 font-size: 16px;
             }
 
-            .credentials {
-                padding: 25px;
+            .story {
+                padding: 70px 25px;
             }
 
-            footer {
-                padding: 40px 20px;
+            .story h2,
+            .philosophy h2,
+            .closing h2 {
+                font-size: 32px;
+            }
+
+            .story p,
+            .philosophy > p,
+            .closing p {
+                font-size: 16px;
+            }
+
+            .philosophy {
+                padding: 75px 22px;
+            }
+
+            .values {
+                grid-template-columns: 1fr;
+                margin-top: 40px;
+            }
+
+            .closing {
+                padding: 70px 25px;
             }
 
         }
@@ -257,9 +367,7 @@
 <body>
 
 
-<!-- ==============================
-     HEADER
-============================== -->
+<!-- HEADER -->
 
 <header>
 
@@ -267,173 +375,224 @@
         DR. ANUSHKA CHOUDHARY
     </div>
 
-
     <nav>
 
-        <a href="index.html">
-            Home
-        </a>
+        <a href="index.html">Home</a>
 
-        <a href="about.html">
-            About
-        </a>
+        <a href="about.html">About</a>
 
-        <a href="blog.html">
-            Dental Blog
-        </a>
+        <a href="blog.html">Dental Blog</a>
 
-        <a href="contact.html">
-            Contact
-        </a>
+        <a href="contact.html">Contact</a>
 
     </nav>
 
 </header>
 
 
+<!-- ABOUT HERO -->
 
-<!-- ==============================
-     MAIN
-============================== -->
+<section class="about-hero">
 
-<main>
+    <div class="about-image">
 
+        <img
+            src="dranushka.JPG"
+            alt="Dr. Anushka Choudhary, BDS"
+        >
 
-    <div class="eyebrow">
-        About the Author
     </div>
 
 
-    <h1>
-        Meet Dr. Anushka Choudhary
-    </h1>
+    <div class="about-text">
+
+        <div class="eyebrow">
+            Meet Dr. Anushka
+        </div>
+
+        <h1>
+            Hi, I'm<br>
+            Dr. Anushka.
+        </h1>
+
+        <div class="subtitle">
+            Dentist. Learner. And a firm believer that dental
+            information shouldn't be intimidating.
+        </div>
+
+        <p>
+            I'm a BDS graduate with a simple goal — to make conversations
+            about dental health easier to understand.
+        </p>
+
+    </div>
+
+</section>
 
 
-    <p class="intro">
-        BDS Dentist · Dental Educator
-    </p>
+<!-- STORY -->
 
+<section class="story">
+
+    <div class="story-inner">
+
+        <div class="eyebrow">
+            Why I started this
+        </div>
+
+        <h2>
+            Somewhere between the dental chair and the internet,
+            I noticed something.
+        </h2>
+
+        <p>
+            Patients have questions.
+        </p>
+
+        <p>
+            A lot of them.
+        </p>
+
+        <p>
+            “Why are my gums bleeding?”
+        </p>
+
+        <p>
+            “Does scaling make teeth loose?”
+        </p>
+
+        <p>
+            “Why is my tooth sensitive?”
+        </p>
+
+        <p>
+            “Do I really need this treatment?”
+        </p>
+
+        <p>
+            And sometimes, patients don't ask these questions at all.
+            They simply go home with a worry they don't know how to
+            explain.
+        </p>
+
+        <p>
+            At the same time, the internet is full of dental advice —
+            some helpful, some confusing, and some simply wrong.
+        </p>
+
+        <p>
+            That's why I wanted to create a space where dental
+            information could feel different.
+        </p>
+
+        <p>
+            Simple. Honest. Evidence-informed. And written for
+            an actual person, rather than a textbook.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- PHILOSOPHY -->
+
+<section class="philosophy">
+
+    <div class="eyebrow">
+        My approach
+    </div>
+
+    <h2>
+        I don't think patients should just know<br>
+        <em>what</em> they're getting.
+    </h2>
 
     <p>
-        I believe good dental care begins with understanding.
-        Patients deserve to know what is happening, why a treatment
-        is being recommended, and what they can expect from it.
+        I think they deserve to understand <strong>why</strong>.
+        Good dental care isn't only about treatment. It's also about
+        communication, trust and helping people feel comfortable
+        asking questions.
     </p>
 
 
-    <div class="content">
+    <div class="values">
 
+        <div class="value">
 
-        <!-- WHY I CREATED THIS SPACE -->
-
-        <h2>
-            Why I created this space
-        </h2>
-
-
-        <p>
-            As a dentist, I have seen how many questions patients
-            have about their teeth, gums and dental treatments.
-            Sometimes the information is available, but it is buried
-            under complicated terminology that can make oral health
-            feel much more confusing than it needs to be.
-        </p>
-
-
-        <p>
-            I created this space to make dental education easier to
-            understand - whether you're a patient looking for an
-            answer to a common dental question or simply someone
-            who wants to take better care of their oral health.
-        </p>
-
-
-
-        <!-- WHAT YOU'LL FIND -->
-
-        <h2>
-            What you'll find here
-        </h2>
-
-
-        <p>
-            You'll find practical, evidence-based information about
-            common dental problems, oral hygiene, dental procedures,
-            myths, prevention and the questions patients ask most often.
-        </p>
-
-
-        <p>
-            My goal is simple: to help you understand your oral health
-            better, make informed decisions and feel more confident
-            when talking to your dentist.
-        </p>
-
-
-
-        <!-- MY APPROACH -->
-
-        <h2>
-            My approach
-        </h2>
-
-
-        <p>
-            I try to approach dental education the same way I approach
-            a conversation with a patient: without unnecessary jargon,
-            without fear, and without making simple questions feel silly.
-        </p>
-
-
-        <p>
-            Not every dental concern has the same answer, and online
-            information can never replace an individual examination.
-            But I hope this website can help you ask better questions,
-            understand your options and feel more comfortable discussing
-            your oral health with your dentist.
-        </p>
-
-
-
-        <!-- CREDENTIALS -->
-
-        <div class="credentials">
+            <h3>
+                Simple
+            </h3>
 
             <p>
-                <strong>
-                    Dr. Anushka Choudhary, BDS
-                </strong>
-            </p>
-
-
-            <p>
-                Bachelor of Dental Surgery
-            </p>
-
-
-            <p>
-                Dental Education · Patient Awareness · Oral Health
+                Dental concepts explained in everyday language,
+                without unnecessary jargon.
             </p>
 
         </div>
 
 
+        <div class="value">
+
+            <h3>
+                Honest
+            </h3>
+
+            <p>
+                No exaggerated promises, no unnecessary fear —
+                just a balanced conversation about oral health.
+            </p>
+
+        </div>
+
+
+        <div class="value">
+
+            <h3>
+                Patient-first
+            </h3>
+
+            <p>
+                Because every patient deserves to understand
+                what is happening and why it matters.
+            </p>
+
+        </div>
+
     </div>
 
-</main>
+</section>
 
 
+<!-- CLOSING -->
 
-<!-- ==============================
-     FOOTER
-============================== -->
+<section class="closing">
+
+    <h2>
+        Let's make dental health<br>
+        a little less confusing.
+    </h2>
+
+    <p>
+        Whether you're curious about a dental myth, worried about
+        something you've noticed, or simply want to understand your
+        oral health better — you're welcome here.
+    </p>
+
+    <a class="button" href="blog.html">
+        Read the Dental Blog
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
 
 <footer>
 
     <strong>
         DR. ANUSHKA CHOUDHARY
     </strong>
-
 
     <p>
         Dentistry, explained simply.
