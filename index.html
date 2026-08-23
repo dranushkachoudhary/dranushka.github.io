@@ -9,16 +9,16 @@
 
     <link rel="icon" type="image/jpeg" href="dental tooth image.jpg">
 
-    <title>Dr. Anushka | Dentistry, Explained Simply</title>
+    <title>Dr. Anushka Choudhary, BDS | Dentistry, Explained Simply</title>
 
     <meta name="description"
-    content="Evidence-based dental education explained simply by Dr. Anushka Choudhary, BDS dentist and dental educator.">
+    content="Dr. Anushka Choudhary, BDS shares simple, honest and evidence-based dental information to help patients understand their oral health better.">
+
+    <meta name="author" content="Dr. Anushka Choudhary">
+
+    <meta name="robots" content="index, follow">
 
     <style>
-
-        /* ==============================
-           RESET
-        ============================== */
 
         * {
             margin: 0;
@@ -26,43 +26,31 @@
             box-sizing: border-box;
         }
 
-
-        /* ==============================
-           BASE
-        ============================== */
-
         body {
             background: #FAF7F2;
             color: #29483F;
             font-family: Arial, sans-serif;
-            line-height: 1.7;
+            line-height: 1.8;
         }
 
         a {
             text-decoration: none;
-            color: inherit;
         }
 
 
-        /* ==============================
-           HEADER
-        ============================== */
+        /* HEADER */
 
         header {
-            background: rgba(250, 247, 242, 0.96);
-            border-bottom: 1px solid #DDD8D2;
-
             padding: 20px 60px;
-
+            border-bottom: 1px solid #DDD8D2;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background: #FAF7F2;
 
             position: sticky;
             top: 0;
             z-index: 100;
-
-            backdrop-filter: blur(8px);
         }
 
         .logo {
@@ -78,12 +66,10 @@
         }
 
         nav a {
+            color: #29483F;
             font-size: 13px;
             letter-spacing: 1px;
             text-transform: uppercase;
-            color: #29483F;
-
-            transition: color 0.3s ease;
         }
 
         nav a:hover {
@@ -91,80 +77,65 @@
         }
 
 
-        /* ==============================
-           HERO
-        ============================== */
+        /* HERO */
 
         .hero {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: auto;
-
-            padding: 115px 60px 125px;
+            padding: 110px 40px 100px;
 
             display: grid;
-            grid-template-columns: 1.15fr 0.85fr;
-
+            grid-template-columns: 1.1fr 0.9fr;
             gap: 80px;
-
             align-items: center;
         }
 
-
-        .eyebrow {
-            font-size: 12px;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-
-            color: #7F9C8D;
-
-            margin-bottom: 22px;
+        .hero-text {
+            max-width: 650px;
         }
 
+        .eyebrow {
+            color: #7F9C8D;
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
 
         h1 {
             font-family: Georgia, serif;
-
-            font-size: 76px;
-            line-height: 1.04;
-
-            font-weight: normal;
-
+            font-size: 62px;
+            line-height: 1.12;
+            font-weight: 600;
             color: #5A4A48;
-
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
+        .hero-subtitle {
+            font-family: Georgia, serif;
+            font-size: 24px;
+            color: #65706A;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
 
-        .hero-text {
-            font-size: 19px;
-
-            max-width: 600px;
-
+        .hero-description {
+            font-size: 17px;
             color: #5D6761;
-
-            line-height: 1.8;
+            line-height: 1.9;
+            margin-bottom: 35px;
+            max-width: 570px;
         }
-
-
-        /* BUTTON */
 
         .button {
             display: inline-block;
-
-            margin-top: 35px;
-
             background: #29483F;
             color: #FAF7F2;
-
-            padding: 15px 25px;
-
-            font-size: 12px;
-
-            letter-spacing: 1.5px;
-
+            padding: 14px 28px;
+            font-size: 13px;
+            letter-spacing: 1px;
             text-transform: uppercase;
-
-            transition: all 0.3s ease;
+            transition: 0.3s;
         }
 
         .button:hover {
@@ -173,484 +144,261 @@
         }
 
 
-        /* ==============================
-           HERO VISUAL
-        ============================== */
+        /* PHOTO */
 
-        .hero-visual {
+        .hero-image {
             position: relative;
-
-            min-height: 440px;
-
-            background: #F1EEE8;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            padding: 45px;
-
-            border: 1px solid #E2DDD7;
         }
 
-
-        .hero-visual::before {
-            content: "";
-
-            position: absolute;
-
-            width: 78%;
-            height: 78%;
-
-            border: 1px solid #D8A6A1;
-
-            top: 11%;
-            left: 11%;
-        }
-
-
-        .hero-content {
-            position: relative;
-
-            text-align: center;
-
-            max-width: 330px;
-
-            z-index: 2;
-        }
-
-
-        .hero-symbol {
-            font-size: 55px;
-
-            margin-bottom: 25px;
-
-            color: #7F9C8D;
-        }
-
-
-        .hero-content small {
-            display: block;
-
-            text-transform: uppercase;
-
-            letter-spacing: 2px;
-
-            font-size: 11px;
-
-            color: #7F9C8D;
-
-            margin-bottom: 15px;
-        }
-
-
-        .hero-content h2 {
-            font-family: Georgia, serif;
-
-            font-size: 34px;
-
-            line-height: 1.25;
-
-            font-weight: normal;
-
-            color: #5A4A48;
-        }
-
-
-        /* ==============================
-           BLOG SECTION
-        ============================== */
-
-        .section {
-            max-width: 1200px;
-
-            margin: auto;
-
-            padding: 95px 60px;
-        }
-
-
-        .section-header {
-            display: flex;
-
-            justify-content: space-between;
-
-            align-items: flex-end;
-
-            margin-bottom: 45px;
-        }
-
-
-        .section-title {
-            font-family: Georgia, serif;
-
-            font-size: 46px;
-
-            font-weight: normal;
-
-            color: #5A4A48;
-        }
-
-
-        .view-all {
-            font-size: 12px;
-
-            letter-spacing: 1px;
-
-            text-transform: uppercase;
-
-            color: #29483F;
-        }
-
-        .view-all:hover {
-            color: #D8A6A1;
-        }
-
-
-        /* ARTICLE GRID */
-
-        .articles {
-            display: grid;
-
-            grid-template-columns: repeat(3, 1fr);
-
-            gap: 25px;
-        }
-
-
-        .article {
-            background: #FFFFFF;
-
-            border: 1px solid #E3DDD7;
-
-            padding: 30px;
-
-            min-height: 330px;
-
-            display: flex;
-
-            flex-direction: column;
-
-            justify-content: space-between;
-
-            transition: transform 0.3s ease,
-                        box-shadow 0.3s ease;
-        }
-
-
-        .article:hover {
-            transform: translateY(-5px);
-
-            box-shadow: 0 15px 35px rgba(70, 60, 50, 0.08);
-        }
-
-
-        .article-category {
-            font-size: 11px;
-
-            text-transform: uppercase;
-
-            letter-spacing: 2px;
-
-            color: #7F9C8D;
-        }
-
-
-        .article h3 {
-            font-family: Georgia, serif;
-
-            font-size: 27px;
-
-            line-height: 1.25;
-
-            font-weight: normal;
-
-            color: #5A4A48;
-
-            margin: 20px 0;
-        }
-
-
-        .article p {
-            color: #65706A;
-
-            font-size: 15px;
-
-            line-height: 1.7;
-        }
-
-
-        .read {
-            margin-top: 25px;
-
-            font-size: 12px;
-
-            text-transform: uppercase;
-
-            letter-spacing: 1px;
-
-            color: #29483F;
-        }
-
-
-        .read:hover {
-            color: #D8A6A1;
-        }
-
-
-        /* ==============================
-           ABOUT PREVIEW
-        ============================== */
-
-        .about-preview {
-            background: #F1EEE8;
-        }
-
-
-        .about-inner {
-            max-width: 1200px;
-
-            margin: auto;
-
-            padding: 95px 60px;
-
-            display: grid;
-
-            grid-template-columns: 0.8fr 1.2fr;
-
-            gap: 80px;
-
-            align-items: center;
-        }
-
-
-        .about-image {
-            height: 430px;
-
-            background: #E8E2DA;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            overflow: hidden;
-        }
-
-
-        .about-image img {
+        .hero-image img {
             width: 100%;
-            height: 100%;
-
-            object-fit: contain;
-
+            max-width: 430px;
             display: block;
-        }
-
-
-        .about-text h2 {
-            font-family: Georgia, serif;
-
-            font-size: 48px;
-
-            line-height: 1.15;
-
-            font-weight: normal;
-
-            color: #5A4A48;
-
-            margin-bottom: 25px;
-        }
-
-
-        .about-text p {
-            font-size: 17px;
-
-            color: #5D6761;
-
-            margin-bottom: 18px;
-
-            max-width: 650px;
-        }
-
-
-        .about-button {
-            display: inline-block;
-
-            margin-top: 15px;
-
-            font-size: 12px;
-
-            text-transform: uppercase;
-
-            letter-spacing: 1.5px;
-
-            color: #29483F;
-
-            border-bottom: 1px solid #D8A6A1;
-
-            padding-bottom: 5px;
-        }
-
-
-        .about-button:hover {
-            color: #D8A6A1;
-        }
-
-
-        /* ==============================
-           PHILOSOPHY
-        ============================== */
-
-        .philosophy {
-            text-align: center;
-
-            max-width: 850px;
-
             margin: auto;
-
-            padding: 110px 30px;
+            border-radius: 4px;
         }
 
 
-        .philosophy h2 {
-            font-family: Georgia, serif;
+        /* INTRO */
 
-            font-size: 42px;
+        .intro-section {
+            background: #F1EEE8;
+            padding: 90px 25px;
+            text-align: center;
+        }
 
-            line-height: 1.3;
-
-            font-weight: normal;
-
-            color: #5A4A48;
-
+        .intro-section .eyebrow {
             margin-bottom: 20px;
         }
 
+        .intro-section h2 {
+            font-family: Georgia, serif;
+            font-weight: normal;
+            color: #5A4A48;
+            font-size: 40px;
+            line-height: 1.3;
+            max-width: 700px;
+            margin: auto;
+        }
 
-        .philosophy p {
+        .intro-section p {
+            max-width: 700px;
+            margin: 25px auto 0;
             color: #5D6761;
-
             font-size: 17px;
-
-            line-height: 1.8;
+            line-height: 1.9;
         }
 
 
-        /* ==============================
-           FOOTER
-        ============================== */
+        /* BLOG */
 
-        footer {
+        .blog-section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 100px 30px;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-heading .eyebrow {
+            margin-bottom: 15px;
+        }
+
+        .section-heading h2 {
+            font-family: Georgia, serif;
+            font-size: 40px;
+            font-weight: normal;
+            color: #5A4A48;
+        }
+
+        .article-card {
+            max-width: 850px;
+            margin: auto;
+            background: #F1EEE8;
+            padding: 45px;
+            border-left: 4px solid #D8A6A1;
+        }
+
+        .article-category {
+            color: #7F9C8D;
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .article-card h3 {
+            font-family: Georgia, serif;
+            color: #5A4A48;
+            font-size: 32px;
+            line-height: 1.3;
+            margin-bottom: 18px;
+        }
+
+        .article-card p {
+            color: #5D6761;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .read-more {
+            color: #29483F;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            color: #D8A6A1;
+        }
+
+
+        /* ABOUT */
+
+        .about-section {
             background: #29483F;
-
             color: #FAF7F2;
-
-            padding: 55px 30px;
-
+            padding: 90px 25px;
             text-align: center;
         }
 
+        .about-section .eyebrow {
+            color: #D8A6A1;
+        }
 
-        footer strong {
-            letter-spacing: 2px;
+        .about-section h2 {
+            font-family: Georgia, serif;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 1.3;
+            margin-bottom: 25px;
+        }
+
+        .about-section p {
+            max-width: 700px;
+            margin: auto;
+            color: #E7E4DE;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+
+        .about-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 28px;
+            border: 1px solid #D8A6A1;
+            color: #FAF7F2;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .about-button:hover {
+            background: #D8A6A1;
+            color: #29483F;
         }
 
 
+        /* FOOTER */
+
+        footer {
+            background: #D8A6A1;
+            color: #29483F;
+            padding: 45px 25px;
+            text-align: center;
+        }
+
+        footer strong {
+            font-size: 17px;
+            letter-spacing: 2px;
+        }
+
         footer p {
-            color: #E8DDD8;
-
-            margin-top: 10px;
-
+            color: #29483F;
+            margin-top: 8px;
             margin-bottom: 0;
-
             font-size: 14px;
         }
 
 
-        /* ==============================
-           MOBILE
-        ============================== */
+        /* MOBILE */
 
-        @media (max-width: 800px) {
+        @media(max-width:800px) {
 
             header {
-                padding: 18px 25px;
+                padding: 20px 25px;
             }
 
             nav {
                 display: none;
             }
 
+            .logo {
+                font-size: 17px;
+            }
 
             .hero {
                 grid-template-columns: 1fr;
-
-                padding: 75px 25px 85px;
-
-                gap: 55px;
+                padding: 70px 25px;
+                gap: 50px;
+                text-align: center;
             }
 
+            .hero-text {
+                margin: auto;
+            }
 
             h1 {
-                font-size: 55px;
+                font-size: 45px;
             }
 
-
-            .hero-visual {
-                min-height: 350px;
+            .hero-subtitle {
+                font-size: 21px;
             }
 
+            .hero-description {
+                font-size: 16px;
+            }
 
-            .section {
+            .hero-image img {
+                max-width: 360px;
+            }
+
+            .intro-section {
                 padding: 70px 25px;
             }
 
-
-            .section-header {
-                display: block;
+            .intro-section h2 {
+                font-size: 32px;
             }
 
-
-            .section-title {
-                font-size: 40px;
-
-                margin-bottom: 15px;
+            .blog-section {
+                padding: 75px 22px;
             }
 
-
-            .articles {
-                grid-template-columns: 1fr;
+            .section-heading h2 {
+                font-size: 32px;
             }
 
+            .article-card {
+                padding: 30px 25px;
+            }
 
-            .about-inner {
-                grid-template-columns: 1fr;
+            .article-card h3 {
+                font-size: 27px;
+            }
 
+            .about-section {
                 padding: 70px 25px;
-
-                gap: 50px;
             }
 
-
-            .about-image {
-                height: 400px;
-            }
-
-
-            .about-text h2 {
-                font-size: 40px;
-            }
-
-
-            .philosophy {
-                padding: 80px 25px;
-            }
-
-
-            .philosophy h2 {
-                font-size: 35px;
+            .about-section h2 {
+                font-size: 32px;
             }
 
         }
@@ -663,16 +411,13 @@
 <body>
 
 
-<!-- ==============================
-     HEADER
-============================== -->
+<!-- HEADER -->
 
 <header>
 
     <div class="logo">
         DR. ANUSHKA CHOUDHARY
     </div>
-
 
     <nav>
 
@@ -689,296 +434,149 @@
 </header>
 
 
-
-<!-- ==============================
-     HERO
-============================== -->
+<!-- HERO -->
 
 <section class="hero">
 
-
-    <div>
+    <div class="hero-text">
 
         <div class="eyebrow">
-            Dental Education · BDS
+            BDS · Dentist · Patient Education
         </div>
-
 
         <h1>
             Dentistry,<br>
             explained simply.
         </h1>
 
+        <div class="hero-subtitle">
+            Because understanding your dental health shouldn't feel complicated.
+        </div>
 
-        <p class="hero-text">
-            Evidence-based dental information,
-            translated from clinical language
-            into answers you can actually understand.
+        <p class="hero-description">
+            I'm Dr. Anushka Choudhary, a dentist passionate about making
+            dental information easier to understand, less intimidating,
+            and actually useful in everyday life.
         </p>
 
-
-        <a href="#blog" class="button">
-            Explore the Dental Journal
+        <a class="button" href="blog.html">
+            Explore the Dental Blog
         </a>
 
     </div>
 
 
+    <div class="hero-image">
 
-    <div class="hero-visual">
-
-        <div class="hero-content">
-
-            <div class="hero-symbol">
-                🦷
-            </div>
-
-            <small>
-                Start here
-            </small>
-
-            <h2>
-                Your dental questions deserve clear answers.
-            </h2>
-
-        </div>
-
-    </div>
-
-
-</section>
-
-
-
-<!-- ==============================
-     LATEST ARTICLES
-============================== -->
-
-<section class="section" id="blog">
-
-
-    <div class="section-header">
-
-        <h2 class="section-title">
-            Latest Articles
-        </h2>
-
-        <a href="blog.html" class="view-all">
-            View all articles →
-        </a>
-
-    </div>
-
-
-
-    <div class="articles">
-
-
-        <!-- ARTICLE 1 -->
-
-        <article class="article">
-
-            <div>
-
-                <div class="article-category">
-                    Dental Myths
-                </div>
-
-
-                <h3>
-                    Does Dental Scaling Damage Your Teeth?
-                </h3>
-
-
-                <p>
-                    What scaling actually removes,
-                    why teeth can feel different afterward,
-                    and what you should know.
-                </p>
-
-            </div>
-
-
-            <a href="scaling.html" class="read">
-                Read Article →
-            </a>
-
-        </article>
-
-
-
-        <!-- ARTICLE 2 -->
-
-        <article class="article">
-
-            <div>
-
-                <div class="article-category">
-                    Gum Health
-                </div>
-
-
-                <h3>
-                    Why Do My Gums Bleed When I Brush?
-                </h3>
-
-
-                <p>
-                    Understanding common causes of
-                    bleeding gums and when they need
-                    professional attention.
-                </p>
-
-            </div>
-
-
-            <div class="read">
-                Coming Soon →
-            </div>
-
-        </article>
-
-
-
-        <!-- ARTICLE 3 -->
-
-        <article class="article">
-
-            <div>
-
-                <div class="article-category">
-                    Tooth Sensitivity
-                </div>
-
-
-                <h3>
-                    Why Are My Teeth Sensitive to Cold?
-                </h3>
-
-
-                <p>
-                    Common causes of sensitivity,
-                    triggers, and when you should
-                    see a dentist.
-                </p>
-
-            </div>
-
-
-            <div class="read">
-                Coming Soon →
-            </div>
-
-        </article>
-
+        <img
+            src="dranushka.JPG"
+            alt="Dr. Anushka Choudhary, BDS"
+        >
 
     </div>
 
 </section>
 
 
+<!-- INTRO -->
 
-<!-- ==============================
-     ABOUT PREVIEW
-============================== -->
-
-<section class="about-preview">
-
-
-    <div class="about-inner">
-
-
-        <div class="about-image">
-
-            <img
-                src="dranushka.JPG"
-                alt="Dr. Anushka Choudhary, BDS"
-            >
-
-        </div>
-
-
-
-        <div class="about-text">
-
-            <div class="eyebrow">
-                Dr. Anushka Choudhary, BDS
-            </div>
-
-
-            <h2>
-                Dental education should feel human.
-            </h2>
-
-
-            <p>
-                I believe patients should understand
-                what is happening in their mouths —
-                not simply be told what treatment
-                they need.
-            </p>
-
-
-            <p>
-                This space brings together practical,
-                evidence-based dental education in
-                language that feels clear, calm and human.
-            </p>
-
-
-            <a href="about.html" class="about-button">
-                Meet Dr. Anushka →
-            </a>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- ==============================
-     PHILOSOPHY
-============================== -->
-
-<section class="philosophy">
-
+<section class="intro-section">
 
     <div class="eyebrow">
-        A simple philosophy
+        A little about this space
     </div>
 
-
     <h2>
-        Better understanding leads
-        to better dental decisions.
+        Your teeth shouldn't be a mystery.
     </h2>
 
-
     <p>
-        Whether you're dealing with a dental problem,
-        preparing for a treatment, or simply trying to
-        take better care of your teeth, you deserve
-        information that is clear, honest and easy to understand.
+        Dental myths are everywhere — from “scaling makes your teeth loose”
+        to “bleeding gums are normal.” This website is where I break down
+        common dental questions and explain what actually matters,
+        without complicated jargon.
     </p>
-
 
 </section>
 
 
+<!-- FEATURED BLOG -->
 
-<!-- ==============================
-     FOOTER
-============================== -->
+<section class="blog-section">
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            Featured Article
+        </div>
+
+        <h2>
+            From the dental chair
+        </h2>
+
+    </div>
+
+
+    <div class="article-card">
+
+        <div class="article-category">
+            Dental Myths
+        </div>
+
+        <h3>
+            “Doctor, Scaling Will Loosen My Teeth.”
+        </h3>
+
+        <p>
+            Does dental scaling really damage your teeth?
+            Why do some teeth feel different afterward?
+            And what is actually happening underneath the gums?
+        </p>
+
+        <a class="read-more" href="scaling.html">
+            Read the article →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about-section">
+
+    <div class="eyebrow">
+        Meet Dr. Anushka
+    </div>
+
+    <h2>
+        Dental education,<br>
+        without the intimidation.
+    </h2>
+
+    <p>
+        I believe patients deserve to understand what is happening
+        in their mouths — not just be told what treatment they need.
+        Through this platform, I share practical dental knowledge,
+        common myths, and the things I wish more patients knew
+        before sitting in the dental chair.
+    </p>
+
+    <a class="about-button" href="about.html">
+        More About Me
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
 
 <footer>
 
     <strong>
         DR. ANUSHKA CHOUDHARY
     </strong>
-
 
     <p>
         Dentistry, explained simply.
