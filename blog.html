@@ -7,15 +7,18 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" type="image/jpeg" href="dental tooth image.jpg">
-    <title>Dental Blog | Dr. Anushka</title>
+    <link rel="icon" type="image/jpeg" href="dental tooth image.jpg">
+
+    <title>Dental Blog | Dr. Anushka Choudhary, BDS</title>
 
     <meta name="description"
-    content="Dental education, oral health information, dental myths and practical advice explained simply by Dr. Anushka Choudhary, BDS.">
+    content="Read simple, honest and practical dental articles by Dr. Anushka Choudhary, BDS. Learn about dental myths, gum health, scaling and everyday oral health.">
+
+    <meta name="author" content="Dr. Anushka Choudhary">
+
+    <meta name="robots" content="index, follow">
 
     <style>
-
-        /* ---------- BASIC SETTINGS ---------- */
 
         * {
             margin: 0;
@@ -27,7 +30,7 @@
             background: #FAF7F2;
             color: #29483F;
             font-family: Arial, sans-serif;
-            line-height: 1.7;
+            line-height: 1.8;
         }
 
         a {
@@ -35,17 +38,15 @@
         }
 
 
-        /* ---------- HEADER ---------- */
+        /* HEADER */
 
         header {
             padding: 20px 60px;
-            background: #FAF7F2;
             border-bottom: 1px solid #DDD8D2;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            background: #FAF7F2;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -75,172 +76,158 @@
         }
 
 
-        /* ---------- MAIN ---------- */
+        /* PAGE INTRO */
 
-        main {
-            max-width: 1150px;
+        .page-intro {
+            max-width: 850px;
             margin: auto;
-            padding: 90px 30px 100px;
+            padding: 95px 25px 70px;
+            text-align: center;
         }
 
         .eyebrow {
             color: #7F9C8D;
-            text-transform: uppercase;
-            letter-spacing: 3px;
             font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
             margin-bottom: 20px;
         }
 
         h1 {
             font-family: Georgia, serif;
+            font-size: 58px;
+            font-weight: 600;
+            line-height: 1.2;
             color: #5A4A48;
-            font-size: 65px;
-            line-height: 1.1;
-            font-weight: normal;
             margin-bottom: 25px;
         }
 
-        .intro {
-            max-width: 700px;
-            font-size: 20px;
+        .page-intro p {
+            max-width: 680px;
+            margin: auto;
             color: #5D6761;
-            line-height: 1.8;
-            margin-bottom: 70px;
+            font-size: 18px;
+            line-height: 1.9;
         }
 
 
-        /* ---------- ARTICLES ---------- */
+        /* ARTICLES */
 
         .articles {
+            max-width: 1050px;
+            margin: auto;
+            padding: 20px 30px 110px;
+        }
+
+        .article-card {
+            background: #F1EEE8;
+            margin-bottom: 45px;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
+            grid-template-columns: 330px 1fr;
+            min-height: 250px;
+            border-left: 4px solid #D8A6A1;
         }
-
-        .article {
-            background: #FFFFFF;
-            border: 1px solid #E3DDD7;
-            padding: 35px;
-
-            min-height: 500px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            transition: transform 0.2s ease,
-                        box-shadow 0.2s ease;
-        }
-
-        .article:hover {
-            transform: translateY(-4px);
-            box-shadow: 8px 8px 0 #F1EEE8;
-        }
-
-
-        /* ---------- ARTICLE IMAGE ---------- */
 
         .article-image {
             width: 100%;
-            height: 220px;
+            height: 100%;
+            min-height: 250px;
             object-fit: cover;
-            display: block;
-            margin-bottom: 25px;
         }
 
-
-        /* ---------- CATEGORY ---------- */
+        .article-content {
+            padding: 40px 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
         .category {
             color: #7F9C8D;
-            text-transform: uppercase;
-            letter-spacing: 2px;
             font-size: 11px;
-        }
-
-
-        /* ---------- ARTICLE TITLE ---------- */
-
-        h2 {
-            font-family: Georgia, serif;
-            color: #5A4A48;
-            font-size: 30px;
-            line-height: 1.25;
-            font-weight: normal;
-            margin: 20px 0;
-        }
-
-
-        /* ---------- ARTICLE TEXT ---------- */
-
-        .article p {
-            color: #65706A;
-            font-size: 15px;
-            line-height: 1.8;
-        }
-
-
-        /* ---------- READ LINK ---------- */
-
-        .read {
-            display: inline-block;
-            margin-top: 25px;
-
-            color: #29483F;
-
+            letter-spacing: 3px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 12px;
-
-            transition: color 0.2s ease;
+            margin-bottom: 14px;
         }
 
-        .read:hover {
+        .article-content h2 {
+            font-family: Georgia, serif;
+            font-size: 32px;
+            font-weight: normal;
+            line-height: 1.3;
+            color: #5A4A48;
+            margin-bottom: 18px;
+        }
+
+        .article-content p {
+            color: #5D6761;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 22px;
+        }
+
+        .read-more {
+            color: #29483F;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
             color: #D8A6A1;
         }
 
 
-        /* ---------- COMING SOON ---------- */
+        /* COMING SOON */
 
-        .coming {
-            margin-top: 70px;
-            padding: 40px;
-
-            background: #F1EEE8;
-
+        .coming-soon {
+            max-width: 850px;
+            margin: 20px auto 0;
+            padding: 55px 30px;
             text-align: center;
+            border-top: 1px solid #DDD8D2;
         }
 
-        .coming h2 {
-            margin-top: 0;
+        .coming-soon h2 {
+            font-family: Georgia, serif;
+            font-size: 30px;
+            font-weight: normal;
+            color: #5A4A48;
             margin-bottom: 15px;
         }
 
-        .coming p {
-            color: #65706A;
-            font-size: 15px;
+        .coming-soon p {
+            color: #747C77;
+            font-size: 16px;
         }
 
 
-        /* ---------- FOOTER ---------- */
+        /* FOOTER */
 
         footer {
-    background: #29483F;
-    color: #FAF7F2;
-    padding: 45px;
-    text-align: center;
-}
+            background: #D8A6A1;
+            color: #29483F;
+            padding: 45px 25px;
+            text-align: center;
+        }
 
-footer p {
-    color: #E8DDD8;
-    margin-top: 8px;
-    margin-bottom: 0;
-    font-size: 14px;
-}
+        footer strong {
+            font-size: 17px;
+            letter-spacing: 2px;
+        }
 
-        /* ---------- MOBILE ---------- */
+        footer p {
+            color: #29483F;
+            margin-top: 8px;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
 
-        @media(max-width:750px) {
+
+        /* MOBILE */
+
+        @media(max-width:800px) {
 
             header {
                 padding: 20px 25px;
@@ -250,32 +237,41 @@ footer p {
                 display: none;
             }
 
-            main {
-                padding: 65px 25px 75px;
+            .logo {
+                font-size: 17px;
+            }
+
+            .page-intro {
+                padding: 70px 25px 50px;
             }
 
             h1 {
-                font-size: 45px;
+                font-size: 43px;
+            }
+
+            .page-intro p {
+                font-size: 16px;
             }
 
             .articles {
-                grid-template-columns: 1fr;
+                padding: 15px 22px 80px;
             }
 
-            .article {
-                min-height: auto;
+            .article-card {
+                display: block;
             }
 
             .article-image {
-                height: 200px;
+                height: 230px;
+                min-height: 0;
             }
 
-            .coming {
-                padding: 30px 22px;
+            .article-content {
+                padding: 30px 25px;
             }
 
-            footer {
-                padding: 35px 20px;
+            .article-content h2 {
+                font-size: 27px;
             }
 
         }
@@ -288,7 +284,7 @@ footer p {
 <body>
 
 
-<!-- ==================== HEADER ==================== -->
+<!-- HEADER -->
 
 <header>
 
@@ -311,184 +307,128 @@ footer p {
 </header>
 
 
-<!-- ==================== MAIN ==================== -->
+<!-- PAGE INTRO -->
 
-<main>
-
+<section class="page-intro">
 
     <div class="eyebrow">
-        The Dental Journal
+        Dental Blog
     </div>
 
-
     <h1>
-        Dental Blog
+        Let's talk teeth.
     </h1>
 
-
-    <p class="intro">
-        Simple, evidence-based explanations about your teeth,
-        gums, dental treatments, oral hygiene and the questions
-        patients ask most often.
+    <p>
+        Dental information shouldn't feel confusing or intimidating.
+        Here, I break down common dental myths, everyday oral health
+        questions and things I wish more patients knew before sitting
+        in the dental chair.
     </p>
 
-
-    <!-- ==================== ARTICLES ==================== -->
-
-    <div class="articles">
+</section>
 
 
-        <!-- ARTICLE 1 -->
+<!-- ARTICLES -->
 
-        <article class="article">
+<section class="articles">
 
-            <div>
 
-                <img
-                    src="scaling-image.jpg"
-                    alt="Dental scaling instruments prepared for a professional dental cleaning"
-                    class="article-image"
-                >
+    <!-- SCALING ARTICLE -->
 
-                <div class="category">
-                    Dental Myths
-                </div>
+    <article class="article-card">
 
-                <h2>
-                    Does Dental Scaling Damage Your Teeth?
-                </h2>
+        <img
+            class="article-image"
+            src="scaling-image.jpg"
+            alt="Dental scaling and professional teeth cleaning"
+        >
 
-                <p>
-                    Does professional cleaning weaken your teeth?
-                    Let's separate the common myth from what actually
-                    happens during scaling.
-                </p>
+        <div class="article-content">
 
+            <div class="category">
+                Dental Myths
             </div>
 
+            <h2>
+                “Doctor, Scaling Will Loosen My Teeth.”
+            </h2>
 
-            <a href="scaling.html" class="read">
+            <p>
+                Does dental scaling really damage your teeth?
+                Why do some teeth feel different afterward?
+                And what is actually happening underneath the gums?
+            </p>
+
+            <a class="read-more" href="scaling.html">
                 Read Article →
             </a>
 
-        </article>
-
-
-       <!-- ARTICLE 2 -->
-
-<article class="article">
-
-    <div>
-
-        <div class="category">
-            Gum Health
         </div>
 
+    </article>
+
+
+    <!-- BLEEDING GUMS ARTICLE -->
+
+    <article class="article-card">
+
+        <img
+            class="article-image"
+            src="gums-bleeding-image (1).jpg"
+            alt="Healthy and bleeding gums"
+        >
+
+        <div class="article-content">
+
+            <div class="category">
+                Gum Health
+            </div>
+
+            <h2>
+                “My Gums Bleed. Is That Normal?”
+            </h2>
+
+            <p>
+                Bleeding gums are often ignored because they don't
+                always hurt. But what are they actually trying to
+                tell you about your oral health?
+            </p>
+
+            <a class="read-more" href="gums-bleeding.html">
+                Read Article →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <!-- COMING SOON -->
+
+    <div class="coming-soon">
+
         <h2>
-            Why Do My Gums Bleed When I Brush?
+            More dental conversations coming soon.
         </h2>
 
         <p>
-            Bleeding gums shouldn't always be ignored.
-            Learn about common causes and when you should
-            see a dentist.
-        </p>
-
-    </div>
-
-    <a href="gums-bleeding.html" class="read">
-        Read Article →
-    </a>
-
-</article>
-
-
-        <!-- ARTICLE 3 -->
-
-        <article class="article">
-
-            <div>
-
-                <div class="category">
-                    Tooth Sensitivity
-                </div>
-
-                <h2>
-                    Why Are My Teeth Sensitive to Cold?
-                </h2>
-
-                <p>
-                    Understanding the common causes of sensitivity
-                    and when it may require professional attention.
-                </p>
-
-            </div>
-
-
-            <span class="read">
-                Coming Soon →
-            </span>
-
-        </article>
-
-
-        <!-- ARTICLE 4 -->
-
-        <article class="article">
-
-            <div>
-
-                <div class="category">
-                    Cavities
-                </div>
-
-                <h2>
-                    What Happens If You Ignore a Cavity?
-                </h2>
-
-                <p>
-                    A cavity doesn't usually disappear on its own.
-                    Here's what can happen if treatment is delayed.
-                </p>
-
-            </div>
-
-
-            <span class="read">
-                Coming Soon →
-            </span>
-
-        </article>
-
-
-    </div>
-
-
-    <!-- ==================== MORE ARTICLES ==================== -->
-
-    <div class="coming">
-
-        <h2>
-            More dental guides are coming.
-        </h2>
-
-        <p>
-            New articles covering oral health, dental treatments,
-            myths and everyday dental questions will be added here.
+            Because there are far too many dental myths
+            that deserve a proper conversation.
         </p>
 
     </div>
 
 
-</main>
+</section>
 
 
-<!-- ==================== FOOTER ==================== -->
+<!-- FOOTER -->
 
 <footer>
 
     <strong>
-        DR. ANUSHKA
+        DR. ANUSHKA CHOUDHARY
     </strong>
 
     <p>
