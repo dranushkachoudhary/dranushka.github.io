@@ -12,7 +12,7 @@
     <title>Dental Blog | Dr. Anushka Choudhary, BDS</title>
 
     <meta name="description"
-    content="Dental articles by Dr. Anushka Choudhary, BDS. Simple, honest explanations of dental myths, oral health and common questions patients have about dentistry.">
+    content="Dental articles and visual guides by Dr. Anushka Choudhary, BDS. Simple, honest explanations of dental myths, oral health and common questions patients have about dentistry.">
 
     <meta name="author" content="Dr. Anushka Choudhary">
 
@@ -27,12 +27,14 @@
             box-sizing: border-box;
         }
 
+
         body {
             background: #FAF7F2;
             color: #29483F;
             font-family: Arial, sans-serif;
             line-height: 1.8;
         }
+
 
         a {
             text-decoration: none;
@@ -43,84 +45,124 @@
 
         header {
             padding: 20px 60px;
+
             border-bottom: 1px solid #DDD8D2;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             background: #FAF7F2;
+
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
+
         .logo {
             font-size: 21px;
+
             letter-spacing: 2px;
+
             font-weight: bold;
+
             color: #29483F;
         }
+
 
         nav {
             display: flex;
+
             gap: 30px;
         }
 
+
         nav a {
             color: #29483F;
+
             font-size: 13px;
+
             letter-spacing: 1px;
+
             text-transform: uppercase;
         }
+
 
         nav a:hover {
             color: #D8A6A1;
         }
 
 
+
         /* BLOG HERO */
 
         .blog-hero {
             max-width: 900px;
+
             margin: auto;
+
             padding: 100px 25px 75px;
+
             text-align: center;
         }
 
+
         .eyebrow {
             color: #7F9C8D;
+
             font-size: 12px;
+
             letter-spacing: 4px;
+
             text-transform: uppercase;
+
             margin-bottom: 20px;
         }
 
+
         h1 {
             font-family: Georgia, serif;
+
             font-size: 58px;
+
             line-height: 1.2;
+
             font-weight: 600;
+
             color: #5A4A48;
+
             margin-bottom: 25px;
         }
 
+
         .blog-intro {
             max-width: 680px;
+
             margin: auto;
+
             color: #5D6761;
+
             font-size: 18px;
+
             line-height: 1.9;
         }
+
 
 
         /* ARTICLES */
 
         .articles {
             max-width: 1050px;
+
             margin: auto;
+
             padding: 20px 25px 110px;
 
             display: grid;
+
             grid-template-columns: repeat(2, 1fr);
+
             gap: 45px;
         }
 
@@ -129,179 +171,562 @@
 
         .article-card {
             background: #F1EEE8;
+
             overflow: hidden;
+
             transition: transform 0.25s ease;
         }
+
 
         .article-card:hover {
             transform: translateY(-5px);
         }
 
+
         .article-image {
             width: 100%;
+
             height: 280px;
+
             object-fit: cover;
+
             display: block;
         }
+
 
         .article-content {
             padding: 32px 32px 35px;
         }
 
+
         .category {
             color: #7F9C8D;
+
             font-size: 11px;
+
             letter-spacing: 3px;
+
             text-transform: uppercase;
+
             margin-bottom: 13px;
         }
 
+
         .article-card h2 {
             font-family: Georgia, serif;
+
             font-weight: normal;
+
             color: #5A4A48;
+
             font-size: 29px;
+
             line-height: 1.3;
+
             margin-bottom: 15px;
         }
 
+
         .article-description {
             color: #65706A;
+
             font-size: 15px;
+
             line-height: 1.85;
+
             margin-bottom: 22px;
         }
 
+
         .article-meta {
             color: #7F9C8D;
+
             font-size: 12px;
+
             margin-bottom: 20px;
         }
 
+
         .read-more {
             display: inline-block;
+
             color: #29483F;
+
             font-size: 12px;
+
             letter-spacing: 2px;
+
             text-transform: uppercase;
+
             border-bottom: 1px solid #D8A6A1;
+
             padding-bottom: 4px;
         }
+
 
         .read-more:hover {
             color: #D8A6A1;
         }
 
 
-        /* MORE TOPICS */
 
-        .topics {
+        /* VISUAL DENTAL GUIDES */
+
+        .visual-guides {
             background: #F1EEE8;
-            padding: 90px 25px;
+
+            padding: 100px 25px;
+        }
+
+
+        .visual-guides-inner {
+            max-width: 1050px;
+
+            margin: auto;
+
             text-align: center;
         }
 
-        .topics-inner {
-            max-width: 750px;
-            margin: auto;
-        }
 
-        .topics h2 {
+        .visual-guides h2 {
             font-family: Georgia, serif;
+
             color: #5A4A48;
-            font-size: 38px;
+
+            font-size: 42px;
+
+            line-height: 1.3;
+
             font-weight: normal;
+
             margin-bottom: 20px;
         }
 
+
+        .visual-guides-intro {
+            max-width: 650px;
+
+            margin: auto;
+
+            color: #5D6761;
+
+            font-size: 16px;
+
+            line-height: 1.9;
+
+            margin-bottom: 55px;
+        }
+
+
+        /* VISUAL GUIDE CARD */
+
+        .visual-guide-card {
+            max-width: 900px;
+
+            margin: auto;
+
+            background: #FAF7F2;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            text-align: left;
+
+            overflow: hidden;
+
+            transition: transform 0.25s ease;
+        }
+
+
+        .visual-guide-card:hover {
+            transform: translateY(-5px);
+        }
+
+
+        .visual-guide-image {
+            background: #FAF7F2;
+        }
+
+
+        .visual-guide-image img {
+            width: 100%;
+
+            height: 100%;
+
+            min-height: 420px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        .visual-guide-content {
+            padding: 55px 45px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+        }
+
+
+        .visual-guide-content h3 {
+            font-family: Georgia, serif;
+
+            color: #5A4A48;
+
+            font-size: 32px;
+
+            line-height: 1.35;
+
+            font-weight: normal;
+
+            margin-bottom: 20px;
+        }
+
+
+        .visual-guide-content p {
+            color: #65706A;
+
+            font-size: 15px;
+
+            line-height: 1.85;
+
+            margin-bottom: 25px;
+        }
+
+
+        .visual-guide-button {
+            display: inline-block;
+
+            width: fit-content;
+
+            background: #29483F;
+
+            color: #FAF7F2;
+
+            padding: 13px 24px;
+
+            font-size: 12px;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            transition: 0.3s ease;
+        }
+
+
+        .visual-guide-button:hover {
+            background: #D8A6A1;
+
+            color: #29483F;
+        }
+
+
+
+        /* MORE TOPICS */
+
+        .topics {
+            background: #FAF7F2;
+
+            padding: 100px 25px;
+
+            text-align: center;
+        }
+
+
+        .topics-inner {
+            max-width: 750px;
+
+            margin: auto;
+        }
+
+
+        .topics h2 {
+            font-family: Georgia, serif;
+
+            color: #5A4A48;
+
+            font-size: 38px;
+
+            font-weight: normal;
+
+            margin-bottom: 20px;
+        }
+
+
         .topics p {
             color: #5D6761;
+
             font-size: 16px;
+
             line-height: 1.9;
         }
+
+
+
+        /* QUESTIONS CTA */
+
+        .questions-cta {
+            background: #F1EEE8;
+
+            padding: 85px 25px;
+
+            text-align: center;
+        }
+
+
+        .questions-cta-inner {
+            max-width: 700px;
+
+            margin: auto;
+        }
+
+
+        .questions-cta h2 {
+            font-family: Georgia, serif;
+
+            color: #5A4A48;
+
+            font-size: 36px;
+
+            font-weight: normal;
+
+            margin-bottom: 18px;
+        }
+
+
+        .questions-cta p {
+            color: #5D6761;
+
+            font-size: 16px;
+
+            margin-bottom: 25px;
+        }
+
+
+        .questions-button {
+            display: inline-block;
+
+            background: #29483F;
+
+            color: #FAF7F2;
+
+            padding: 14px 28px;
+
+            font-size: 12px;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            transition: 0.3s ease;
+        }
+
+
+        .questions-button:hover {
+            background: #D8A6A1;
+
+            color: #29483F;
+        }
+
 
 
         /* FOOTER */
 
         footer {
             background: #D8A6A1;
+
             color: #29483F;
+
             padding: 45px 25px;
+
             text-align: center;
         }
 
+
         footer strong {
             font-size: 17px;
+
             letter-spacing: 2px;
         }
 
+
         footer p {
             color: #29483F;
+
             margin-top: 8px;
-            margin-bottom: 0;
+
+            margin-bottom: 20px;
+
             font-size: 14px;
         }
+
+
+        .footer-links {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 20px;
+        }
+
+
+        .footer-links a {
+            color: #29483F;
+
+            font-size: 12px;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+
+        .footer-links a:hover {
+            color: #FAF7F2;
+        }
+
 
 
         /* MOBILE */
 
         @media(max-width:800px) {
 
+
             header {
                 padding: 20px 25px;
             }
+
 
             nav {
                 display: none;
             }
 
+
             .logo {
                 font-size: 17px;
             }
+
 
             .blog-hero {
                 padding: 70px 25px 55px;
             }
 
+
             h1 {
                 font-size: 43px;
             }
+
 
             .blog-intro {
                 font-size: 16px;
             }
 
+
             .articles {
                 grid-template-columns: 1fr;
+
                 padding: 10px 20px 80px;
+
                 gap: 30px;
             }
+
 
             .article-image {
                 height: 230px;
             }
 
+
             .article-content {
                 padding: 27px 25px 30px;
             }
+
 
             .article-card h2 {
                 font-size: 26px;
             }
 
+
+            /* VISUAL GUIDE MOBILE */
+
+            .visual-guides {
+                padding: 75px 20px;
+            }
+
+
+            .visual-guides h2 {
+                font-size: 32px;
+            }
+
+
+            .visual-guides-intro {
+                font-size: 15px;
+
+                margin-bottom: 40px;
+            }
+
+
+            .visual-guide-card {
+                grid-template-columns: 1fr;
+            }
+
+
+            .visual-guide-image img {
+                height: auto;
+
+                min-height: 0;
+
+                object-fit: contain;
+            }
+
+
+            .visual-guide-content {
+                padding: 35px 27px 40px;
+            }
+
+
+            .visual-guide-content h3 {
+                font-size: 27px;
+            }
+
+
+            /* TOPICS */
+
             .topics {
                 padding: 70px 25px;
             }
 
+
             .topics h2 {
                 font-size: 31px;
             }
+
+
+            /* QUESTIONS */
+
+            .questions-cta {
+                padding: 70px 25px;
+            }
+
+
+            .questions-cta h2 {
+                font-size: 30px;
+            }
+
 
         }
 
     </style>
 
 </head>
+
 
 
 <body>
@@ -315,23 +740,42 @@
         DR. ANUSHKA CHOUDHARY
     </div>
 
-<nav>
 
-    <a href="index.html">Home</a>
+    <nav>
 
-    <a href="about.html">About</a>
+        <a href="index.html">
+            Home
+        </a>
 
-    <a href="blog.html">Dental Blog</a>
 
-    <a href="guides.html">Visual Guides</a>
+        <a href="about.html">
+            About
+        </a>
 
-    <a href="questions.html">Ask Dr. Anushka</a>
 
-    <a href="contact.html">Contact</a>
+        <a href="blog.html">
+            Dental Blog
+        </a>
 
-</nav>
+
+        <a href="guides.html">
+            Visual Guides
+        </a>
+
+
+        <a href="questions.html">
+            Ask Dr. Anushka
+        </a>
+
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
 
 </header>
+
 
 
 <!-- BLOG HERO -->
@@ -342,18 +786,23 @@
         The Dental Blog
     </div>
 
+
     <h1>
         Dentistry,<br>
         explained simply.
     </h1>
 
+
     <p class="blog-intro">
+
         Dental health can feel confusing. Here, I break down common
         dental questions, myths and everyday oral health topics —
         without unnecessary jargon or fear.
+
     </p>
 
 </section>
+
 
 
 <!-- ARTICLES -->
@@ -375,34 +824,45 @@
 
         </a>
 
+
         <div class="article-content">
 
             <div class="category">
                 Dental Myths
             </div>
 
+
             <h2>
                 Does Dental Scaling Damage Your Teeth?
             </h2>
 
+
             <p class="article-description">
+
                 Does scaling make teeth loose? Can it damage enamel?
                 And why do teeth sometimes feel different afterward?
                 Let's talk about what actually happens during a
                 professional dental cleaning.
+
             </p>
+
 
             <div class="article-meta">
                 August 2026 · 5 min read
             </div>
 
-            <a class="read-more" href="scaling.html">
+
+            <a
+                class="read-more"
+                href="scaling.html"
+            >
                 Read Article →
             </a>
 
         </div>
 
     </article>
+
 
 
     <!-- ARTICLE 2 -->
@@ -419,34 +879,45 @@
 
         </a>
 
+
         <div class="article-content">
 
             <div class="category">
                 Gum Health
             </div>
 
+
             <h2>
                 Why Do My Gums Bleed When I Brush?
             </h2>
 
+
             <p class="article-description">
+
                 Seeing blood when you brush can be worrying. But what
                 does bleeding actually mean? Here's what your gums may
                 be trying to tell you — and when it's time to see your
                 dentist.
+
             </p>
+
 
             <div class="article-meta">
                 August 2026 · 5 min read
             </div>
 
-            <a class="read-more" href="gums-bleeding.html">
+
+            <a
+                class="read-more"
+                href="gums-bleeding.html"
+            >
                 Read Article →
             </a>
 
         </div>
 
     </article>
+
 
 
     <!-- ARTICLE 3 -->
@@ -463,27 +934,37 @@
 
         </a>
 
+
         <div class="article-content">
 
             <div class="category">
                 Tooth Discoloration
             </div>
 
+
             <h2>
                 Why Are My Teeth Yellow? The Truth Behind Tooth Discoloration
             </h2>
 
+
             <p class="article-description">
+
                 Are naturally yellowish teeth unhealthy?
                 What causes teeth to become darker over time?
                 And when is whitening actually useful?
+
             </p>
+
 
             <div class="article-meta">
                 August 2026 · 6 min read
             </div>
 
-            <a class="read-more" href="yellow-teeth.html">
+
+            <a
+                class="read-more"
+                href="yellow-teeth.html"
+            >
                 Read Article →
             </a>
 
@@ -495,29 +976,156 @@
 </section>
 
 
+
+<!-- VISUAL DENTAL GUIDES -->
+
+<section class="visual-guides">
+
+    <div class="visual-guides-inner">
+
+
+        <div class="eyebrow">
+            Visual Dental Guides
+        </div>
+
+
+        <h2>
+            Dental concepts,<br>
+            explained visually.
+        </h2>
+
+
+        <p class="visual-guides-intro">
+
+            Short, visual guides for common dental questions —
+            designed to make complex concepts easier to understand.
+
+        </p>
+
+
+
+        <!-- GUIDE CARD -->
+
+        <div class="visual-guide-card">
+
+
+            <div class="visual-guide-image">
+
+                <img
+                    src="tooth-pain-guide-01.png"
+                    alt="Visual dental guide explaining why tooth pain disappearing does not always mean the problem is gone"
+                >
+
+            </div>
+
+
+            <div class="visual-guide-content">
+
+                <div class="category">
+                    Visual Guide · 01
+                </div>
+
+
+                <h3>
+                    My Tooth Stopped Hurting.
+                    Do I Still Need Treatment?
+                </h3>
+
+
+                <p>
+
+                    Pain going away doesn't always mean the problem
+                    has gone away. Explore this simple visual guide
+                    to understand what may be happening.
+
+                </p>
+
+
+                <a
+                    class="visual-guide-button"
+                    href="guides.html"
+                >
+                    View Visual Guide →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
 <!-- MORE TOPICS -->
 
 <section class="topics">
 
     <div class="topics-inner">
 
+
         <div class="eyebrow">
             More coming soon
         </div>
+
 
         <h2>
             There are a lot more dental questions to talk about.
         </h2>
 
+
         <p>
+
             Tooth sensitivity. Wisdom teeth. Root canals. Bad breath.
             Cavities. Whitening. Dental anxiety. Everyday questions
             that deserve straightforward answers.
+
         </p>
 
     </div>
 
 </section>
+
+
+
+<!-- QUESTIONS CTA -->
+
+<section class="questions-cta">
+
+    <div class="questions-cta-inner">
+
+
+        <div class="eyebrow">
+            Have a question?
+        </div>
+
+
+        <h2>
+            Ask Dr. Anushka.
+        </h2>
+
+
+        <p>
+
+            If there's a dental question you've always wanted to ask,
+            you can submit it here. Your question may even inspire
+            a future article or visual guide.
+
+        </p>
+
+
+        <a
+            href="questions.html"
+            class="questions-button"
+        >
+            Ask Your Question →
+        </a>
+
+    </div>
+
+</section>
+
 
 
 <!-- FOOTER -->
@@ -528,25 +1136,53 @@
         DR. ANUSHKA CHOUDHARY
     </strong>
 
+
     <p>
         Dentistry, explained simply.
     </p>
 
+
     <div class="footer-links">
 
-        <a href="index.html">Home</a>
+        <a href="index.html">
+            Home
+        </a>
 
-        <a href="blog.html">Dental Blog</a>
 
-        <a href="about.html">About</a>
+        <a href="blog.html">
+            Dental Blog
+        </a>
 
-        <a href="contact.html">Contact</a>
 
-        <a href="disclaimer.html">Disclaimer</a>
+        <a href="guides.html">
+            Visual Guides
+        </a>
+
+
+        <a href="about.html">
+            About
+        </a>
+
+
+        <a href="questions.html">
+            Ask Dr. Anushka
+        </a>
+
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+
+        <a href="disclaimer.html">
+            Disclaimer
+        </a>
 
     </div>
 
 </footer>
+
+
 </body>
 
 </html>
