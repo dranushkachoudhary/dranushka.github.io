@@ -444,17 +444,27 @@
 
         <!-- FORMSPREE FORM -->
 
-      <form
-    action="https://formspree.io/f/xgawbjae"
-    method="POST"
->
-    <input type="hidden" name="_next" value="thank-you.html">
+        <form
+            action="https://formspree.io/f/xgawbjae"
+            method="POST"
+        >
+
+            <!-- CUSTOM THANK YOU PAGE -->
+
+            <input
+                type="hidden"
+                name="_next"
+                value="thank-you.html"
+            >
+
+
             <label>
                 Your Name
                 <input
                     type="text"
                     name="name"
                     placeholder="Your name"
+                    required
                 >
             </label>
 
@@ -465,6 +475,7 @@
                     type="email"
                     name="email"
                     placeholder="Your email address"
+                    required
                 >
             </label>
 
