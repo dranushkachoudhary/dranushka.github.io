@@ -4,23 +4,27 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/jpeg" href="dental tooth image.jpg">
+<link rel="icon" type="image/jpeg" href="dental tooth image.jpg">
 
-    <title>Dental Bridges Explained | Dr. Anushka Choudhary, BDS</title>
+<title>Dental Bridges Explained | Dr. Anushka Choudhary, BDS</title>
 
-    <meta name="description"
-    content="Learn about dental bridges, why they may be recommended, how they work, the different types of bridges and what to expect from treatment with Dr. Anushka Choudhary, BDS.">
+<meta name="description"
+content="Learn what dental bridges are, why they may be recommended for missing teeth, the different types of bridges, how the procedure works, aftercare and common questions explained simply by Dr. Anushka Choudhary, BDS.">
 
-    <meta name="author" content="Dr. Anushka Choudhary">
+<meta name="author" content="Dr. Anushka Choudhary">
 
-    <meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow">
 
 
 <style>
+
+/* =========================
+   RESET
+========================= */
 
 * {
     margin: 0;
@@ -87,6 +91,7 @@ nav a {
     letter-spacing: 0.8px;
     text-transform: uppercase;
     white-space: nowrap;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
@@ -116,14 +121,14 @@ nav a:hover {
 h1 {
     font-family: Georgia, serif;
     font-size: 58px;
-    line-height: 1.2;
+    line-height: 1.15;
     font-weight: 600;
     color: #5A4A48;
     margin-bottom: 25px;
 }
 
 .hero-intro {
-    max-width: 700px;
+    max-width: 720px;
     margin: auto;
     color: #5D6761;
     font-size: 18px;
@@ -145,61 +150,105 @@ h1 {
     margin: auto;
 }
 
-.content-card {
+
+/* =========================
+   INFORMATION CARDS
+========================= */
+
+.info-card {
     background: #FAF7F2;
-    padding: 45px;
+    padding: 40px;
     margin-bottom: 25px;
 }
 
-.content-card h2 {
+.info-card h2 {
     font-family: Georgia, serif;
     color: #5A4A48;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: normal;
     line-height: 1.3;
     margin-bottom: 18px;
 }
 
-.content-card h3 {
+.info-card h3 {
     font-family: Georgia, serif;
     color: #5A4A48;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: normal;
     margin-top: 30px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
-.content-card p {
+.info-card p {
     color: #5D6761;
     font-size: 16px;
     line-height: 1.9;
     margin-bottom: 15px;
 }
 
+.info-card p:last-child {
+    margin-bottom: 0;
+}
+
+.info-card ul {
+    margin: 15px 0 20px 22px;
+    color: #5D6761;
+}
+
+.info-card li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
 
 /* =========================
-   HIGHLIGHT
+   HIGHLIGHT BOX
 ========================= */
 
 .highlight-box {
-    background: #FAF7F2;
-    border-left: 4px solid #D8A6A1;
-    padding: 35px;
-    margin: 30px 0;
+    background: #29483F;
+    color: #FAF7F2;
+    padding: 45px;
+    margin: 35px 0;
+}
+
+.highlight-box .eyebrow {
+    color: #D8A6A1;
 }
 
 .highlight-box h2 {
     font-family: Georgia, serif;
-    color: #5A4A48;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: normal;
-    margin-bottom: 12px;
+    line-height: 1.4;
+    margin-bottom: 15px;
 }
 
 .highlight-box p {
-    color: #5D6761;
+    color: #E7E4DE;
     font-size: 16px;
     line-height: 1.9;
+}
+
+
+/* =========================
+   BRIDGE TYPES
+========================= */
+
+.bridge-type {
+    background: #F1EEE8;
+    padding: 25px 28px;
+    margin-bottom: 15px;
+    border-left: 3px solid #7F9C8D;
+}
+
+.bridge-type h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.bridge-type p {
+    margin-bottom: 0;
 }
 
 
@@ -208,26 +257,65 @@ h1 {
 ========================= */
 
 .steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .step {
-    background: #F1EEE8;
-    padding: 28px 22px;
+    display: flex;
+    gap: 25px;
+    padding: 25px 0;
+    border-bottom: 1px solid #DDD8D2;
+}
+
+.step:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .step-number {
-    color: #7F9C8D;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    min-width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #D8A6A1;
+    color: #29483F;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
 }
 
-.step h3 {
+.step-content h3 {
+    font-family: Georgia, serif;
+    color: #5A4A48;
+    font-size: 21px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+.step-content p {
+    margin: 0;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-section {
+    margin-top: 20px;
+}
+
+.faq {
+    background: #F1EEE8;
+    padding: 25px 28px;
+    margin-bottom: 15px;
+}
+
+.faq h3 {
     font-family: Georgia, serif;
     color: #5A4A48;
     font-size: 21px;
@@ -235,15 +323,15 @@ h1 {
     margin-bottom: 10px;
 }
 
-.step p {
+.faq p {
     color: #65706A;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.8;
 }
 
 
 /* =========================
-   QUESTION SECTION
+   CTA
 ========================= */
 
 .question-section {
@@ -358,10 +446,17 @@ footer p {
 
     header {
         padding: 20px 25px;
+        flex-direction: column;
+        gap: 15px;
     }
 
     nav {
-        display: none;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    nav a {
+        font-size: 11px;
     }
 
     .logo {
@@ -384,16 +479,24 @@ footer p {
         padding: 60px 20px 75px;
     }
 
-    .content-card {
+    .info-card {
         padding: 30px 25px;
     }
 
-    .content-card h2 {
+    .info-card h2 {
         font-size: 29px;
     }
 
-    .steps {
-        grid-template-columns: 1fr;
+    .highlight-box {
+        padding: 35px 25px;
+    }
+
+    .highlight-box h2 {
+        font-size: 28px;
+    }
+
+    .step {
+        gap: 15px;
     }
 
     .question-section {
@@ -459,7 +562,7 @@ footer p {
 <section class="hero">
 
     <div class="eyebrow">
-        Tooth Replacement
+        Tooth Replacement Guide
     </div>
 
     <h1>
@@ -469,9 +572,9 @@ footer p {
 
     <p class="hero-intro">
 
-        A dental bridge is one option for replacing a missing tooth or
-        several missing teeth. It uses supporting structures to hold
-        replacement teeth in the space created by missing teeth.
+        A dental bridge is one option for replacing a missing tooth
+        or several missing teeth. Here's how bridges work, when they
+        may be considered and what you can expect from treatment.
 
     </p>
 
@@ -490,7 +593,11 @@ footer p {
 
         <!-- WHAT IS A BRIDGE -->
 
-        <div class="content-card">
+        <div class="info-card">
+
+            <div class="eyebrow">
+                Understanding the treatment
+            </div>
 
             <h2>
                 What is a dental bridge?
@@ -499,17 +606,23 @@ footer p {
             <p>
 
                 A dental bridge is a fixed dental restoration used to
-                replace one or more missing teeth. The replacement tooth
-                or teeth are connected to supporting structures, which
-                may include natural teeth or dental implants.
+                replace one or more missing teeth.
+
+            </p>
+
+            <p>
+
+                The replacement tooth or teeth are supported by
+                structures connected to neighbouring natural teeth,
+                dental implants or, in some designs, other supporting
+                structures.
 
             </p>
 
             <p>
 
                 Unlike a removable denture, a conventional fixed bridge
-                is designed to remain in place rather than being removed
-                by the patient.
+                is designed to stay in place during normal daily use.
 
             </p>
 
@@ -519,24 +632,36 @@ footer p {
 
         <!-- WHY NEEDED -->
 
-        <div class="content-card">
+        <div class="info-card">
+
+            <div class="eyebrow">
+                Why might you need one?
+            </div>
 
             <h2>
-                Why might a dental bridge be recommended?
+                Why are dental bridges recommended?
             </h2>
 
             <p>
 
-                A missing tooth can affect chewing, appearance and the
-                way neighbouring teeth interact with each other.
+                Losing a tooth can affect chewing, appearance and the
+                way neighbouring teeth contact each other.
 
             </p>
 
             <p>
 
-                Depending on the individual situation, a bridge may be
-                considered as one option for restoring the missing tooth
-                or teeth.
+                Depending on the location of the missing tooth and the
+                condition of the surrounding tissues, a bridge may be
+                considered as one way to restore the missing space.
+
+            </p>
+
+            <p>
+
+                However, a bridge is not automatically the best choice
+                for every missing tooth. Your dentist needs to assess
+                the individual situation first.
 
             </p>
 
@@ -548,16 +673,21 @@ footer p {
 
         <div class="highlight-box">
 
+            <div class="eyebrow">
+                An important point
+            </div>
+
             <h2>
-                A bridge is not the only option.
+                A dental bridge is one option — not the only option.
             </h2>
 
             <p>
 
                 Depending on the number and position of missing teeth,
-                the condition of the surrounding teeth and gums, bone
-                support and other factors, options may include a bridge,
-                dental implant or removable denture.
+                the condition of neighbouring teeth and gums, bone
+                support and your overall oral health, treatment options
+                may include a bridge, dental implant or removable
+                partial denture.
 
             </p>
 
@@ -567,72 +697,103 @@ footer p {
 
         <!-- TYPES -->
 
-        <div class="content-card">
+        <div class="info-card">
+
+            <div class="eyebrow">
+                Different designs
+            </div>
 
             <h2>
                 What are the different types of bridges?
             </h2>
 
-            <h3>
-                Traditional bridge
-            </h3>
 
-            <p>
+            <div class="bridge-type">
 
-                A traditional bridge is supported by crowns placed on
-                teeth next to the space where the tooth is missing.
+                <h3>
+                    Traditional bridge
+                </h3>
 
-            </p>
+                <p>
 
+                    A traditional bridge is supported by crowns placed
+                    on suitable teeth on either side of the space.
 
-            <h3>
-                Cantilever bridge
-            </h3>
+                </p>
 
-            <p>
-
-                A cantilever bridge is supported from one side rather
-                than both sides. Whether this type is appropriate
-                depends on the location and forces involved.
-
-            </p>
+            </div>
 
 
-            <h3>
-                Maryland bridge
-            </h3>
 
-            <p>
+            <div class="bridge-type">
 
-                A Maryland bridge uses a framework or wings that attach
-                to the back surfaces of supporting teeth. It may be
-                considered in selected situations.
+                <h3>
+                    Cantilever bridge
+                </h3>
 
-            </p>
+                <p>
+
+                    A cantilever bridge is supported from one side rather
+                    than both sides. Whether it is suitable depends on
+                    factors such as the location of the missing tooth
+                    and the forces placed on the restoration.
+
+                </p>
+
+            </div>
 
 
-            <h3>
-                Implant-supported bridge
-            </h3>
 
-            <p>
+            <div class="bridge-type">
 
-                An implant-supported bridge uses dental implants as
-                support instead of relying entirely on natural teeth.
+                <h3>
+                    Maryland bridge
+                </h3>
 
-            </p>
+                <p>
+
+                    A Maryland bridge uses a framework or wings that
+                    attach to the back surfaces of supporting teeth.
+                    It may be considered in selected situations.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="bridge-type">
+
+                <h3>
+                    Implant-supported bridge
+                </h3>
+
+                <p>
+
+                    An implant-supported bridge uses dental implants
+                    as support rather than relying entirely on natural
+                    teeth.
+
+                </p>
+
+            </div>
 
         </div>
 
 
 
-        <!-- HOW IT WORKS -->
+        <!-- PROCEDURE -->
 
-        <div class="content-card">
+        <div class="info-card">
+
+            <div class="eyebrow">
+                During treatment
+            </div>
 
             <h2>
-                What happens when getting a bridge?
+                What happens when getting a dental bridge?
             </h2>
+
 
             <div class="steps">
 
@@ -640,17 +801,25 @@ footer p {
                 <div class="step">
 
                     <div class="step-number">
-                        Step 01
+                        1
                     </div>
 
-                    <h3>
-                        Assessment
-                    </h3>
+                    <div class="step-content">
 
-                    <p>
-                        Your dentist examines the missing tooth area
-                        and evaluates the surrounding teeth and tissues.
-                    </p>
+                        <h3>
+                            Examination and planning
+                        </h3>
+
+                        <p>
+
+                            Your dentist examines the missing tooth area
+                            and evaluates the neighbouring teeth, gums,
+                            bite and other factors that may affect the
+                            treatment.
+
+                        </p>
+
+                    </div>
 
                 </div>
 
@@ -659,17 +828,24 @@ footer p {
                 <div class="step">
 
                     <div class="step-number">
-                        Step 02
+                        2
                     </div>
 
-                    <h3>
-                        Preparation
-                    </h3>
+                    <div class="step-content">
 
-                    <p>
-                        If a conventional bridge is planned, the
-                        supporting teeth may need to be prepared.
-                    </p>
+                        <h3>
+                            Preparing the supporting teeth
+                        </h3>
+
+                        <p>
+
+                            If a conventional bridge is planned, the
+                            supporting teeth may need to be carefully
+                            prepared to create space for the crowns.
+
+                        </p>
+
+                    </div>
 
                 </div>
 
@@ -678,16 +854,352 @@ footer p {
                 <div class="step">
 
                     <div class="step-number">
-                        Step 03
+                        3
                     </div>
 
+                    <div class="step-content">
+
+                        <h3>
+                            Impression or digital scan
+                        </h3>
+
+                        <p>
+
+                            An impression or digital scan may be taken
+                            to help design the bridge accurately.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        4
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Temporary restoration
+                        </h3>
+
+                        <p>
+
+                            Depending on the treatment plan, a temporary
+                            restoration may be placed while the final
+                            bridge is being prepared.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        5
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Final placement
+                        </h3>
+
+                        <p>
+
+                            The final bridge is checked for fit, bite,
+                            comfort and appearance before being placed
+                            appropriately.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PAIN -->
+
+        <div class="info-card">
+
+            <div class="eyebrow">
+                A common concern
+            </div>
+
+            <h2>
+                Does getting a dental bridge hurt?
+            </h2>
+
+            <p>
+
+                If natural teeth need to be prepared for a conventional
+                bridge, local anaesthesia is generally used to make the
+                procedure more comfortable.
+
+            </p>
+
+            <p>
+
+                You may experience pressure, vibration or some temporary
+                sensitivity around the treated teeth.
+
+            </p>
+
+            <p>
+
+                If significant or persistent pain develops, contact your
+                dentist so the area can be examined.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- AFTER -->
+
+        <div class="info-card">
+
+            <div class="eyebrow">
+                After treatment
+            </div>
+
+            <h2>
+                What can you expect afterward?
+            </h2>
+
+            <p>
+
+                Some temporary sensitivity or gum tenderness may occur
+                after bridge preparation or placement.
+
+            </p>
+
+            <p>
+
+                Your dentist may give you specific instructions about
+                eating, cleaning and caring for the restoration.
+
+            </p>
+
+            <p>
+
+                It may take a short period of time to become accustomed
+                to the new restoration, particularly when chewing.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- CARE -->
+
+        <div class="info-card">
+
+            <div class="eyebrow">
+                Long-term care
+            </div>
+
+            <h2>
+                How do you care for a dental bridge?
+            </h2>
+
+            <p>
+
+                A bridge needs regular cleaning just like natural teeth.
+                Brush twice a day and clean between the teeth and around
+                the bridge.
+
+            </p>
+
+            <p>
+
+                Depending on the bridge design, your dentist or hygienist
+                may recommend floss threaders, interdental brushes or
+                other cleaning aids to clean underneath the replacement
+                tooth.
+
+            </p>
+
+            <p>
+
+                Regular dental examinations are also important because
+                the supporting teeth and surrounding gums need to remain
+                healthy.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- SUPPORTING TEETH -->
+
+        <div class="highlight-box">
+
+            <div class="eyebrow">
+                Remember
+            </div>
+
+            <h2>
+                The supporting teeth matter just as much as the bridge.
+            </h2>
+
+            <p>
+
+                A bridge depends on healthy supporting structures.
+                Maintaining good oral hygiene and attending regular
+                dental check-ups can help protect the teeth and gums
+                supporting the restoration.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- FAQ -->
+
+        <div class="info-card">
+
+            <div class="eyebrow">
+                Common questions
+            </div>
+
+            <h2>
+                Dental bridges: quick answers
+            </h2>
+
+
+            <div class="faq-section">
+
+
+                <div class="faq">
+
                     <h3>
-                        Placement
+                        How long does a dental bridge last?
                     </h3>
 
                     <p>
-                        The completed bridge is fitted and checked
-                        for comfort, function and appearance.
+
+                        The lifespan of a bridge varies depending on
+                        factors such as the material, oral hygiene,
+                        bite forces, supporting teeth and general care.
+                        Regular dental check-ups can help identify
+                        problems early.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Can a dental bridge come loose?
+                    </h3>
+
+                    <p>
+
+                        A bridge can occasionally become loose or
+                        dislodged. If this happens, contact your dentist
+                        for assessment rather than attempting a permanent
+                        repair yourself.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Can you get a cavity under a dental bridge?
+                    </h3>
+
+                    <p>
+
+                        The natural teeth supporting a bridge can still
+                        develop decay, especially around areas where
+                        plaque accumulates. Good cleaning and regular
+                        dental care remain important.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Is a bridge better than a dental implant?
+                    </h3>
+
+                    <p>
+
+                        Neither option is automatically better for every
+                        patient. The appropriate choice depends on the
+                        condition of the surrounding teeth and gums,
+                        bone support, overall oral health, treatment
+                        goals and other individual factors.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Can I eat normally with a dental bridge?
+                    </h3>
+
+                    <p>
+
+                        A properly fitted bridge is designed to restore
+                        chewing function. Your dentist may recommend
+                        temporary dietary precautions while you adjust
+                        to the restoration.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Can a bridge replace more than one tooth?
+                    </h3>
+
+                    <p>
+
+                        Yes, some bridges can replace more than one
+                        missing tooth. Whether this is appropriate depends
+                        on the location of the missing teeth and the
+                        supporting structures available.
+
                     </p>
 
                 </div>
@@ -699,78 +1211,25 @@ footer p {
 
 
 
-        <!-- CARE -->
-
-        <div class="content-card">
-
-            <h2>
-                How do you care for a dental bridge?
-            </h2>
-
-            <p>
-
-                Good oral hygiene remains important after getting a
-                bridge. Brushing twice a day and cleaning around and
-                underneath the bridge helps maintain the surrounding
-                teeth and gums.
-
-            </p>
-
-            <p>
-
-                Your dentist or hygienist can demonstrate suitable
-                cleaning techniques, which may include floss threaders,
-                interdental brushes or other cleaning aids depending
-                on the bridge design.
-
-            </p>
-
-        </div>
-
-
-
-        <!-- IMPORTANT -->
+        <!-- FINAL NOTE -->
 
         <div class="highlight-box">
 
+            <div class="eyebrow">
+                Final thought
+            </div>
+
             <h2>
-                The supporting teeth matter too.
+                Replacing a missing tooth is about more than appearance.
             </h2>
 
             <p>
 
-                A bridge depends on its supporting structures. Keeping
-                the supporting teeth and surrounding gums healthy is
-                an important part of maintaining the restoration.
-
-            </p>
-
-        </div>
-
-
-
-        <!-- FINAL -->
-
-        <div class="content-card">
-
-            <h2>
-                Is a dental bridge right for you?
-            </h2>
-
-            <p>
-
-                There is no single tooth-replacement option that is
-                suitable for everyone. Your dentist will consider the
-                location of the missing tooth, the condition of nearby
-                teeth and gums, your bite, bone support and your overall
-                oral health before recommending an option.
-
-            </p>
-
-            <p>
-
-                A proper examination is therefore important before
-                deciding whether a bridge is appropriate.
+                Restoring a missing tooth can help with chewing and
+                function, but the best treatment depends on your
+                individual oral health. A proper dental examination
+                can help you understand which replacement options are
+                suitable for you.
 
             </p>
 
@@ -799,8 +1258,9 @@ footer p {
 
     <p>
 
-        If you are wondering whether a dental bridge may be suitable
-        for a missing tooth, you can ask your dental question here.
+        If you have a question about dental bridges, missing teeth or
+        another dental treatment, you can submit your question through
+        the website.
 
     </p>
 
@@ -823,9 +1283,9 @@ footer p {
 
     <p>
 
-        The information on this page is for general educational
-        purposes only and does not replace an in-person dental
-        examination, diagnosis or personalised professional advice.
+        The information on this page is for general educational purposes
+        only and does not replace an in-person dental examination,
+        diagnosis or personalised professional advice.
 
     </p>
 
