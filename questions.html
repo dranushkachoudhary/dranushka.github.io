@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/jpeg" href="dental tooth image.jpg">
+
+    <title>Ask Dr. Anushka | Dental Questions & Answers</title>
+
+    <meta name="description"
+    content="Have a dental question? Ask Dr. Anushka Choudhary, BDS. Get simple, patient-friendly explanations about teeth, gums and everyday oral health.">
+
+    <meta name="author" content="Dr. Anushka Choudhary">
+
+    <meta name="robots" content="index, follow">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #FAF7F2;
+            color: #29483F;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* HEADER */
+
+        header {
+            padding: 20px 60px;
+            border-bottom: 1px solid #DDD8D2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #FAF7F2;
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 21px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #29483F;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #29483F;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #D8A6A1;
+        }
+
+
+        /* HERO */
+
+        .qa-hero {
+            max-width: 850px;
+            margin: auto;
+            padding: 100px 25px 75px;
+            text-align: center;
+        }
+
+        .eyebrow {
+            color: #7F9C8D;
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 58px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #5A4A48;
+            margin-bottom: 25px;
+        }
+
+        .hero-intro {
+            max-width: 680px;
+            margin: auto;
+            color: #5D6761;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+
+        /* QUESTION FORM */
+
+        .question-section {
+            background: #F1EEE8;
+            padding: 90px 25px;
+        }
+
+        .question-box {
+            max-width: 750px;
+            margin: auto;
+            background: #FAF7F2;
+            padding: 50px;
+            border-top: 4px solid #D8A6A1;
+        }
+
+        .question-box h2 {
+            font-family: Georgia, serif;
+            font-size: 36px;
+            font-weight: normal;
+            color: #5A4A48;
+            margin-bottom: 12px;
+        }
+
+        .question-box-intro {
+            color: #5D6761;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 35px;
+        }
+
+
+        /* FORM */
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label {
+            color: #29483F;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            border: 1px solid #D8D3CC;
+            background: #FFFFFF;
+            padding: 14px 16px;
+            margin-top: 8px;
+
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            color: #29483F;
+
+            outline: none;
+            transition: border 0.2s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #7F9C8D;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            display: inline-block;
+            width: fit-content;
+            border: none;
+            background: #29483F;
+            color: #FAF7F2;
+            padding: 14px 28px;
+
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background: #D8A6A1;
+            color: #29483F;
+        }
+
+
+        /* NOTE */
+
+        .form-note {
+            color: #7F9C8D;
+            font-size: 13px;
+            line-height: 1.7;
+            margin-top: 5px;
+        }
+
+
+        /* ANSWERS */
+
+        .answers-section {
+            max-width: 900px;
+            margin: auto;
+            padding: 100px 25px;
+        }
+
+        .answers-heading {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .answers-heading h2 {
+            font-family: Georgia, serif;
+            font-size: 40px;
+            font-weight: normal;
+            color: #5A4A48;
+        }
+
+
+        /* ANSWER CARD */
+
+        .answer-card {
+            background: #F1EEE8;
+            padding: 35px 40px;
+            margin-bottom: 25px;
+            border-left: 4px solid #D8A6A1;
+        }
+
+        .answer-question {
+            font-family: Georgia, serif;
+            color: #5A4A48;
+            font-size: 25px;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .answer-text {
+            color: #5D6761;
+            font-size: 16px;
+            line-height: 1.85;
+        }
+
+        .answer-signature {
+            color: #7F9C8D;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-top: 18px;
+        }
+
+
+        /* DISCLAIMER */
+
+        .qa-disclaimer {
+            max-width: 750px;
+            margin: 0 auto 100px;
+            padding: 0 25px;
+            text-align: center;
+        }
+
+        .qa-disclaimer p {
+            color: #7A817C;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .qa-disclaimer a {
+            color: #29483F;
+            border-bottom: 1px solid #D8A6A1;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #D8A6A1;
+            color: #29483F;
+            padding: 45px 25px;
+            text-align: center;
+        }
+
+        footer strong {
+            font-size: 17px;
+            letter-spacing: 2px;
+        }
+
+        footer p {
+            color: #29483F;
+            margin-top: 8px;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+
+        /* MOBILE */
+
+        @media(max-width:800px) {
+
+            header {
+                padding: 20px 25px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .logo {
+                font-size: 17px;
+            }
+
+            .qa-hero {
+                padding: 70px 25px 55px;
+            }
+
+            h1 {
+                font-size: 43px;
+            }
+
+            .hero-intro {
+                font-size: 16px;
+            }
+
+            .question-section {
+                padding: 65px 20px;
+            }
+
+            .question-box {
+                padding: 32px 25px;
+            }
+
+            .question-box h2 {
+                font-size: 31px;
+            }
+
+            .answers-section {
+                padding: 75px 22px;
+            }
+
+            .answers-heading h2 {
+                font-size: 32px;
+            }
+
+            .answer-card {
+                padding: 28px 25px;
+            }
+
+            .answer-question {
+                font-size: 23px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+        DR. ANUSHKA CHOUDHARY
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="blog.html">Dental Blog</a>
+
+        <a href="questions.html">Ask Dr. Anushka</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="qa-hero">
+
+    <div class="eyebrow">
+        Ask Dr. Anushka
+    </div>
+
+    <h1>
+        Have a dental question?
+    </h1>
+
+    <p class="hero-intro">
+        Sometimes the smallest dental questions are the ones we
+        forget to ask. If you've been wondering about something
+        related to your teeth, gums or oral health, you can ask it here.
+    </p>
+
+</section>
+
+
+<!-- QUESTION FORM -->
+
+<section class="question-section">
+
+    <div class="question-box">
+
+        <h2>
+            Ask your question.
+        </h2>
+
+        <p class="question-box-intro">
+            Tell me what's on your mind. Your question may even become
+            the inspiration for a future dental article.
+        </p>
+
+
+        <!-- CHANGE THE EMAIL ADDRESS BELOW -->
+
+        <form
+            action="mailto:dranushkachoudhary@gmail.com"
+            method="post"
+            enctype="text/plain"
+        >
+
+            <label>
+                Your Name
+                <input
+                    type="text"
+                    name="Name"
+                    placeholder="Your name"
+                >
+            </label>
+
+
+            <label>
+                Email Address
+                <input
+                    type="email"
+                    name="Email"
+                    placeholder="Your email address"
+                >
+            </label>
+
+
+            <label>
+                Your Dental Question
+                <textarea
+                    name="Dental Question"
+                    placeholder="What would you like to ask?"
+                    required
+                ></textarea>
+            </label>
+
+
+            <p class="form-note">
+                Please avoid sharing private medical information,
+                photographs, phone numbers or other sensitive personal details.
+            </p>
+
+
+            <button
+                type="submit"
+                class="submit-button"
+            >
+                Send My Question →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ANSWERS -->
+
+<section class="answers-section">
+
+    <div class="answers-heading">
+
+        <div class="eyebrow">
+            Questions I've Answered
+        </div>
+
+        <h2>
+            From the questions patients ask.
+        </h2>
+
+    </div>
+
+
+    <!-- ANSWER 1 -->
+
+    <div class="answer-card">
+
+        <div class="answer-question">
+            “Does dental scaling loosen your teeth?”
+        </div>
+
+        <p class="answer-text">
+            Professional dental scaling does not loosen healthy teeth.
+            Sometimes teeth can feel different after deposits are removed,
+            especially when there was already gum inflammation or supporting
+            tissue loss. The important thing is to understand what is happening
+            underneath the gums rather than avoiding necessary dental cleaning.
+        </p>
+
+        <div class="answer-signature">
+            — Dr. Anushka Choudhary, BDS
+        </div>
+
+    </div>
+
+
+    <!-- ANSWER 2 -->
+
+    <div class="answer-card">
+
+        <div class="answer-question">
+            “Why do my gums bleed when I brush?”
+        </div>
+
+        <p class="answer-text">
+            Bleeding while brushing is not something you should simply ignore.
+            It can be associated with gum inflammation, plaque buildup or other
+            oral health problems. If bleeding continues, becomes frequent or is
+            accompanied by swelling or discomfort, a dental examination can help
+            identify the cause.
+        </p>
+
+        <div class="answer-signature">
+            — Dr. Anushka Choudhary, BDS
+        </div>
+
+    </div>
+
+
+    <!-- ANSWER 3 -->
+
+    <div class="answer-card">
+
+        <div class="answer-question">
+            “Why are my teeth yellow even though I brush twice a day?”
+        </div>
+
+        <p class="answer-text">
+            Teeth are not naturally pure white. Their natural colour can vary,
+            and factors such as enamel thickness, the underlying dentin,
+            staining and plaque can affect how they look. Good brushing is
+            important, but tooth colour alone does not tell you whether your
+            teeth are healthy.
+        </p>
+
+        <div class="answer-signature">
+            — Dr. Anushka Choudhary, BDS
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DISCLAIMER -->
+
+<div class="qa-disclaimer">
+
+    <p>
+        The information shared on this page is for general educational
+        purposes only and does not replace an in-person dental examination,
+        diagnosis or personalised professional advice.
+        Please visit a qualified dentist for concerns about your individual
+        oral health.
+    </p>
+
+    <p style="margin-top: 12px;">
+
+        <a href="disclaimer.html">
+            Read the full disclaimer →
+        </a>
+
+    </p>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <strong>
+        DR. ANUSHKA CHOUDHARY
+    </strong>
+
+    <p>
+        Dentistry, explained simply.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
