@@ -1,0 +1,855 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/jpeg" href="dental tooth image.jpg">
+
+    <title>Teeth Whitening Explained | Dr. Anushka Choudhary, BDS</title>
+
+    <meta name="description"
+    content="Learn about professional teeth whitening, how whitening works, what it can and cannot change, possible sensitivity and what to expect from treatment.">
+
+    <meta name="author" content="Dr. Anushka Choudhary">
+
+    <meta name="robots" content="index, follow">
+
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FAF7F2;
+    color: #29483F;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    padding: 20px 40px;
+    border-bottom: 1px solid #DDD8D2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #FAF7F2;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    gap: 30px;
+}
+
+.logo {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #29483F;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #29483F;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: #D8A6A1;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 900px;
+    margin: auto;
+    padding: 100px 25px 80px;
+    text-align: center;
+}
+
+.eyebrow {
+    color: #7F9C8D;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #5A4A48;
+    margin-bottom: 25px;
+}
+
+.hero-intro {
+    max-width: 700px;
+    margin: auto;
+    color: #5D6761;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.content-section {
+    background: #F1EEE8;
+    padding: 80px 25px 100px;
+}
+
+.content-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.content-card {
+    background: #FAF7F2;
+    padding: 45px;
+    margin-bottom: 25px;
+}
+
+.content-card h2 {
+    font-family: Georgia, serif;
+    color: #5A4A48;
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.content-card h3 {
+    font-family: Georgia, serif;
+    color: #5A4A48;
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.content-card p {
+    color: #5D6761;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   HIGHLIGHT BOX
+========================= */
+
+.highlight-box {
+    background: #FAF7F2;
+    border-left: 4px solid #D8A6A1;
+    padding: 35px;
+    margin: 30px 0;
+}
+
+.highlight-box h2 {
+    font-family: Georgia, serif;
+    color: #5A4A48;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.highlight-box p {
+    color: #5D6761;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   STEPS
+========================= */
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.step {
+    background: #F1EEE8;
+    padding: 28px 22px;
+}
+
+.step-number {
+    color: #7F9C8D;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    font-family: Georgia, serif;
+    color: #5A4A48;
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #65706A;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   QUESTION SECTION
+========================= */
+
+.question-section {
+    padding: 90px 25px;
+    text-align: center;
+    background: #FAF7F2;
+}
+
+.question-section h2 {
+    font-family: Georgia, serif;
+    color: #5A4A48;
+    font-size: 38px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.question-section p {
+    max-width: 650px;
+    margin: auto;
+    color: #5D6761;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.question-button {
+    display: inline-block;
+    margin-top: 28px;
+    background: #29483F;
+    color: #FAF7F2;
+    padding: 14px 28px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.question-button:hover {
+    background: #D8A6A1;
+    color: #29483F;
+}
+
+
+/* =========================
+   DISCLAIMER
+========================= */
+
+.disclaimer {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 25px 75px;
+    text-align: center;
+}
+
+.disclaimer p {
+    color: #7A817C;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.disclaimer a {
+    color: #29483F;
+    border-bottom: 1px solid #D8A6A1;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #D8A6A1;
+    color: #29483F;
+    padding: 45px 25px;
+    text-align: center;
+}
+
+footer strong {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+footer p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #29483F;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-links a:hover {
+    color: #FAF7F2;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:800px) {
+
+    header {
+        padding: 20px 25px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .hero {
+        padding: 70px 25px 55px;
+    }
+
+    h1 {
+        font-size: 43px;
+    }
+
+    .hero-intro {
+        font-size: 16px;
+    }
+
+    .content-section {
+        padding: 60px 20px 75px;
+    }
+
+    .content-card {
+        padding: 30px 25px;
+    }
+
+    .content-card h2 {
+        font-size: 29px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .question-section {
+        padding: 70px 25px;
+    }
+
+    .question-section h2 {
+        font-size: 31px;
+    }
+
+    .footer-links {
+        gap: 12px 18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <div class="logo">
+        DR. ANUSHKA CHOUDHARY
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="blog.html">Dental Blog</a>
+
+        <a href="guides.html">Visual Guides</a>
+
+        <a href="symptoms.html">Symptoms</a>
+
+        <a href="treatments.html">Treatments</a>
+
+        <a href="questions.html">Ask Dr. Anushka</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="eyebrow">
+        Cosmetic Dental Treatment
+    </div>
+
+    <h1>
+        Teeth whitening,<br>
+        explained simply.
+    </h1>
+
+    <p class="hero-intro">
+
+        Teeth whitening is a popular cosmetic dental treatment designed
+        to lighten the colour of natural teeth. But whitening does not
+        work the same way for every type of discoloration.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+     CONTENT
+========================= -->
+
+<section class="content-section">
+
+    <div class="content-container">
+
+
+        <!-- WHAT IS WHITENING -->
+
+        <div class="content-card">
+
+            <h2>
+                What is teeth whitening?
+            </h2>
+
+            <p>
+
+                Teeth whitening is a cosmetic procedure used to make
+                natural teeth appear lighter. Whitening products work
+                by using bleaching agents that can break down certain
+                stains and discoloration within the tooth.
+
+            </p>
+
+            <p>
+
+                The amount of whitening possible depends on the original
+                colour of the teeth, the cause of discoloration and the
+                whitening method used.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- IMPORTANT -->
+
+        <div class="highlight-box">
+
+            <h2>
+                Whitening is not the same as cleaning.
+            </h2>
+
+            <p>
+
+                Professional cleaning removes plaque, tartar and some
+                surface stains. Whitening is different — it is intended
+                to lighten the colour of natural tooth structure.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- WHY TEETH BECOME YELLOW -->
+
+        <div class="content-card">
+
+            <h2>
+                Why do teeth become yellow or darker?
+            </h2>
+
+            <p>
+                Teeth can naturally have a slightly yellow, cream or
+                off-white appearance. Tooth colour also changes with age.
+            </p>
+
+            <p>
+                Other factors that may contribute to discoloration include
+                certain foods and drinks, tobacco use, surface staining,
+                trauma to a tooth and some medications or developmental
+                conditions.
+            </p>
+
+        </div>
+
+
+
+        <!-- WHO CAN WHITEN -->
+
+        <div class="content-card">
+
+            <h2>
+                Can everyone whiten their teeth?
+            </h2>
+
+            <p>
+
+                Whitening is generally intended for natural teeth.
+                Before whitening, a dentist may need to check the teeth
+                and gums to determine whether whitening is appropriate.
+
+            </p>
+
+            <p>
+
+                Existing cavities, gum problems, significant sensitivity
+                or certain types of discoloration may need attention
+                before cosmetic whitening is considered.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- HOW IT WORKS -->
+
+        <div class="content-card">
+
+            <h2>
+                What happens during professional whitening?
+            </h2>
+
+            <p>
+
+                The exact procedure depends on the whitening system being
+                used. Professional whitening may involve the application
+                of a whitening agent under controlled conditions.
+
+            </p>
+
+
+            <div class="steps">
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        Step 01
+                    </div>
+
+                    <h3>
+                        Examination
+                    </h3>
+
+                    <p>
+                        Your dentist assesses your teeth and gums and
+                        discusses your expectations.
+                    </p>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        Step 02
+                    </div>
+
+                    <h3>
+                        Whitening
+                    </h3>
+
+                    <p>
+                        The selected whitening system is applied according
+                        to the treatment protocol.
+                    </p>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        Step 03
+                    </div>
+
+                    <h3>
+                        Aftercare
+                    </h3>
+
+                    <p>
+                        Your dentist may provide advice to help maintain
+                        the result and manage sensitivity if it occurs.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SENSITIVITY -->
+
+        <div class="content-card">
+
+            <h2>
+                Can whitening cause sensitivity?
+            </h2>
+
+            <p>
+
+                Temporary tooth sensitivity can occur during or after
+                whitening in some people. The degree of sensitivity
+                varies between individuals.
+
+            </p>
+
+            <p>
+
+                If you already have significant tooth sensitivity,
+                it is important to discuss this with your dentist
+                before starting whitening.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- WHAT WHITENING CANNOT DO -->
+
+        <div class="content-card">
+
+            <h2>
+                What can whitening NOT change?
+            </h2>
+
+            <p>
+
+                Whitening does not change the colour of dental restorations
+                such as crowns, veneers or fillings.
+
+            </p>
+
+            <p>
+
+                Some types of internal discoloration may also respond
+                differently to conventional whitening and may require
+                another approach.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- FINAL -->
+
+        <div class="highlight-box">
+
+            <h2>
+                The goal isn't perfectly white teeth.
+            </h2>
+
+            <p>
+
+                A natural-looking, healthy smile does not have to mean
+                extremely white teeth. The best cosmetic result is one
+                that is appropriate for your teeth, your oral health and
+                your expectations.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     QUESTION CTA
+========================= -->
+
+<section class="question-section">
+
+    <div class="eyebrow">
+        Still wondering?
+    </div>
+
+    <h2>
+        Have a dental question?
+    </h2>
+
+    <p>
+
+        If you are wondering whether whitening may be suitable for you,
+        you can ask your dental question here.
+
+    </p>
+
+    <a
+        href="questions.html"
+        class="question-button"
+    >
+        Ask Dr. Anushka →
+    </a>
+
+</section>
+
+
+
+<!-- =========================
+     DISCLAIMER
+========================= -->
+
+<section class="disclaimer">
+
+    <p>
+
+        The information on this page is for general educational
+        purposes only and does not replace an in-person dental
+        examination, diagnosis or personalised professional advice.
+
+    </p>
+
+    <p style="margin-top: 12px;">
+
+        <a href="disclaimer.html">
+            Read the full disclaimer →
+        </a>
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <strong>
+        DR. ANUSHKA CHOUDHARY
+    </strong>
+
+    <p>
+        Dentistry, explained simply.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="blog.html">Dental Blog</a>
+
+        <a href="about.html">About</a>
+
+        <a href="guides.html">Visual Guides</a>
+
+        <a href="symptoms.html">Symptoms</a>
+
+        <a href="treatments.html">Treatments</a>
+
+        <a href="questions.html">Ask Dr. Anushka</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="disclaimer.html">Disclaimer</a>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```
