@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +13,7 @@
     <title>Dental Fillings Explained | Dr. Anushka Choudhary, BDS</title>
 
     <meta name="description"
-    content="Learn what dental fillings are, why they are needed, what happens during the procedure, whether fillings hurt and what to expect afterward. Explained simply by Dr. Anushka Choudhary, BDS.">
+    content="Learn what dental fillings are, why cavities need fillings, what happens during the procedure, whether fillings hurt and what to expect afterward.">
 
     <meta name="author" content="Dr. Anushka Choudhary">
 
@@ -52,8 +53,7 @@ a {
 ========================= */
 
 header {
-    padding: 20px 60px;
-
+    padding: 20px 40px;
     border-bottom: 1px solid #DDD8D2;
 
     display: flex;
@@ -70,7 +70,7 @@ header {
 }
 
 .logo {
-    font-size: 21px;
+    font-size: 20px;
     letter-spacing: 2px;
     font-weight: bold;
     color: #29483F;
@@ -79,7 +79,7 @@ header {
 
 nav {
     display: flex;
-    gap: 25px;
+    gap: 18px;
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -88,7 +88,7 @@ nav {
 nav a {
     color: #29483F;
     font-size: 12px;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s ease;
@@ -103,51 +103,35 @@ nav a:hover {
    HERO
 ========================= */
 
-.article-hero {
+.hero {
     max-width: 900px;
-
     margin: auto;
-
-    padding: 100px 25px 75px;
-
+    padding: 100px 25px 80px;
     text-align: center;
 }
 
 .eyebrow {
     color: #7F9C8D;
-
     font-size: 12px;
-
     letter-spacing: 4px;
-
     text-transform: uppercase;
-
     margin-bottom: 20px;
 }
 
 h1 {
     font-family: Georgia, serif;
-
     font-size: 58px;
-
-    line-height: 1.2;
-
+    line-height: 1.15;
     font-weight: 600;
-
     color: #5A4A48;
-
     margin-bottom: 25px;
 }
 
 .hero-intro {
-    max-width: 720px;
-
+    max-width: 700px;
     margin: auto;
-
     color: #5D6761;
-
     font-size: 18px;
-
     line-height: 1.9;
 }
 
@@ -158,84 +142,43 @@ h1 {
 
 .content-section {
     background: #F1EEE8;
-
     padding: 80px 25px 100px;
 }
 
 .content-container {
     max-width: 900px;
-
     margin: auto;
 }
 
 
 /* =========================
-   CONTENT CARD
+   CONTENT CARDS
 ========================= */
 
-.content-card {
+.info-card {
     background: #FAF7F2;
-
-    padding: 45px;
-
+    padding: 40px;
     margin-bottom: 25px;
 }
 
-.content-card h2 {
+.info-card h2 {
     font-family: Georgia, serif;
-
     color: #5A4A48;
-
-    font-size: 34px;
-
+    font-size: 32px;
     font-weight: normal;
-
     line-height: 1.3;
-
-    margin-bottom: 20px;
-}
-
-.content-card h3 {
-    font-family: Georgia, serif;
-
-    color: #5A4A48;
-
-    font-size: 25px;
-
-    font-weight: normal;
-
-    line-height: 1.4;
-
-    margin-top: 30px;
-
-    margin-bottom: 12px;
-}
-
-.content-card p {
-    color: #5D6761;
-
-    font-size: 16px;
-
-    line-height: 1.9;
-
     margin-bottom: 18px;
 }
 
-
-/* =========================
-   LIST
-========================= */
-
-.content-card ul {
-    margin: 15px 0 20px 22px;
-
+.info-card p {
     color: #5D6761;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 15px;
 }
 
-.content-card li {
-    margin-bottom: 10px;
-
-    padding-left: 5px;
+.info-card p:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -244,21 +187,76 @@ h1 {
 ========================= */
 
 .highlight-box {
-    background: #F1EEE8;
-
-    border-left: 4px solid #D8A6A1;
-
-    padding: 25px 30px;
-
-    margin: 25px 0;
+    background: #29483F;
+    color: #FAF7F2;
+    padding: 45px;
+    margin: 35px 0;
 }
 
-.highlight-box strong {
-    color: #5A4A48;
+.highlight-box .eyebrow {
+    color: #D8A6A1;
+}
+
+.highlight-box h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 15px;
 }
 
 .highlight-box p {
-    margin-bottom: 0;
+    color: #E7E4DE;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   STEPS
+========================= */
+
+.steps {
+    margin-top: 20px;
+}
+
+.step {
+    display: flex;
+    gap: 25px;
+    padding: 25px 0;
+    border-bottom: 1px solid #DDD8D2;
+}
+
+.step:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.step-number {
+    min-width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #D8A6A1;
+    color: #29483F;
+
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+.step-content h3 {
+    font-family: Georgia, serif;
+    color: #5A4A48;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+
+.step-content p {
+    margin: 0;
 }
 
 
@@ -267,57 +265,27 @@ h1 {
 ========================= */
 
 .faq-section {
-    margin-top: 50px;
-}
-
-.faq-section .eyebrow {
-    text-align: center;
-
-    margin-bottom: 15px;
-}
-
-.faq-section h2 {
-    font-family: Georgia, serif;
-
-    color: #5A4A48;
-
-    font-size: 38px;
-
-    font-weight: normal;
-
-    text-align: center;
-
-    margin-bottom: 40px;
+    margin-top: 25px;
 }
 
 .faq {
     background: #FAF7F2;
-
-    padding: 30px;
-
+    padding: 28px 30px;
     margin-bottom: 15px;
 }
 
 .faq h3 {
     font-family: Georgia, serif;
-
     color: #5A4A48;
-
-    font-size: 23px;
-
+    font-size: 21px;
     font-weight: normal;
-
     margin-bottom: 10px;
 }
 
 .faq p {
-    color: #5D6761;
-
+    color: #65706A;
     font-size: 15px;
-
-    line-height: 1.9;
-
-    margin: 0;
+    line-height: 1.8;
 }
 
 
@@ -327,59 +295,40 @@ h1 {
 
 .question-section {
     padding: 90px 25px;
-
     text-align: center;
-
     background: #FAF7F2;
 }
 
 .question-section h2 {
     font-family: Georgia, serif;
-
     color: #5A4A48;
-
     font-size: 38px;
-
     font-weight: normal;
-
     margin-bottom: 15px;
 }
 
 .question-section p {
     max-width: 650px;
-
     margin: auto;
-
     color: #5D6761;
-
     font-size: 16px;
-
     line-height: 1.9;
 }
 
 .question-button {
     display: inline-block;
-
     margin-top: 28px;
-
     background: #29483F;
-
     color: #FAF7F2;
-
     padding: 14px 28px;
-
     font-size: 12px;
-
     letter-spacing: 2px;
-
     text-transform: uppercase;
-
     transition: 0.3s ease;
 }
 
 .question-button:hover {
     background: #D8A6A1;
-
     color: #29483F;
 }
 
@@ -390,25 +339,19 @@ h1 {
 
 .disclaimer {
     max-width: 800px;
-
     margin: auto;
-
     padding: 20px 25px 75px;
-
     text-align: center;
 }
 
 .disclaimer p {
     color: #7A817C;
-
     font-size: 13px;
-
     line-height: 1.8;
 }
 
 .disclaimer a {
     color: #29483F;
-
     border-bottom: 1px solid #D8A6A1;
 }
 
@@ -419,45 +362,33 @@ h1 {
 
 footer {
     background: #D8A6A1;
-
     color: #29483F;
-
     padding: 45px 25px;
-
     text-align: center;
 }
 
 footer strong {
     font-size: 17px;
-
     letter-spacing: 2px;
 }
 
 footer p {
     margin-top: 8px;
-
     font-size: 14px;
 }
 
 .footer-links {
     margin-top: 20px;
-
     display: flex;
-
     justify-content: center;
-
     flex-wrap: wrap;
-
     gap: 20px;
 }
 
 .footer-links a {
     color: #29483F;
-
     font-size: 12px;
-
     letter-spacing: 1px;
-
     text-transform: uppercase;
 }
 
@@ -470,23 +401,16 @@ footer p {
    MOBILE
 ========================= */
 
-@media(max-width:900px) {
+@media(max-width:800px) {
 
     header {
         padding: 20px 25px;
-
         flex-direction: column;
-
         gap: 15px;
-    }
-
-    .logo {
-        font-size: 17px;
     }
 
     nav {
         justify-content: center;
-
         gap: 12px 18px;
     }
 
@@ -494,7 +418,11 @@ footer p {
         font-size: 11px;
     }
 
-    .article-hero {
+    .logo {
+        font-size: 17px;
+    }
+
+    .hero {
         padding: 70px 25px 55px;
     }
 
@@ -510,24 +438,24 @@ footer p {
         padding: 60px 20px 75px;
     }
 
-    .content-card {
+    .info-card {
         padding: 30px 25px;
     }
 
-    .content-card h2 {
-        font-size: 30px;
+    .info-card h2 {
+        font-size: 29px;
     }
 
-    .content-card h3 {
-        font-size: 23px;
+    .highlight-box {
+        padding: 35px 25px;
     }
 
-    .faq-section h2 {
-        font-size: 31px;
+    .highlight-box h2 {
+        font-size: 28px;
     }
 
-    .faq {
-        padding: 25px;
+    .step {
+        gap: 15px;
     }
 
     .question-section {
@@ -562,7 +490,6 @@ footer p {
         DR. ANUSHKA CHOUDHARY
     </div>
 
-
     <nav>
 
         <a href="index.html">Home</a>
@@ -591,25 +518,23 @@ footer p {
      HERO
 ========================= -->
 
-<section class="article-hero">
+<section class="hero">
 
     <div class="eyebrow">
-        Treatment Guide
+        Dental Treatment Guide
     </div>
-
 
     <h1>
         Dental fillings,<br>
         explained simply.
     </h1>
 
-
     <p class="hero-intro">
 
         A dental filling is one of the most common treatments used
-        to repair a tooth affected by decay or certain types of damage.
-        Here's what the treatment actually involves and what you can
-        expect.
+        to restore a tooth affected by decay or certain types of damage.
+        Here's what it actually does, why it may be needed and what
+        you can expect during the procedure.
 
     </p>
 
@@ -628,7 +553,7 @@ footer p {
 
         <!-- WHAT IS A FILLING -->
 
-        <div class="content-card">
+        <div class="info-card">
 
             <div class="eyebrow">
                 Understanding the treatment
@@ -640,29 +565,26 @@ footer p {
 
             <p>
 
-                A dental filling is a restorative treatment used to
-                repair a tooth that has been damaged, most commonly
-                because of dental decay.
+                A dental filling is a restorative treatment used to repair
+                a tooth that has been damaged by decay or, in some cases,
+                other forms of minor tooth damage.
 
             </p>
 
             <p>
 
-                During the treatment, the dentist removes the damaged
-                or decayed portion of the tooth and then fills the
-                resulting space with a suitable restorative material.
+                The dentist removes the damaged portion of the tooth,
+                cleans the area and then fills the space with a suitable
+                restorative material.
 
             </p>
 
-            <div class="highlight-box">
+            <p>
 
-                <p>
-                    <strong>The goal:</strong> remove the damaged portion
-                    of the tooth and restore its shape, function and
-                    integrity as much as possible.
-                </p>
+                The aim is to restore the tooth's shape and function while
+                helping prevent the cavity from progressing further.
 
-            </div>
+            </p>
 
         </div>
 
@@ -670,44 +592,61 @@ footer p {
 
         <!-- WHY NEEDED -->
 
-        <div class="content-card">
+        <div class="info-card">
 
             <div class="eyebrow">
-                Why it may be recommended
+                Why might you need one?
             </div>
 
             <h2>
-                Why do you need a filling?
+                Why are dental fillings needed?
             </h2>
 
             <p>
 
-                Fillings are most commonly recommended when a tooth has
-                a cavity caused by dental decay.
+                The most common reason for a filling is dental caries,
+                commonly called a cavity.
 
             </p>
 
             <p>
-                Depending on the situation, restorative treatment may
-                also be considered for certain forms of tooth wear,
-                fractures or other defects.
+
+                When decay creates a cavity in the tooth, simply brushing
+                cannot repair the lost tooth structure. The damaged portion
+                may need to be removed and restored.
+
             </p>
 
-            <h3>
-                A filling may help:
-            </h3>
+            <p>
 
-            <ul>
+                The exact treatment depends on how extensive the damage is
+                and how much healthy tooth structure remains.
 
-                <li>Restore a tooth affected by decay.</li>
+            </p>
 
-                <li>Restore lost tooth structure.</li>
+        </div>
 
-                <li>Improve the tooth's shape and function.</li>
 
-                <li>Protect the remaining tooth structure.</li>
 
-            </ul>
+        <!-- HIGHLIGHT -->
+
+        <div class="highlight-box">
+
+            <div class="eyebrow">
+                An important point
+            </div>
+
+            <h2>
+                A filling doesn't "heal" a cavity.
+            </h2>
+
+            <p>
+
+                A filling replaces the portion of tooth structure that has
+                been lost. This is why identifying and treating decay early
+                can help preserve more of the natural tooth.
+
+            </p>
 
         </div>
 
@@ -715,7 +654,7 @@ footer p {
 
         <!-- PROCEDURE -->
 
-        <div class="content-card">
+        <div class="info-card">
 
             <div class="eyebrow">
                 During the appointment
@@ -725,91 +664,146 @@ footer p {
                 What happens during a filling?
             </h2>
 
-            <p>
 
-                The exact procedure varies depending on the tooth,
-                the extent of the decay and the type of restoration
-                being placed.
+            <div class="steps">
 
-            </p>
 
-            <h3>
-                1. Examination
-            </h3>
+                <div class="step">
 
-            <p>
+                    <div class="step-number">
+                        1
+                    </div>
 
-                Your dentist examines the tooth and may use dental
-                X-rays when appropriate to understand how extensive
-                the problem is.
+                    <div class="step-content">
 
-            </p>
+                        <h3>
+                            Examination
+                        </h3>
 
-            <h3>
-                2. Local anaesthesia
-            </h3>
+                        <p>
 
-            <p>
+                            Your dentist examines the tooth and determines
+                            the extent and location of the problem.
 
-                If necessary, local anaesthesia is used to numb the
-                area so that the procedure can be performed comfortably.
+                        </p>
 
-            </p>
+                    </div>
 
-            <h3>
-                3. Removing the damaged tooth structure
-            </h3>
+                </div>
 
-            <p>
 
-                The dentist carefully removes the decayed or damaged
-                portion of the tooth.
 
-            </p>
+                <div class="step">
 
-            <h3>
-                4. Cleaning and preparing the tooth
-            </h3>
+                    <div class="step-number">
+                        2
+                    </div>
 
-            <p>
+                    <div class="step-content">
 
-                The area is cleaned and prepared so that the restorative
-                material can be placed appropriately.
+                        <h3>
+                            Local anaesthesia
+                        </h3>
 
-            </p>
+                        <p>
 
-            <h3>
-                5. Placing the filling
-            </h3>
+                            If needed, local anaesthesia is used to numb
+                            the area and make the procedure more comfortable.
 
-            <p>
+                        </p>
 
-                The filling material is placed into the prepared area
-                and shaped to restore the tooth.
+                    </div>
 
-            </p>
+                </div>
 
-            <h3>
-                6. Checking the bite
-            </h3>
 
-            <p>
 
-                Your dentist checks how your teeth come together and
-                makes adjustments if necessary.
+                <div class="step">
 
-            </p>
+                    <div class="step-number">
+                        3
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Removing the decay
+                        </h3>
+
+                        <p>
+
+                            The dentist removes the decayed or damaged
+                            portion of the tooth and cleans the area.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        4
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Placing the filling
+                        </h3>
+
+                        <p>
+
+                            A restorative material is placed into the prepared
+                            area and shaped to restore the tooth.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        5
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Final adjustment
+                        </h3>
+
+                        <p>
+
+                            Your dentist checks the bite and makes any necessary
+                            adjustments so the restored tooth functions comfortably.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
 
         </div>
 
 
 
-        <!-- DOES IT HURT -->
+        <!-- PAIN -->
 
-        <div class="content-card">
+        <div class="info-card">
 
             <div class="eyebrow">
-                A common concern
+                One of the most common questions
             </div>
 
             <h2>
@@ -818,32 +812,25 @@ footer p {
 
             <p>
 
-                Many people worry that getting a filling will be painful.
-                The treatment itself is generally performed with local
-                anaesthesia when needed, which numbs the treatment area.
+                With appropriate local anaesthesia, the filling procedure
+                itself is generally intended to be comfortable.
 
             </p>
 
             <p>
 
                 You may feel pressure, vibration or movement during the
-                procedure, but you should not simply have to tolerate
-                significant pain. If you feel discomfort during treatment,
-                tell your dentist so they can address it.
+                procedure, but you should not be expected to tolerate
+                significant pain.
 
             </p>
 
-            <div class="highlight-box">
+            <p>
 
-                <p>
+                If you feel discomfort during treatment, tell your dentist.
+                Additional anaesthesia can often be given when appropriate.
 
-                    <strong>Remember:</strong> the experience can vary
-                    depending on the tooth, the extent of the decay,
-                    sensitivity and individual factors.
-
-                </p>
-
-            </div>
+            </p>
 
         </div>
 
@@ -851,113 +838,37 @@ footer p {
 
         <!-- AFTER -->
 
-        <div class="content-card">
+        <div class="info-card">
 
             <div class="eyebrow">
-                After the treatment
+                After the filling
             </div>
 
             <h2>
-                What happens after a filling?
+                What can you expect afterward?
             </h2>
 
             <p>
 
-                It is possible to experience some temporary sensitivity
-                after a filling, particularly to hot, cold or pressure.
+                Some people experience temporary sensitivity after a filling.
+                This can depend on the depth and location of the restoration
+                and the individual tooth.
 
             </p>
 
             <p>
 
                 Your dentist may give you specific instructions depending
-                on the type of filling and the condition of the tooth.
+                on the material used and the condition of the tooth.
 
             </p>
 
             <p>
 
-                If sensitivity is severe, persistent or worsening,
-                it is a good idea to contact your dentist for an
-                assessment.
+                If sensitivity is severe, persistent or worsening, the tooth
+                should be reviewed by a dentist.
 
             </p>
-
-        </div>
-
-
-
-        <!-- WHEN FILLING IS NOT ENOUGH -->
-
-        <div class="content-card">
-
-            <div class="eyebrow">
-                An important distinction
-            </div>
-
-            <h2>
-                Is a filling always enough?
-            </h2>
-
-            <p>
-
-                No. The appropriate treatment depends on how much of the
-                tooth has been affected and whether the pulp inside the
-                tooth is involved.
-
-            </p>
-
-            <p>
-
-                A smaller area of decay may be treatable with a filling,
-                while a more extensively damaged tooth may require another
-                form of treatment.
-
-            </p>
-
-            <p>
-
-                In some situations, a tooth may require root canal
-                treatment followed by a suitable restoration.
-
-            </p>
-
-        </div>
-
-
-
-        <!-- PREVENTION -->
-
-        <div class="content-card">
-
-            <div class="eyebrow">
-                Protecting your teeth
-            </div>
-
-            <h2>
-                Can you prevent cavities?
-            </h2>
-
-            <p>
-
-                Good daily oral hygiene and regular dental care can help
-                reduce the risk of tooth decay.
-
-            </p>
-
-            <ul>
-
-                <li>Brush your teeth regularly with fluoride toothpaste.</li>
-
-                <li>Clean between your teeth regularly.</li>
-
-                <li>Limit frequent exposure to sugary foods and drinks.</li>
-
-                <li>Attend dental check-ups as recommended for you.</li>
-
-                <li>Do not ignore persistent tooth sensitivity or pain.</li>
-
-            </ul>
 
         </div>
 
@@ -965,87 +876,120 @@ footer p {
 
         <!-- FAQ -->
 
-        <div class="faq-section">
+        <div class="info-card">
 
             <div class="eyebrow">
                 Common questions
             </div>
 
             <h2>
-                Dental fillings: FAQs
+                Dental fillings: quick answers
             </h2>
 
 
-            <div class="faq">
+            <div class="faq-section">
 
-                <h3>
-                    How long does a filling take?
-                </h3>
 
-                <p>
+                <div class="faq">
 
-                    The time depends on the tooth, the extent of the
-                    problem and the type of filling being placed.
-                    Your dentist can tell you approximately how long
-                    your particular appointment is likely to take.
+                    <h3>
+                        Can a filling fall out?
+                    </h3>
 
-                </p>
+                    <p>
+
+                        Fillings can occasionally become damaged, worn or
+                        dislodged. If this happens, the tooth should be
+                        assessed by a dentist.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Can a filled tooth get another cavity?
+                    </h3>
+
+                    <p>
+
+                        Yes. The tooth can still develop decay around a
+                        restoration or on another part of the tooth.
+                        Good oral hygiene and regular dental examinations
+                        remain important.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Does every cavity need a filling?
+                    </h3>
+
+                    <p>
+
+                        Not necessarily. The appropriate management depends
+                        on factors such as the stage and extent of the lesion.
+                        Your dentist can determine the most suitable approach
+                        after examining the tooth.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        When is a filling not enough?
+                    </h3>
+
+                    <p>
+
+                        If a tooth has extensive damage or the pulp inside
+                        the tooth is significantly affected, a different
+                        treatment may be required. The appropriate treatment
+                        depends on the individual tooth.
+
+                    </p>
+
+                </div>
+
 
             </div>
 
+        </div>
 
-            <div class="faq">
 
-                <h3>
-                    Can a filled tooth get a cavity again?
-                </h3>
 
-                <p>
+        <!-- FINAL NOTE -->
 
-                    Yes. A tooth that has been filled can develop decay
-                    again, including around a restoration. Good oral
-                    hygiene and regular dental care remain important.
+        <div class="highlight-box">
 
-                </p>
-
+            <div class="eyebrow">
+                Remember
             </div>
 
+            <h2>
+                The earlier a dental problem is assessed, the more options there may be.
+            </h2>
 
-            <div class="faq">
+            <p>
 
-                <h3>
-                    Does a filling last forever?
-                </h3>
+                If you notice a cavity, sensitivity, food getting stuck,
+                pain or a change in a tooth, don't rely only on symptoms
+                to decide whether treatment is needed. A dental examination
+                can help determine what is actually happening.
 
-                <p>
-
-                    No restoration lasts forever. How long a filling
-                    remains functional depends on factors such as the
-                    material used, the tooth, chewing forces, oral hygiene
-                    and other individual factors.
-
-                </p>
-
-            </div>
-
-
-            <div class="faq">
-
-                <h3>
-                    Should I get a filling if my tooth doesn't hurt?
-                </h3>
-
-                <p>
-
-                    Tooth decay does not always cause pain in its early
-                    stages. If your dentist has identified decay,
-                    treatment may be recommended even when the tooth
-                    feels completely normal.
-
-                </p>
-
-            </div>
-
+            </p>
 
         </div>
 
@@ -1072,9 +1016,8 @@ footer p {
 
     <p>
 
-        If you are unsure about dental fillings or simply want to
-        understand a treatment better, you can ask your question
-        directly.
+        If you have a question about fillings or another dental treatment,
+        you can submit your question through the website.
 
     </p>
 
@@ -1097,9 +1040,9 @@ footer p {
 
     <p>
 
-        The information on this page is for general educational
-        purposes only and does not replace an in-person dental
-        examination, diagnosis or personalised professional advice.
+        The information on this page is for general educational purposes
+        only and does not replace an in-person dental examination,
+        diagnosis or personalised professional advice.
 
     </p>
 
@@ -1129,7 +1072,6 @@ footer p {
         Dentistry, explained simply.
     </p>
 
-
     <div class="footer-links">
 
         <a href="index.html">Home</a>
@@ -1158,3 +1100,4 @@ footer p {
 </body>
 
 </html>
+```
