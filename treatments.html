@@ -188,7 +188,7 @@ h1 {
     display: flex;
     flex-direction: column;
 
-    min-height: 480px;
+    min-height: 360px;
 
     color: inherit;
 
@@ -206,37 +206,10 @@ h1 {
 }
 
 
-/* TREATMENT IMAGE */
-
-.treatment-image {
-    width: 100%;
-    height: 220px;
-
-    overflow: hidden;
-
-    background: #EAE5DD;
-}
-
-.treatment-image img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition: transform 0.5s ease;
-}
-
-.treatment-card:hover .treatment-image img {
-    transform: scale(1.05);
-}
-
-
 /* CARD CONTENT */
 
 .treatment-content {
-    padding: 28px 30px 32px;
+    padding: 40px 32px 35px;
 
     display: flex;
     flex-direction: column;
@@ -244,10 +217,36 @@ h1 {
     flex: 1;
 }
 
+
+/* TREATMENT ICON */
+
 .treatment-icon {
-    font-size: 27px;
-    margin-bottom: 12px;
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F1EEE8;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+
+    margin-bottom: 22px;
+
+    transition: 0.3s ease;
 }
+
+.treatment-card:hover .treatment-icon {
+    transform: scale(1.08);
+
+    background: #F5E4E2;
+}
+
+
+/* TREATMENT TITLE */
 
 .treatment-card h3 {
     font-family: Georgia, serif;
@@ -525,12 +524,15 @@ footer p {
         min-height: auto;
     }
 
-    .treatment-image {
-        height: 210px;
+    .treatment-content {
+        padding: 30px 25px;
     }
 
-    .treatment-content {
-        padding: 25px;
+    .treatment-icon {
+        width: 54px;
+        height: 54px;
+
+        font-size: 26px;
     }
 
     .understanding-section {
@@ -646,13 +648,6 @@ with your dentist.
 
 <a href="fillings.html" class="treatment-card">
 
-<div class="treatment-image">
-
-<img src="fillings.jpg"
-alt="Dental fillings treatment">
-
-</div>
-
 <div class="treatment-content">
 
 <div class="treatment-icon">
@@ -685,13 +680,6 @@ Read more →
 <!-- 2. ROOT CANAL -->
 
 <a href="root-canal.html" class="treatment-card">
-
-<div class="treatment-image">
-
-<img src="root-canal.jpg"
-alt="Root canal treatment">
-
-</div>
 
 <div class="treatment-content">
 
@@ -727,13 +715,6 @@ Read more →
 
 <a href="crowns.html" class="treatment-card">
 
-<div class="treatment-image">
-
-<img src="crowns.jpg"
-alt="Dental crown treatment">
-
-</div>
-
 <div class="treatment-content">
 
 <div class="treatment-icon">
@@ -768,13 +749,6 @@ Read more →
 
 <a href="extraction.html" class="treatment-card">
 
-<div class="treatment-image">
-
-<img src="extraction.jpg"
-alt="Tooth extraction">
-
-</div>
-
 <div class="treatment-content">
 
 <div class="treatment-icon">
@@ -807,13 +781,6 @@ Read more →
 <!-- 5. SCALING -->
 
 <a href="scaling-treatment.html" class="treatment-card">
-
-<div class="treatment-image">
-
-<img src="scaling.jpg"
-alt="Dental scaling and professional cleaning">
-
-</div>
 
 <div class="treatment-content">
 
@@ -848,13 +815,6 @@ Read more →
 
 <a href="whitening.html" class="treatment-card">
 
-<div class="treatment-image">
-
-<img src="whitening.jpg"
-alt="Professional teeth whitening">
-
-</div>
-
 <div class="treatment-content">
 
 <div class="treatment-icon">
@@ -888,13 +848,6 @@ Read more →
 
 <a href="bridges.html" class="treatment-card">
 
-<div class="treatment-image">
-
-<img src="dental bridge.jpg"
-alt="Dental bridge">
-
-</div>
-
 <div class="treatment-content">
 
 <div class="treatment-icon">
@@ -927,13 +880,6 @@ Read more →
 <!-- 8. IMPLANTS -->
 
 <a href="implants.html" class="treatment-card">
-
-<div class="treatment-image">
-
-<img src="implant.jpg"
-alt="Dental implant">
-
-</div>
 
 <div class="treatment-content">
 
@@ -969,13 +915,6 @@ Read more →
 
 <a href="wisdom-teeth.html" class="treatment-card">
 
-<div class="treatment-image">
-
-<img src="wisdom tooth.jpg"
-alt="Wisdom tooth treatment">
-
-</div>
-
 <div class="treatment-content">
 
 <div class="treatment-icon">
@@ -1010,13 +949,6 @@ Read more →
 
 <a href="gum-treatment.html" class="treatment-card">
 
-<div class="treatment-image">
-
-<img src="gum treatment.jpg"
-alt="Gum treatment">
-
-</div>
-
 <div class="treatment-content">
 
 <div class="treatment-icon">
@@ -1050,13 +982,6 @@ Read more →
 
 <a href="dentures.html" class="treatment-card">
 
-<div class="treatment-image">
-
-<img src="denture.jpg"
-alt="Dental dentures">
-
-</div>
-
 <div class="treatment-content">
 
 <div class="treatment-icon">
@@ -1089,13 +1014,6 @@ Read more →
 <!-- 12. DENTAL SEALANTS -->
 
 <a href="sealants.html" class="treatment-card">
-
-<div class="treatment-image">
-
-<img src="sealant.jpg"
-alt="Dental sealants">
-
-</div>
 
 <div class="treatment-content">
 
