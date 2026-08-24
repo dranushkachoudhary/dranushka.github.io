@@ -1,0 +1,936 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/jpeg" href="dental tooth image.jpg">
+
+    <title>Dental Sealants Explained | Dr. Anushka Choudhary, BDS</title>
+
+    <meta name="description"
+    content="Understand dental sealants in simple language. Learn what dental sealants are, how they work, who may benefit from them and why they are used as preventive dental care.">
+
+    <meta name="author" content="Dr. Anushka Choudhary">
+
+    <meta name="robots" content="index, follow">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background: #FAF7F2;
+            color: #29483F;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* HEADER */
+
+        header {
+            padding: 20px 60px;
+            border-bottom: 1px solid #DDD8D2;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background: #FAF7F2;
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+
+        .logo {
+            font-size: 21px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #29483F;
+        }
+
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+
+        nav a {
+            color: #29483F;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+
+        nav a:hover {
+            color: #D8A6A1;
+        }
+
+
+        /* HERO */
+
+        .hero {
+            max-width: 900px;
+            margin: auto;
+
+            padding: 100px 25px 75px;
+
+            text-align: center;
+        }
+
+
+        .eyebrow {
+            color: #7F9C8D;
+
+            font-size: 12px;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+        }
+
+
+        h1 {
+            font-family: Georgia, serif;
+
+            font-size: 58px;
+
+            line-height: 1.2;
+
+            font-weight: 600;
+
+            color: #5A4A48;
+
+            margin-bottom: 25px;
+        }
+
+
+        .hero-intro {
+            max-width: 720px;
+
+            margin: auto;
+
+            color: #5D6761;
+
+            font-size: 18px;
+
+            line-height: 1.9;
+        }
+
+
+        /* CONTENT */
+
+        .content-section {
+            background: #F1EEE8;
+
+            padding: 80px 25px 100px;
+        }
+
+
+        .content-container {
+            max-width: 900px;
+
+            margin: auto;
+        }
+
+
+        .content-box {
+            background: #FAF7F2;
+
+            padding: 50px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .content-box h2 {
+            font-family: Georgia, serif;
+
+            font-size: 34px;
+
+            font-weight: normal;
+
+            color: #5A4A48;
+
+            margin-bottom: 20px;
+        }
+
+
+        .content-box p {
+            color: #5D6761;
+
+            font-size: 16px;
+
+            line-height: 1.9;
+
+            margin-bottom: 18px;
+        }
+
+
+        .content-box p:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* LIST */
+
+        .simple-list {
+            margin-top: 20px;
+
+            padding-left: 22px;
+        }
+
+
+        .simple-list li {
+            color: #5D6761;
+
+            font-size: 16px;
+
+            line-height: 1.9;
+
+            margin-bottom: 12px;
+        }
+
+
+        /* HIGHLIGHT */
+
+        .highlight {
+            background: #F8EDEC;
+
+            border-left: 4px solid #D8A6A1;
+
+            padding: 30px;
+
+            margin: 30px 0;
+        }
+
+
+        .highlight strong {
+            display: block;
+
+            font-family: Georgia, serif;
+
+            color: #5A4A48;
+
+            font-size: 23px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .highlight p {
+            margin-bottom: 0;
+        }
+
+
+        /* CTA */
+
+        .question-section {
+            padding: 90px 25px;
+
+            text-align: center;
+
+            background: #FAF7F2;
+        }
+
+
+        .question-section h2 {
+            font-family: Georgia, serif;
+
+            color: #5A4A48;
+
+            font-size: 38px;
+
+            font-weight: normal;
+
+            margin-bottom: 15px;
+        }
+
+
+        .question-section p {
+            max-width: 650px;
+
+            margin: auto;
+
+            color: #5D6761;
+
+            font-size: 16px;
+
+            line-height: 1.9;
+        }
+
+
+        .question-button {
+            display: inline-block;
+
+            margin-top: 28px;
+
+            background: #29483F;
+
+            color: #FAF7F2;
+
+            padding: 14px 28px;
+
+            font-size: 12px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            transition: 0.3s ease;
+        }
+
+
+        .question-button:hover {
+            background: #D8A6A1;
+
+            color: #29483F;
+        }
+
+
+        /* DISCLAIMER */
+
+        .disclaimer {
+            max-width: 800px;
+
+            margin: auto;
+
+            padding: 20px 25px 75px;
+
+            text-align: center;
+        }
+
+
+        .disclaimer p {
+            color: #7A817C;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+
+        .disclaimer a {
+            color: #29483F;
+
+            border-bottom: 1px solid #D8A6A1;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #D8A6A1;
+
+            color: #29483F;
+
+            padding: 45px 25px;
+
+            text-align: center;
+        }
+
+
+        footer strong {
+            font-size: 17px;
+
+            letter-spacing: 2px;
+        }
+
+
+        footer p {
+            margin-top: 8px;
+
+            font-size: 14px;
+        }
+
+
+        .footer-links {
+            margin-top: 20px;
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 20px;
+        }
+
+
+        .footer-links a {
+            color: #29483F;
+
+            font-size: 12px;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+
+        .footer-links a:hover {
+            color: #FAF7F2;
+        }
+
+
+        /* MOBILE */
+
+        @media(max-width:800px) {
+
+            header {
+                padding: 20px 25px;
+            }
+
+
+            nav {
+                display: none;
+            }
+
+
+            .logo {
+                font-size: 17px;
+            }
+
+
+            .hero {
+                padding: 70px 25px 55px;
+            }
+
+
+            h1 {
+                font-size: 43px;
+            }
+
+
+            .hero-intro {
+                font-size: 16px;
+            }
+
+
+            .content-section {
+                padding: 60px 20px 75px;
+            }
+
+
+            .content-box {
+                padding: 30px 25px;
+            }
+
+
+            .content-box h2 {
+                font-size: 29px;
+            }
+
+
+            .question-section {
+                padding: 70px 25px;
+            }
+
+
+            .question-section h2 {
+                font-size: 31px;
+            }
+
+
+            .footer-links {
+                gap: 12px 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+        DR. ANUSHKA CHOUDHARY
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="blog.html">Dental Blog</a>
+
+        <a href="guides.html">Visual Guides</a>
+
+        <a href="symptoms.html">Symptoms</a>
+
+        <a href="treatments.html">Treatments</a>
+
+        <a href="questions.html">Ask Dr. Anushka</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="eyebrow">
+        Preventive Dentistry
+    </div>
+
+
+    <h1>
+        Protecting teeth<br>
+        before cavities begin.
+    </h1>
+
+
+    <p class="hero-intro">
+
+        Dental sealants are a preventive treatment designed to help
+        protect certain teeth from developing cavities. They are
+        particularly useful on the grooves and pits of back teeth,
+        where food and plaque can sometimes collect.
+
+    </p>
+
+</section>
+
+
+
+<!-- CONTENT -->
+
+<section class="content-section">
+
+    <div class="content-container">
+
+
+        <!-- WHAT ARE SEALANTS -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                Understanding sealants
+            </div>
+
+
+            <h2>
+                What are dental sealants?
+            </h2>
+
+
+            <p>
+
+                Dental sealants are thin protective coatings placed
+                over the grooves and pits of certain teeth. They create
+                a smoother surface that can make these areas easier to
+                keep clean.
+
+            </p>
+
+
+            <p>
+
+                Sealants are most commonly placed on the chewing surfaces
+                of back teeth because these teeth often have natural
+                grooves where plaque and food particles can accumulate.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- WHY -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                Why they are used
+            </div>
+
+
+            <h2>
+                Why might a dentist recommend sealants?
+            </h2>
+
+
+            <p>
+
+                Some teeth have deep or narrow grooves that can be
+                difficult to clean thoroughly with a toothbrush.
+                These areas may be more susceptible to cavities.
+
+            </p>
+
+
+            <p>
+
+                A sealant can act as a protective barrier over these
+                surfaces and may help reduce the risk of decay in
+                suitable teeth.
+
+            </p>
+
+
+            <div class="highlight">
+
+                <strong>
+                    Sealants are preventive — not a replacement for brushing.
+                </strong>
+
+
+                <p>
+
+                    Good brushing, cleaning between the teeth, a balanced
+                    diet and regular dental examinations remain important
+                    even after sealants are placed.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- WHO -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                Who may benefit?
+            </div>
+
+
+            <h2>
+                Who can have dental sealants?
+            </h2>
+
+
+            <p>
+
+                Sealants are often considered for children and teenagers
+                when permanent back teeth erupt, but adults may also
+                benefit from them in appropriate situations.
+
+            </p>
+
+
+            <p>
+
+                Whether a sealant is useful depends on factors such as
+                the shape of the tooth grooves, cavity risk, oral hygiene
+                and the condition of the tooth.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- PROCEDURE -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                The procedure
+            </div>
+
+
+            <h2>
+                What happens when a sealant is placed?
+            </h2>
+
+
+            <p>
+
+                The tooth is first cleaned and prepared. The tooth surface
+                is then treated so that the sealant can bond properly.
+
+            </p>
+
+
+            <p>
+
+                The sealant material is carefully placed into the grooves
+                of the tooth. A dental curing light may then be used to
+                harden the material.
+
+            </p>
+
+
+            <p>
+
+                The procedure is generally quick and does not require
+                removal of healthy tooth structure simply to place the
+                sealant.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- AFTERCARE -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                After treatment
+            </div>
+
+
+            <h2>
+                What happens after a sealant is placed?
+            </h2>
+
+
+            <p>
+
+                In most cases, normal oral hygiene can continue after
+                sealant placement. Your dentist may check the sealants
+                during regular dental visits to make sure they remain
+                intact.
+
+            </p>
+
+
+            <p>
+
+                Sealants can wear down or become damaged over time.
+                If this happens, your dentist can assess whether repair
+                or replacement is appropriate.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- IMPORTANT -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                Important to remember
+            </div>
+
+
+            <h2>
+                Sealants reduce risk — they do not make teeth cavity-proof.
+            </h2>
+
+
+            <p>
+
+                Dental sealants are one part of preventive dental care.
+                Cavities can still develop on other parts of a tooth or
+                around areas that are not covered by the sealant.
+
+            </p>
+
+
+            <p>
+
+                Regular brushing, cleaning between the teeth, appropriate
+                fluoride use, healthy habits and routine dental check-ups
+                remain important for maintaining oral health.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- PREVENTION -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                Prevention
+            </div>
+
+
+            <h2>
+                Preventing cavities involves more than sealants.
+            </h2>
+
+
+            <ul class="simple-list">
+
+                <li>
+                    Brush your teeth twice a day.
+                </li>
+
+                <li>
+                    Clean between your teeth regularly.
+                </li>
+
+                <li>
+                    Follow appropriate fluoride recommendations.
+                </li>
+
+                <li>
+                    Limit frequent exposure to sugary foods and drinks.
+                </li>
+
+                <li>
+                    Attend regular dental examinations.
+                </li>
+
+                <li>
+                    Ask your dentist whether sealants are appropriate
+                    for your teeth.
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- CTA -->
+
+<section class="question-section">
+
+    <div class="eyebrow">
+        Still wondering?
+    </div>
+
+
+    <h2>
+        Have a question about dental sealants?
+    </h2>
+
+
+    <p>
+
+        If you want to understand whether sealants may be useful for
+        you or your child, you can ask your dental question directly.
+
+    </p>
+
+
+    <a
+        href="questions.html"
+        class="question-button"
+    >
+        Ask Dr. Anushka →
+    </a>
+
+</section>
+
+
+
+<!-- DISCLAIMER -->
+
+<section class="disclaimer">
+
+    <p>
+
+        The information on this page is for general educational
+        purposes only and does not replace an in-person dental
+        examination, diagnosis or personalised professional advice.
+
+    </p>
+
+
+    <p style="margin-top: 12px;">
+
+        <a href="disclaimer.html">
+            Read the full disclaimer →
+        </a>
+
+    </p>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <strong>
+        DR. ANUSHKA CHOUDHARY
+    </strong>
+
+
+    <p>
+        Dentistry, explained simply.
+    </p>
+
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="blog.html">Dental Blog</a>
+
+        <a href="about.html">About</a>
+
+        <a href="guides.html">Visual Guides</a>
+
+        <a href="symptoms.html">Symptoms</a>
+
+        <a href="treatments.html">Treatments</a>
+
+        <a href="questions.html">Ask Dr. Anushka</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="disclaimer.html">Disclaimer</a>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```
