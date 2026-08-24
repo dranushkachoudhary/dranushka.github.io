@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,12 +28,14 @@
             box-sizing: border-box;
         }
 
+
         body {
             background: #FAF7F2;
             color: #29483F;
             font-family: Arial, sans-serif;
             line-height: 1.8;
         }
+
 
         a {
             text-decoration: none;
@@ -42,36 +45,68 @@
         /* HEADER */
 
         header {
-            padding: 20px 60px;
+            padding: 20px 40px;
+
             border-bottom: 1px solid #DDD8D2;
+
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
+
             background: #FAF7F2;
 
             position: sticky;
+
             top: 0;
+
             z-index: 100;
-        }
 
-        .logo {
-            font-size: 21px;
-            letter-spacing: 2px;
-            font-weight: bold;
-            color: #29483F;
-        }
-
-        nav {
-            display: flex;
             gap: 30px;
         }
 
+
+        .logo {
+            font-size: 20px;
+
+            letter-spacing: 2px;
+
+            font-weight: bold;
+
+            color: #29483F;
+
+            white-space: nowrap;
+        }
+
+
+        nav {
+            display: flex;
+
+            gap: 18px;
+
+            align-items: center;
+
+            justify-content: flex-end;
+
+            flex-wrap: wrap;
+        }
+
+
         nav a {
             color: #29483F;
-            font-size: 13px;
-            letter-spacing: 1px;
+
+            font-size: 12px;
+
+            letter-spacing: 0.8px;
+
             text-transform: uppercase;
+
+            white-space: nowrap;
+
+            transition: 0.3s ease;
         }
+
 
         nav a:hover {
             color: #D8A6A1;
@@ -82,65 +117,102 @@
 
         .hero {
             max-width: 1100px;
+
             margin: auto;
+
             padding: 110px 40px 100px;
 
             display: grid;
+
             grid-template-columns: 1.1fr 0.9fr;
+
             gap: 80px;
+
             align-items: center;
         }
+
 
         .hero-text {
             max-width: 650px;
         }
 
+
         .eyebrow {
             color: #7F9C8D;
+
             font-size: 12px;
+
             letter-spacing: 4px;
+
             text-transform: uppercase;
+
             margin-bottom: 25px;
         }
+
 
         h1 {
             font-family: Georgia, serif;
+
             font-size: 62px;
+
             line-height: 1.12;
+
             font-weight: 600;
+
             color: #5A4A48;
+
             margin-bottom: 25px;
         }
+
 
         .hero-subtitle {
             font-family: Georgia, serif;
+
             font-size: 24px;
+
             color: #65706A;
+
             line-height: 1.6;
+
             margin-bottom: 25px;
         }
 
+
         .hero-description {
             font-size: 17px;
+
             color: #5D6761;
+
             line-height: 1.9;
+
             margin-bottom: 35px;
+
             max-width: 570px;
         }
 
+
         .button {
             display: inline-block;
+
             background: #29483F;
+
             color: #FAF7F2;
+
             padding: 14px 28px;
+
             font-size: 13px;
+
             letter-spacing: 1px;
+
             text-transform: uppercase;
+
             transition: 0.3s;
         }
 
+
         .button:hover {
             background: #D8A6A1;
+
             color: #29483F;
         }
 
@@ -151,11 +223,16 @@
             position: relative;
         }
 
+
         .hero-image img {
             width: 100%;
+
             max-width: 430px;
+
             display: block;
+
             margin: auto;
+
             border-radius: 4px;
         }
 
@@ -164,29 +241,44 @@
 
         .intro-section {
             background: #F1EEE8;
+
             padding: 90px 25px;
+
             text-align: center;
         }
+
 
         .intro-section .eyebrow {
             margin-bottom: 20px;
         }
 
+
         .intro-section h2 {
             font-family: Georgia, serif;
+
             font-weight: normal;
+
             color: #5A4A48;
+
             font-size: 40px;
+
             line-height: 1.3;
+
             max-width: 700px;
+
             margin: auto;
         }
 
+
         .intro-section p {
             max-width: 700px;
+
             margin: 25px auto 0;
+
             color: #5D6761;
+
             font-size: 17px;
+
             line-height: 1.9;
         }
 
@@ -195,93 +287,139 @@
 
         .blog-section {
             max-width: 1100px;
+
             margin: auto;
+
             padding: 100px 30px;
         }
 
+
         .section-heading {
             text-align: center;
+
             margin-bottom: 55px;
         }
+
 
         .section-heading .eyebrow {
             margin-bottom: 15px;
         }
 
+
         .section-heading h2 {
             font-family: Georgia, serif;
+
             font-size: 40px;
+
             font-weight: normal;
+
             color: #5A4A48;
         }
+
 
         /* BLOG GRID */
 
         .blog-grid {
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 30px;
         }
 
+
         .article-card {
             background: #F1EEE8;
+
             overflow: hidden;
+
             transition: transform 0.25s ease;
         }
+
 
         .article-card:hover {
             transform: translateY(-5px);
         }
 
+
         .article-image {
             width: 100%;
+
             height: 220px;
+
             object-fit: cover;
+
             display: block;
         }
+
 
         .article-content {
             padding: 28px 25px 30px;
         }
 
+
         .article-category {
             color: #7F9C8D;
+
             font-size: 11px;
+
             letter-spacing: 3px;
+
             text-transform: uppercase;
+
             margin-bottom: 12px;
         }
 
+
         .article-card h3 {
             font-family: Georgia, serif;
+
             color: #5A4A48;
+
             font-size: 24px;
+
             line-height: 1.35;
+
             font-weight: normal;
+
             margin-bottom: 15px;
         }
 
+
         .article-card p {
             color: #65706A;
+
             font-size: 14px;
+
             line-height: 1.8;
+
             margin-bottom: 20px;
         }
 
+
         .article-meta {
             color: #7F9C8D;
+
             font-size: 11px;
+
             margin-bottom: 18px;
         }
 
+
         .read-more {
             color: #29483F;
+
             font-size: 12px;
+
             letter-spacing: 1.5px;
+
             text-transform: uppercase;
+
             border-bottom: 1px solid #D8A6A1;
+
             padding-bottom: 4px;
         }
+
 
         .read-more:hover {
             color: #D8A6A1;
@@ -292,22 +430,174 @@
 
         .blog-button-wrapper {
             text-align: center;
+
             margin-top: 50px;
         }
 
+
         .blog-button {
             display: inline-block;
+
             border: 1px solid #29483F;
+
             color: #29483F;
+
             padding: 13px 28px;
+
             font-size: 12px;
+
             letter-spacing: 2px;
+
             text-transform: uppercase;
+
             transition: 0.3s;
         }
 
+
         .blog-button:hover {
             background: #29483F;
+
+            color: #FAF7F2;
+        }
+
+
+        /* TREATMENT GUIDES */
+
+        .treatment-section {
+            background: #F1EEE8;
+
+            padding: 100px 30px;
+        }
+
+
+        .treatment-container {
+            max-width: 1100px;
+
+            margin: auto;
+        }
+
+
+        .treatment-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .treatment-card {
+            background: #FAF7F2;
+
+            padding: 35px 30px;
+
+            border-top: 3px solid transparent;
+
+            transition: 0.3s ease;
+
+            min-height: 245px;
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+
+        .treatment-card:hover {
+            transform: translateY(-5px);
+
+            border-top-color: #D8A6A1;
+
+            box-shadow: 0 15px 40px rgba(41, 72, 63, 0.08);
+        }
+
+
+        .treatment-icon {
+            font-size: 30px;
+
+            margin-bottom: 18px;
+        }
+
+
+        .treatment-card h3 {
+            font-family: Georgia, serif;
+
+            color: #5A4A48;
+
+            font-size: 25px;
+
+            font-weight: normal;
+
+            line-height: 1.3;
+
+            margin-bottom: 12px;
+        }
+
+
+        .treatment-card p {
+            color: #65706A;
+
+            font-size: 14px;
+
+            line-height: 1.8;
+
+            margin-bottom: 20px;
+        }
+
+
+        .treatment-link {
+            margin-top: auto;
+
+            color: #29483F;
+
+            font-size: 11px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            border-bottom: 1px solid #D8A6A1;
+
+            padding-bottom: 4px;
+
+            align-self: flex-start;
+        }
+
+
+        .treatment-link:hover {
+            color: #D8A6A1;
+        }
+
+
+        .treatment-button-wrapper {
+            text-align: center;
+
+            margin-top: 50px;
+        }
+
+
+        .treatment-button {
+            display: inline-block;
+
+            border: 1px solid #29483F;
+
+            color: #29483F;
+
+            padding: 13px 28px;
+
+            font-size: 12px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            transition: 0.3s;
+        }
+
+
+        .treatment-button:hover {
+            background: #29483F;
+
             color: #FAF7F2;
         }
 
@@ -315,47 +605,73 @@
         /* QUESTION SECTION */
 
         .question-section {
-            background: #F1EEE8;
+            background: #FAF7F2;
+
             padding: 95px 25px;
+
             text-align: center;
         }
 
+
         .question-inner {
             max-width: 750px;
+
             margin: auto;
         }
+
 
         .question-section h2 {
             font-family: Georgia, serif;
+
             font-weight: normal;
+
             color: #5A4A48;
+
             font-size: 40px;
+
             line-height: 1.3;
+
             margin-bottom: 20px;
         }
 
+
         .question-section p {
             color: #5D6761;
+
             font-size: 17px;
+
             line-height: 1.9;
+
             max-width: 650px;
+
             margin: auto;
         }
 
+
         .question-button {
             display: inline-block;
+
             margin-top: 30px;
+
             background: #29483F;
+
             color: #FAF7F2;
+
             padding: 14px 28px;
+
             font-size: 12px;
+
             letter-spacing: 2px;
+
             text-transform: uppercase;
+
             transition: 0.3s;
         }
 
+
         .question-button:hover {
             background: #D8A6A1;
+
             color: #29483F;
         }
 
@@ -364,44 +680,68 @@
 
         .about-section {
             background: #29483F;
+
             color: #FAF7F2;
+
             padding: 90px 25px;
+
             text-align: center;
         }
+
 
         .about-section .eyebrow {
             color: #D8A6A1;
         }
 
+
         .about-section h2 {
             font-family: Georgia, serif;
+
             font-weight: normal;
+
             font-size: 40px;
+
             line-height: 1.3;
+
             margin-bottom: 25px;
         }
 
+
         .about-section p {
             max-width: 700px;
+
             margin: auto;
+
             color: #E7E4DE;
+
             font-size: 17px;
+
             line-height: 1.9;
         }
 
+
         .about-button {
             display: inline-block;
+
             margin-top: 30px;
+
             padding: 13px 28px;
+
             border: 1px solid #D8A6A1;
+
             color: #FAF7F2;
+
             font-size: 13px;
+
             letter-spacing: 1px;
+
             text-transform: uppercase;
         }
 
+
         .about-button:hover {
             background: #D8A6A1;
+
             color: #29483F;
         }
 
@@ -410,110 +750,206 @@
 
         footer {
             background: #D8A6A1;
+
             color: #29483F;
+
             padding: 45px 25px;
+
             text-align: center;
         }
 
+
         footer strong {
             font-size: 17px;
+
             letter-spacing: 2px;
         }
 
+
         footer p {
             color: #29483F;
+
             margin-top: 8px;
+
             margin-bottom: 0;
+
             font-size: 14px;
+        }
+
+
+        .footer-links {
+            margin-top: 20px;
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 20px;
+        }
+
+
+        .footer-links a {
+            color: #29483F;
+
+            font-size: 12px;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+
+        .footer-links a:hover {
+            color: #FAF7F2;
         }
 
 
         /* MOBILE */
 
-        @media(max-width:800px) {
+        @media(max-width:900px) {
 
             header {
                 padding: 20px 25px;
+
+                flex-direction: column;
+
+                gap: 15px;
             }
 
-            nav {
-                display: none;
-            }
 
             .logo {
                 font-size: 17px;
             }
 
+
+            nav {
+                justify-content: center;
+
+                gap: 12px 18px;
+            }
+
+
+            nav a {
+                font-size: 11px;
+            }
+
+
             .hero {
                 grid-template-columns: 1fr;
+
                 padding: 70px 25px;
+
                 gap: 50px;
+
                 text-align: center;
             }
+
 
             .hero-text {
                 margin: auto;
             }
 
+
             h1 {
                 font-size: 45px;
             }
+
 
             .hero-subtitle {
                 font-size: 21px;
             }
 
+
             .hero-description {
                 font-size: 16px;
             }
+
 
             .hero-image img {
                 max-width: 360px;
             }
 
+
             .intro-section {
                 padding: 70px 25px;
             }
+
 
             .intro-section h2 {
                 font-size: 32px;
             }
 
+
             .blog-section {
                 padding: 75px 22px;
             }
+
 
             .section-heading h2 {
                 font-size: 32px;
             }
 
+
             .blog-grid {
                 grid-template-columns: 1fr;
+
                 gap: 30px;
             }
+
 
             .article-image {
                 height: 230px;
             }
 
+
             .article-card h3 {
                 font-size: 27px;
             }
+
+
+            .treatment-section {
+                padding: 75px 22px;
+            }
+
+
+            .treatment-grid {
+                grid-template-columns: 1fr;
+
+                gap: 20px;
+            }
+
+
+            .treatment-card {
+                min-height: auto;
+
+                padding: 30px 25px;
+            }
+
 
             .question-section {
                 padding: 70px 25px;
             }
 
+
             .question-section h2 {
                 font-size: 32px;
             }
+
 
             .about-section {
                 padding: 70px 25px;
             }
 
+
             .about-section h2 {
                 font-size: 32px;
+            }
+
+
+            .footer-links {
+                gap: 12px 18px;
             }
 
         }
@@ -533,23 +969,25 @@
     <div class="logo">
         DR. ANUSHKA CHOUDHARY
     </div>
-<nav>
 
-    <a href="index.html">Home</a>
 
-    <a href="about.html">About</a>
+    <nav>
 
-    <a href="blog.html">Dental Blog</a>
+        <a href="index.html">Home</a>
 
-   <a href="guides.html">Visual Guides</a>
+        <a href="about.html">About</a>
 
-<a href="symptoms.html">Symptoms</a>
+        <a href="blog.html">Dental Blog</a>
 
-<a href="questions.html">Ask Dr. Anushka</a>
+        <a href="guides.html">Visual Guides</a>
 
-    <a href="contact.html">Contact</a>
+        <a href="symptoms.html">Symptoms</a>
 
-</nav>
+        <a href="questions.html">Ask Dr. Anushka</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
 
 </header>
 
@@ -780,6 +1218,211 @@
 </section>
 
 
+<!-- TREATMENT GUIDES -->
+
+<section class="treatment-section">
+
+    <div class="treatment-container">
+
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                Treatment Guides
+            </div>
+
+            <h2>
+                Understand your dental treatment.
+            </h2>
+
+        </div>
+
+
+        <div class="treatment-grid">
+
+
+            <!-- SCALING -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    🪥
+                </div>
+
+                <h3>
+                    Dental Scaling
+                </h3>
+
+                <p>
+                    What scaling actually does, why dentists recommend it,
+                    what to expect during the procedure and what happens afterward.
+                </p>
+
+                <a
+                    href="scaling-treatment.html"
+                    class="treatment-link"
+                >
+                    Explore Treatment →
+                </a>
+
+            </article>
+
+
+            <!-- FILLINGS -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    🦷
+                </div>
+
+                <h3>
+                    Dental Fillings
+                </h3>
+
+                <p>
+                    Understand why fillings are needed, how cavities are treated
+                    and what you can expect during a filling procedure.
+                </p>
+
+                <a
+                    href="dental-fillings.html"
+                    class="treatment-link"
+                >
+                    Explore Treatment →
+                </a>
+
+            </article>
+
+
+            <!-- RCT -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    🦷
+                </div>
+
+                <h3>
+                    Root Canal Treatment
+                </h3>
+
+                <p>
+                    Learn why a root canal may be recommended, what happens
+                    during treatment and whether it actually hurts.
+                </p>
+
+                <a
+                    href="root-canal-treatment.html"
+                    class="treatment-link"
+                >
+                    Explore Treatment →
+                </a>
+
+            </article>
+
+
+            <!-- CROWN -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    👑
+                </div>
+
+                <h3>
+                    Dental Crowns
+                </h3>
+
+                <p>
+                    Find out when a tooth may need a crown, how crowns protect
+                    teeth and what the treatment process involves.
+                </p>
+
+                <a
+                    href="dental-crowns.html"
+                    class="treatment-link"
+                >
+                    Explore Treatment →
+                </a>
+
+            </article>
+
+
+            <!-- EXTRACTION -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    🦷
+                </div>
+
+                <h3>
+                    Tooth Extraction
+                </h3>
+
+                <p>
+                    Why a tooth may need to be removed, what happens during
+                    extraction and what recovery usually involves.
+                </p>
+
+                <a
+                    href="tooth-extraction.html"
+                    class="treatment-link"
+                >
+                    Explore Treatment →
+                </a>
+
+            </article>
+
+
+            <!-- WHITENING -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    Teeth Whitening
+                </h3>
+
+                <p>
+                    Understand how professional whitening works, who may benefit
+                    from it and what you should know before whitening your teeth.
+                </p>
+
+                <a
+                    href="teeth-whitening.html"
+                    class="treatment-link"
+                >
+                    Explore Treatment →
+                </a>
+
+            </article>
+
+
+        </div>
+
+
+        <div class="treatment-button-wrapper">
+
+            <a
+                href="treatments.html"
+                class="treatment-button"
+            >
+                View All Treatment Guides
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
 <!-- QUESTION SECTION -->
 
 <section class="question-section">
@@ -802,7 +1445,10 @@
             me to explain.
         </p>
 
-        <a class="question-button" href="contact.html">
+        <a
+            class="question-button"
+            href="questions.html"
+        >
             Ask Your Question
         </a>
 
@@ -832,7 +1478,10 @@
         before sitting in the dental chair.
     </p>
 
-    <a class="about-button" href="about.html">
+    <a
+        class="about-button"
+        href="about.html"
+    >
         More About Me
     </a>
 
@@ -851,26 +1500,33 @@
         Dentistry, explained simply.
     </p>
 
+
     <div class="footer-links">
 
-    <a href="index.html">Home</a>
+        <a href="index.html">Home</a>
 
-    <a href="blog.html">Dental Blog</a>
+        <a href="blog.html">Dental Blog</a>
 
-    <a href="guides.html">Visual Guides</a>
+        <a href="guides.html">Visual Guides</a>
 
-    <a href="about.html">About</a>
+        <a href="symptoms.html">Symptoms</a>
 
-    <a href="questions.html">Ask Dr. Anushka</a>
+        <a href="treatments.html">Treatment Guides</a>
 
-    <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
 
-    <a href="disclaimer.html">Disclaimer</a>
+        <a href="questions.html">Ask Dr. Anushka</a>
 
-</div>
+        <a href="contact.html">Contact</a>
+
+        <a href="disclaimer.html">Disclaimer</a>
+
+    </div>
 
 </footer>
+
 
 </body>
 
 </html>
+```
