@@ -1,0 +1,1259 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/jpeg" href="dental tooth image.jpg">
+
+    <title>Dental Treatments | Dr. Anushka Choudhary, BDS</title>
+
+    <meta name="description"
+    content="Understand common dental treatments in simple language. Learn what fillings, root canal treatment, crowns, scaling, extractions, whitening and other dental treatments involve.">
+
+    <meta name="author" content="Dr. Anushka Choudhary">
+
+    <meta name="robots" content="index, follow">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background: #FAF7F2;
+            color: #29483F;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* HEADER */
+
+        header {
+            padding: 20px 60px;
+
+            border-bottom: 1px solid #DDD8D2;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            background: #FAF7F2;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 100;
+        }
+
+
+        .logo {
+            font-size: 21px;
+
+            letter-spacing: 2px;
+
+            font-weight: bold;
+
+            color: #29483F;
+        }
+
+
+        nav {
+            display: flex;
+
+            gap: 25px;
+
+            flex-wrap: wrap;
+
+            justify-content: flex-end;
+        }
+
+
+        nav a {
+            color: #29483F;
+
+            font-size: 13px;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+
+        nav a:hover {
+            color: #D8A6A1;
+        }
+
+
+        /* HERO */
+
+        .treatment-hero {
+            max-width: 900px;
+
+            margin: auto;
+
+            padding: 100px 25px 80px;
+
+            text-align: center;
+        }
+
+
+        .eyebrow {
+            color: #7F9C8D;
+
+            font-size: 12px;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+        }
+
+
+        h1 {
+            font-family: Georgia, serif;
+
+            font-size: 58px;
+
+            line-height: 1.2;
+
+            font-weight: 600;
+
+            color: #5A4A48;
+
+            margin-bottom: 25px;
+        }
+
+
+        .hero-intro {
+            max-width: 700px;
+
+            margin: auto;
+
+            color: #5D6761;
+
+            font-size: 18px;
+
+            line-height: 1.9;
+        }
+
+
+        /* TREATMENTS SECTION */
+
+        .treatments-section {
+            background: #F1EEE8;
+
+            padding: 80px 25px 100px;
+        }
+
+
+        .treatments-container {
+            max-width: 1100px;
+
+            margin: auto;
+        }
+
+
+        .section-heading {
+            text-align: center;
+
+            margin-bottom: 55px;
+        }
+
+
+        .section-heading h2 {
+            font-family: Georgia, serif;
+
+            font-size: 40px;
+
+            font-weight: normal;
+
+            color: #5A4A48;
+
+            margin-bottom: 15px;
+        }
+
+
+        .section-heading p {
+            max-width: 700px;
+
+            margin: auto;
+
+            color: #5D6761;
+
+            font-size: 16px;
+
+            line-height: 1.9;
+        }
+
+
+        /* TREATMENT GRID */
+
+        .treatment-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        /* TREATMENT CARD */
+
+        .treatment-card {
+            background: #FAF7F2;
+
+            padding: 35px 30px 32px;
+
+            border-top: 3px solid transparent;
+
+            transition: 0.3s ease;
+
+            display: flex;
+
+            flex-direction: column;
+
+            min-height: 390px;
+        }
+
+
+        .treatment-card:hover {
+            transform: translateY(-5px);
+
+            border-top-color: #D8A6A1;
+
+            box-shadow: 0 15px 40px rgba(41, 72, 63, 0.08);
+        }
+
+
+        .treatment-icon {
+            font-size: 32px;
+
+            margin-bottom: 18px;
+        }
+
+
+        .treatment-category {
+            color: #7F9C8D;
+
+            font-size: 11px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 10px;
+        }
+
+
+        .treatment-card h3 {
+            font-family: Georgia, serif;
+
+            color: #5A4A48;
+
+            font-size: 26px;
+
+            font-weight: normal;
+
+            line-height: 1.3;
+
+            margin-bottom: 14px;
+        }
+
+
+        .treatment-card p {
+            color: #65706A;
+
+            font-size: 14px;
+
+            line-height: 1.8;
+
+            margin-bottom: 18px;
+        }
+
+
+        .treatment-info {
+            color: #5D6761;
+
+            font-size: 13px;
+
+            line-height: 1.7;
+
+            margin-bottom: 20px;
+        }
+
+
+        .treatment-link {
+            margin-top: auto;
+
+            color: #29483F;
+
+            font-size: 11px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            border-bottom: 1px solid #D8A6A1;
+
+            padding-bottom: 4px;
+
+            align-self: flex-start;
+        }
+
+
+        .treatment-link:hover {
+            color: #D8A6A1;
+        }
+
+
+        /* EXPECTATION SECTION */
+
+        .expectation-section {
+            max-width: 900px;
+
+            margin: 80px auto 0;
+
+            padding: 50px 40px;
+
+            background: #FAF7F2;
+
+            border-left: 4px solid #D8A6A1;
+
+            text-align: center;
+        }
+
+
+        .expectation-section h2 {
+            font-family: Georgia, serif;
+
+            color: #5A4A48;
+
+            font-size: 34px;
+
+            font-weight: normal;
+
+            margin-bottom: 15px;
+        }
+
+
+        .expectation-section p {
+            color: #5D6761;
+
+            font-size: 16px;
+
+            line-height: 1.9;
+
+            max-width: 720px;
+
+            margin: auto;
+        }
+
+
+        /* NOTE */
+
+        .note-section {
+            max-width: 850px;
+
+            margin: 80px auto 0;
+
+            text-align: center;
+        }
+
+
+        .note-section h2 {
+            font-family: Georgia, serif;
+
+            color: #5A4A48;
+
+            font-size: 34px;
+
+            font-weight: normal;
+
+            margin-bottom: 15px;
+        }
+
+
+        .note-section p {
+            color: #5D6761;
+
+            font-size: 16px;
+
+            line-height: 1.9;
+        }
+
+
+        /* QUESTION CTA */
+
+        .question-section {
+            padding: 90px 25px;
+
+            text-align: center;
+
+            background: #FAF7F2;
+        }
+
+
+        .question-section h2 {
+            font-family: Georgia, serif;
+
+            color: #5A4A48;
+
+            font-size: 38px;
+
+            font-weight: normal;
+
+            margin-bottom: 15px;
+        }
+
+
+        .question-section p {
+            max-width: 650px;
+
+            margin: auto;
+
+            color: #5D6761;
+
+            font-size: 16px;
+
+            line-height: 1.9;
+        }
+
+
+        .question-button {
+            display: inline-block;
+
+            margin-top: 28px;
+
+            background: #29483F;
+
+            color: #FAF7F2;
+
+            padding: 14px 28px;
+
+            font-size: 12px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            transition: 0.3s ease;
+        }
+
+
+        .question-button:hover {
+            background: #D8A6A1;
+
+            color: #29483F;
+        }
+
+
+        /* DISCLAIMER */
+
+        .disclaimer {
+            max-width: 800px;
+
+            margin: auto;
+
+            padding: 55px 25px 75px;
+
+            text-align: center;
+        }
+
+
+        .disclaimer p {
+            color: #7A817C;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+
+        .disclaimer a {
+            color: #29483F;
+
+            border-bottom: 1px solid #D8A6A1;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #D8A6A1;
+
+            color: #29483F;
+
+            padding: 45px 25px;
+
+            text-align: center;
+        }
+
+
+        footer strong {
+            font-size: 17px;
+
+            letter-spacing: 2px;
+        }
+
+
+        footer p {
+            margin-top: 8px;
+
+            font-size: 14px;
+        }
+
+
+        .footer-links {
+            margin-top: 20px;
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 20px;
+        }
+
+
+        .footer-links a {
+            color: #29483F;
+
+            font-size: 12px;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+
+        .footer-links a:hover {
+            color: #FAF7F2;
+        }
+
+
+        /* MOBILE */
+
+        @media(max-width:800px) {
+
+            header {
+                padding: 20px 25px;
+            }
+
+
+            nav {
+                display: none;
+            }
+
+
+            .logo {
+                font-size: 17px;
+            }
+
+
+            .treatment-hero {
+                padding: 70px 25px 55px;
+            }
+
+
+            h1 {
+                font-size: 43px;
+            }
+
+
+            .hero-intro {
+                font-size: 16px;
+            }
+
+
+            .treatments-section {
+                padding: 60px 20px 75px;
+            }
+
+
+            .section-heading h2 {
+                font-size: 32px;
+            }
+
+
+            .treatment-grid {
+                grid-template-columns: 1fr;
+
+                gap: 20px;
+            }
+
+
+            .treatment-card {
+                min-height: auto;
+
+                padding: 30px 25px;
+            }
+
+
+            .expectation-section {
+                margin-top: 55px;
+
+                padding: 40px 25px;
+            }
+
+
+            .expectation-section h2 {
+                font-size: 29px;
+            }
+
+
+            .note-section {
+                margin-top: 55px;
+            }
+
+
+            .note-section h2 {
+                font-size: 29px;
+            }
+
+
+            .question-section {
+                padding: 70px 25px;
+            }
+
+
+            .question-section h2 {
+                font-size: 31px;
+            }
+
+
+            .footer-links {
+                gap: 12px 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+        DR. ANUSHKA CHOUDHARY
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="blog.html">Dental Blog</a>
+
+        <a href="guides.html">Visual Guides</a>
+
+        <a href="symptoms.html">Symptoms</a>
+
+        <a href="treatments.html">Treatments</a>
+
+        <a href="questions.html">Ask Dr. Anushka</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="treatment-hero">
+
+    <div class="eyebrow">
+        Dental Treatments
+    </div>
+
+
+    <h1>
+        Dental treatments,<br>
+        explained simply.
+    </h1>
+
+
+    <p class="hero-intro">
+        Dental treatment names can sound complicated.
+        Explore common procedures below to understand what
+        they are generally used for, what they involve,
+        and what you can expect.
+    </p>
+
+</section>
+
+
+
+<!-- TREATMENTS -->
+
+<section class="treatments-section">
+
+    <div class="treatments-container">
+
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                Explore Treatments
+            </div>
+
+
+            <h2>
+                Start with the treatment you're curious about.
+            </h2>
+
+
+            <p>
+                These guides are designed to make dental
+                procedures easier to understand before,
+                during or after a dental visit.
+            </p>
+
+        </div>
+
+
+
+        <div class="treatment-grid">
+
+
+            <!-- SCALING -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    🪥
+                </div>
+
+                <div class="treatment-category">
+                    Preventive Dentistry
+                </div>
+
+                <h3>
+                    Dental Scaling
+                </h3>
+
+                <p>
+                    Professional cleaning that removes
+                    plaque, tartar and deposits that regular
+                    brushing cannot remove completely.
+                </p>
+
+                <div class="treatment-info">
+                    <strong>Commonly used for:</strong><br>
+                    Tartar buildup, gum inflammation and
+                    maintaining gum health.
+                </div>
+
+                <a
+                    href="scaling.html"
+                    class="treatment-link"
+                >
+                    Learn About Scaling →
+                </a>
+
+            </article>
+
+
+
+            <!-- FILLING -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    🦷
+                </div>
+
+                <div class="treatment-category">
+                    Restorative Dentistry
+                </div>
+
+                <h3>
+                    Dental Fillings
+                </h3>
+
+                <p>
+                    A filling restores a tooth after decay
+                    or certain types of damage by replacing
+                    the affected tooth structure.
+                </p>
+
+                <div class="treatment-info">
+                    <strong>Commonly used for:</strong><br>
+                    Dental cavities and certain small
+                    areas of tooth damage.
+                </div>
+
+                <a
+                    href="dental-fillings.html"
+                    class="treatment-link"
+                >
+                    Learn About Fillings →
+                </a>
+
+            </article>
+
+
+
+            <!-- RCT -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    🦷
+                </div>
+
+                <div class="treatment-category">
+                    Endodontic Treatment
+                </div>
+
+                <h3>
+                    Root Canal Treatment
+                </h3>
+
+                <p>
+                    A procedure used to treat disease or
+                    infection involving the pulp inside
+                    a tooth.
+                </p>
+
+                <div class="treatment-info">
+                    <strong>Commonly used for:</strong><br>
+                    Deep decay, pulp inflammation or
+                    infection involving the tooth.
+                </div>
+
+                <a
+                    href="root-canal.html"
+                    class="treatment-link"
+                >
+                    Learn About Root Canal →
+                </a>
+
+            </article>
+
+
+
+            <!-- CROWN -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    👑
+                </div>
+
+                <div class="treatment-category">
+                    Restorative Dentistry
+                </div>
+
+                <h3>
+                    Dental Crowns
+                </h3>
+
+                <p>
+                    A crown is a custom-made restoration
+                    that covers and protects a tooth when
+                    substantial restoration is needed.
+                </p>
+
+                <div class="treatment-info">
+                    <strong>Commonly used for:</strong><br>
+                    Heavily damaged, weakened or
+                    root-canal-treated teeth.
+                </div>
+
+                <a
+                    href="dental-crowns.html"
+                    class="treatment-link"
+                >
+                    Learn About Crowns →
+                </a>
+
+            </article>
+
+
+
+            <!-- EXTRACTION -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    🦷
+                </div>
+
+                <div class="treatment-category">
+                    Oral Surgery
+                </div>
+
+                <h3>
+                    Tooth Extraction
+                </h3>
+
+                <p>
+                    Removal of a tooth may sometimes be
+                    recommended when a tooth cannot be
+                    predictably restored or other factors
+                    make removal necessary.
+                </p>
+
+                <div class="treatment-info">
+                    <strong>Commonly considered for:</strong><br>
+                    Severely damaged teeth, certain
+                    infections or impacted teeth.
+                </div>
+
+                <a
+                    href="tooth-extraction.html"
+                    class="treatment-link"
+                >
+                    Learn About Extraction →
+                </a>
+
+            </article>
+
+
+
+            <!-- WHITENING -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    ✨
+                </div>
+
+                <div class="treatment-category">
+                    Cosmetic Dentistry
+                </div>
+
+                <h3>
+                    Teeth Whitening
+                </h3>
+
+                <p>
+                    Whitening treatments are designed to
+                    lighten the colour of natural teeth
+                    and reduce certain types of staining.
+                </p>
+
+                <div class="treatment-info">
+                    <strong>Commonly used for:</strong><br>
+                    Certain external and internal
+                    tooth discoloration.
+                </div>
+
+                <a
+                    href="teeth-whitening.html"
+                    class="treatment-link"
+                >
+                    Learn About Whitening →
+                </a>
+
+            </article>
+
+
+
+            <!-- VENEERS -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    ✨
+                </div>
+
+                <div class="treatment-category">
+                    Cosmetic Dentistry
+                </div>
+
+                <h3>
+                    Dental Veneers
+                </h3>
+
+                <p>
+                    Thin restorations placed on the front
+                    surface of selected teeth to change
+                    aspects of their appearance.
+                </p>
+
+                <div class="treatment-info">
+                    <strong>May be considered for:</strong><br>
+                    Certain cosmetic concerns involving
+                    tooth shape, colour or proportions.
+                </div>
+
+                <a
+                    href="dental-veneers.html"
+                    class="treatment-link"
+                >
+                    Learn About Veneers →
+                </a>
+
+            </article>
+
+
+
+            <!-- DEEP CLEANING -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    🪥
+                </div>
+
+                <div class="treatment-category">
+                    Gum Treatment
+                </div>
+
+                <h3>
+                    Deep Cleaning
+                </h3>
+
+                <p>
+                    A deeper form of periodontal cleaning
+                    used when deposits and inflammation
+                    affect areas below the gumline.
+                </p>
+
+                <div class="treatment-info">
+                    <strong>May be recommended for:</strong><br>
+                    Certain cases of gum disease and
+                    periodontal inflammation.
+                </div>
+
+                <a
+                    href="deep-cleaning.html"
+                    class="treatment-link"
+                >
+                    Learn About Deep Cleaning →
+                </a>
+
+            </article>
+
+
+
+            <!-- WISDOM TOOTH -->
+
+            <article class="treatment-card">
+
+                <div class="treatment-icon">
+                    🦷
+                </div>
+
+                <div class="treatment-category">
+                    Wisdom Teeth
+                </div>
+
+                <h3>
+                    Wisdom Tooth Removal
+                </h3>
+
+                <p>
+                    Wisdom teeth sometimes require removal
+                    when they cause problems or are unlikely
+                    to function properly.
+                </p>
+
+                <div class="treatment-info">
+                    <strong>May be considered for:</strong><br>
+                    Impacted teeth, recurrent infection,
+                    damage to nearby teeth or other problems.
+                </div>
+
+                <a
+                    href="wisdom-tooth-removal.html"
+                    class="treatment-link"
+                >
+                    Learn About Wisdom Teeth →
+                </a>
+
+            </article>
+
+
+
+        </div>
+
+
+
+        <!-- EXPECTATION BOX -->
+
+        <div class="expectation-section">
+
+            <div class="eyebrow">
+                Before Treatment
+            </div>
+
+
+            <h2>
+                The right treatment depends on the right diagnosis.
+            </h2>
+
+
+            <p>
+                Two people can have similar symptoms but need
+                completely different treatments. A dental
+                examination, medical and dental history and,
+                when appropriate, diagnostic tests help a dentist
+                determine what treatment is suitable.
+            </p>
+
+        </div>
+
+
+
+        <!-- NOTE -->
+
+        <div class="note-section">
+
+            <div class="eyebrow">
+                One important thing
+            </div>
+
+
+            <h2>
+                Treatment isn't one-size-fits-all.
+            </h2>
+
+
+            <p>
+                These pages are educational guides designed to
+                help you understand common dental procedures.
+                They are not a recommendation for any specific
+                treatment. Your dentist can explain which options
+                are appropriate for your individual situation.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- QUESTION CTA -->
+
+<section class="question-section">
+
+    <div class="eyebrow">
+        Still unsure?
+    </div>
+
+
+    <h2>
+        Have a question about a dental treatment?
+    </h2>
+
+
+    <p>
+        If you have a question about a procedure, you can
+        send it through the Ask Dr. Anushka section.
+    </p>
+
+
+    <a
+        href="questions.html"
+        class="question-button"
+    >
+        Ask Dr. Anushka →
+    </a>
+
+</section>
+
+
+
+<!-- DISCLAIMER -->
+
+<section class="disclaimer">
+
+    <p>
+        The information on this page is for general educational
+        purposes only and does not replace an in-person dental
+        examination, diagnosis or personalised professional advice.
+    </p>
+
+
+    <p style="margin-top: 12px;">
+
+        <a href="disclaimer.html">
+            Read the full disclaimer →
+        </a>
+
+    </p>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <strong>
+        DR. ANUSHKA CHOUDHARY
+    </strong>
+
+
+    <p>
+        Dentistry, explained simply.
+    </p>
+
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="blog.html">Dental Blog</a>
+
+        <a href="guides.html">Visual Guides</a>
+
+        <a href="symptoms.html">Symptoms</a>
+
+        <a href="treatments.html">Treatments</a>
+
+        <a href="about.html">About</a>
+
+        <a href="questions.html">Ask Dr. Anushka</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="disclaimer.html">Disclaimer</a>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```
