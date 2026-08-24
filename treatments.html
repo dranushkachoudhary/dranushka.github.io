@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,576 +20,564 @@
     <meta name="robots" content="index, follow">
 
 
-<style>
-
-/* =========================
-   RESET
-========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background: #FAF7F2;
-    color: #29483F;
-    font-family: Arial, sans-serif;
-    line-height: 1.8;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-    padding: 20px 60px;
-    border-bottom: 1px solid #DDD8D2;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background: #FAF7F2;
-
-    position: sticky;
-    top: 0;
-    z-index: 100;
-
-    gap: 30px;
-}
-
-.logo {
-    font-size: 21px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    color: #29483F;
-    white-space: nowrap;
-}
-
-nav {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: #29483F;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    white-space: nowrap;
-    transition: 0.3s ease;
-}
-
-nav a:hover {
-    color: #D8A6A1;
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.treatment-hero {
-    max-width: 900px;
-    margin: auto;
-
-    padding: 100px 25px 75px;
-
-    text-align: center;
-}
-
-.eyebrow {
-    color: #7F9C8D;
-    font-size: 12px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
+    <style>
 
-h1 {
-    font-family: Georgia, serif;
-    font-size: 58px;
-    line-height: 1.2;
-    font-weight: 600;
-    color: #5A4A48;
-    margin-bottom: 25px;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.hero-intro {
-    max-width: 700px;
-    margin: auto;
-    color: #5D6761;
-    font-size: 18px;
-    line-height: 1.9;
-}
 
+        body {
+            background: #FAF7F2;
+            color: #29483F;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+        }
 
-/* =========================
-   TREATMENTS SECTION
-========================= */
 
-.treatments-section {
-    background: #F1EEE8;
-    padding: 80px 25px 100px;
-}
+        a {
+            text-decoration: none;
+        }
 
-.treatments-container {
-    max-width: 1100px;
-    margin: auto;
-}
 
-.section-heading {
-    text-align: center;
-    margin-bottom: 55px;
-}
+        /* HEADER */
 
-.section-heading h2 {
-    font-family: Georgia, serif;
-    font-size: 40px;
-    font-weight: normal;
-    color: #5A4A48;
-    margin-bottom: 15px;
-}
+        header {
+            padding: 20px 60px;
+            border-bottom: 1px solid #DDD8D2;
 
-.section-heading p {
-    max-width: 680px;
-    margin: auto;
-    color: #5D6761;
-    font-size: 16px;
-    line-height: 1.9;
-}
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
+            background: #FAF7F2;
 
-/* =========================
-   TREATMENT GRID
-========================= */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-.treatment-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
 
+        .logo {
+            font-size: 21px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #29483F;
+        }
 
-/* =========================
-   TREATMENT CARD
-========================= */
 
-.treatment-card {
-    background: #FAF7F2;
+        nav {
+            display: flex;
+            gap: 30px;
+        }
 
-    padding: 35px 30px 32px;
 
-    border-top: 3px solid transparent;
+        nav a {
+            color: #29483F;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
 
-    transition: all 0.3s ease;
 
-    display: flex;
-    flex-direction: column;
+        nav a:hover {
+            color: #D8A6A1;
+        }
 
-    min-height: 310px;
 
-    color: #29483F;
+        /* HERO */
 
-    cursor: pointer;
+        .treatment-hero {
+            max-width: 900px;
+            margin: auto;
 
-    position: relative;
-}
+            padding: 100px 25px 75px;
 
+            text-align: center;
+        }
 
-/* HOVER */
 
-.treatment-card:hover {
-    transform: translateY(-7px);
+        .eyebrow {
+            color: #7F9C8D;
 
-    border-top-color: #D8A6A1;
+            font-size: 12px;
 
-    box-shadow: 0 15px 40px rgba(41, 72, 63, 0.12);
-}
+            letter-spacing: 4px;
 
+            text-transform: uppercase;
 
-/* ICON */
+            margin-bottom: 20px;
+        }
 
-.treatment-icon {
-    font-size: 30px;
-    margin-bottom: 18px;
-}
 
+        h1 {
+            font-family: Georgia, serif;
 
-/* TITLE */
+            font-size: 58px;
 
-.treatment-card h3 {
-    font-family: Georgia, serif;
+            line-height: 1.2;
 
-    color: #5A4A48;
+            font-weight: 600;
 
-    font-size: 25px;
+            color: #5A4A48;
 
-    font-weight: normal;
+            margin-bottom: 25px;
+        }
 
-    line-height: 1.3;
 
-    margin-bottom: 12px;
-}
+        .hero-intro {
+            max-width: 700px;
 
+            margin: auto;
 
-/* DESCRIPTION */
+            color: #5D6761;
 
-.treatment-card p {
-    color: #65706A;
+            font-size: 18px;
 
-    font-size: 14px;
+            line-height: 1.9;
+        }
 
-    line-height: 1.8;
 
-    margin-bottom: 20px;
-}
+        /* TREATMENTS SECTION */
 
+        .treatments-section {
+            background: #F1EEE8;
 
-/* SMALL NOTE */
+            padding: 80px 25px 100px;
+        }
 
-.treatment-note {
-    color: #7F9C8D;
 
-    font-size: 11px;
+        .treatments-container {
+            max-width: 1100px;
 
-    letter-spacing: 1px;
+            margin: auto;
+        }
 
-    text-transform: uppercase;
 
-    margin-top: auto;
+        .section-heading {
+            text-align: center;
 
-    margin-bottom: 12px;
-}
+            margin-bottom: 55px;
+        }
 
 
-/* CLICKABLE LINK */
+        .section-heading h2 {
+            font-family: Georgia, serif;
 
-.treatment-link {
-    display: inline-block;
+            font-size: 40px;
 
-    align-self: flex-start;
+            font-weight: normal;
 
-    color: #29483F;
+            color: #5A4A48;
 
-    font-size: 11px;
+            margin-bottom: 15px;
+        }
 
-    letter-spacing: 1.8px;
 
-    text-transform: uppercase;
+        .section-heading p {
+            max-width: 680px;
 
-    border-bottom: 1px solid #D8A6A1;
+            margin: auto;
 
-    padding-bottom: 4px;
+            color: #5D6761;
 
-    transition: 0.3s ease;
-}
+            font-size: 16px;
 
+            line-height: 1.9;
+        }
 
-.treatment-card:hover .treatment-link {
-    color: #D8A6A1;
-}
 
+        /* TREATMENT GRID */
 
-/* =========================
-   UNDERSTANDING SECTION
-========================= */
+        .treatment-grid {
+            display: grid;
 
-.understanding-section {
-    max-width: 900px;
+            grid-template-columns: repeat(3, 1fr);
 
-    margin: 80px auto 0;
+            gap: 25px;
+        }
 
-    padding: 55px 45px;
 
-    background: #FAF7F2;
+        /* CLICKABLE TREATMENT CARD */
 
-    border-left: 4px solid #D8A6A1;
+        .treatment-card {
+            background: #FAF7F2;
 
-    text-align: center;
-}
+            padding: 35px 30px 32px;
 
-.understanding-section h2 {
-    font-family: Georgia, serif;
+            border-top: 3px solid transparent;
 
-    color: #5A4A48;
+            transition: 0.3s ease;
 
-    font-size: 35px;
+            display: flex;
 
-    font-weight: normal;
+            flex-direction: column;
 
-    margin-bottom: 18px;
-}
+            min-height: 300px;
 
-.understanding-section p {
-    color: #5D6761;
+            color: inherit;
 
-    font-size: 16px;
+            cursor: pointer;
+        }
 
-    line-height: 1.9;
 
-    max-width: 720px;
+        .treatment-card:hover {
+            transform: translateY(-5px);
 
-    margin: auto;
-}
+            border-top-color: #D8A6A1;
 
+            box-shadow: 0 15px 40px rgba(41, 72, 63, 0.12);
+        }
 
-/* =========================
-   QUESTION CTA
-========================= */
 
-.question-section {
-    padding: 90px 25px;
+        .treatment-icon {
+            font-size: 30px;
 
-    text-align: center;
+            margin-bottom: 18px;
+        }
 
-    background: #FAF7F2;
-}
 
-.question-section h2 {
-    font-family: Georgia, serif;
+        .treatment-card h3 {
+            font-family: Georgia, serif;
 
-    color: #5A4A48;
+            color: #5A4A48;
 
-    font-size: 38px;
+            font-size: 25px;
 
-    font-weight: normal;
+            font-weight: normal;
 
-    margin-bottom: 15px;
-}
+            line-height: 1.3;
 
-.question-section p {
-    max-width: 650px;
+            margin-bottom: 12px;
+        }
 
-    margin: auto;
 
-    color: #5D6761;
+        .treatment-card p {
+            color: #65706A;
 
-    font-size: 16px;
+            font-size: 14px;
 
-    line-height: 1.9;
-}
+            line-height: 1.8;
 
-.question-button {
-    display: inline-block;
+            margin-bottom: 15px;
+        }
 
-    margin-top: 28px;
 
-    background: #29483F;
+        .treatment-note {
+            margin-top: auto;
 
-    color: #FAF7F2;
+            color: #7F9C8D;
 
-    padding: 14px 28px;
+            font-size: 11px;
 
-    font-size: 12px;
+            letter-spacing: 1px;
 
-    letter-spacing: 2px;
+            text-transform: uppercase;
+        }
 
-    text-transform: uppercase;
 
-    transition: 0.3s ease;
-}
+        .learn-more {
+            margin-top: 14px;
 
-.question-button:hover {
-    background: #D8A6A1;
+            color: #29483F;
 
-    color: #29483F;
-}
+            font-size: 12px;
 
+            letter-spacing: 1px;
 
-/* =========================
-   DISCLAIMER
-========================= */
+            text-transform: uppercase;
 
-.disclaimer {
-    max-width: 800px;
+            font-weight: bold;
+        }
 
-    margin: auto;
 
-    padding: 20px 25px 75px;
+        .treatment-card:hover .learn-more {
+            color: #D8A6A1;
+        }
 
-    text-align: center;
-}
 
-.disclaimer p {
-    color: #7A817C;
+        /* UNDERSTANDING SECTION */
 
-    font-size: 13px;
+        .understanding-section {
+            max-width: 900px;
 
-    line-height: 1.8;
-}
+            margin: 80px auto 0;
 
-.disclaimer a {
-    color: #29483F;
+            padding: 55px 45px;
 
-    border-bottom: 1px solid #D8A6A1;
-}
+            background: #FAF7F2;
 
+            border-left: 4px solid #D8A6A1;
 
-/* =========================
-   FOOTER
-========================= */
+            text-align: center;
+        }
 
-footer {
-    background: #D8A6A1;
 
-    color: #29483F;
+        .understanding-section h2 {
+            font-family: Georgia, serif;
 
-    padding: 45px 25px;
+            color: #5A4A48;
 
-    text-align: center;
-}
+            font-size: 35px;
 
-footer strong {
-    font-size: 17px;
+            font-weight: normal;
 
-    letter-spacing: 2px;
-}
+            margin-bottom: 18px;
+        }
 
-footer p {
-    margin-top: 8px;
 
-    font-size: 14px;
-}
+        .understanding-section p {
+            color: #5D6761;
 
-.footer-links {
-    margin-top: 20px;
+            font-size: 16px;
 
-    display: flex;
+            line-height: 1.9;
 
-    justify-content: center;
+            max-width: 720px;
 
-    flex-wrap: wrap;
+            margin: auto;
+        }
 
-    gap: 20px;
-}
 
-.footer-links a {
-    color: #29483F;
+        /* QUESTION CTA */
 
-    font-size: 12px;
+        .question-section {
+            padding: 90px 25px;
 
-    letter-spacing: 1px;
+            text-align: center;
 
-    text-transform: uppercase;
-}
+            background: #FAF7F2;
+        }
 
-.footer-links a:hover {
-    color: #FAF7F2;
-}
 
+        .question-section h2 {
+            font-family: Georgia, serif;
 
-/* =========================
-   MOBILE
-========================= */
+            color: #5A4A48;
 
-@media(max-width:900px) {
+            font-size: 38px;
 
-    header {
-        padding: 20px 25px;
+            font-weight: normal;
 
-        flex-direction: column;
+            margin-bottom: 15px;
+        }
 
-        gap: 15px;
-    }
 
-    .logo {
-        font-size: 17px;
-    }
+        .question-section p {
+            max-width: 650px;
 
-    nav {
-        justify-content: center;
-        gap: 12px 18px;
-    }
+            margin: auto;
 
-    nav a {
-        font-size: 11px;
-    }
+            color: #5D6761;
 
-    .treatment-hero {
-        padding: 70px 25px 55px;
-    }
+            font-size: 16px;
 
-    h1 {
-        font-size: 43px;
-    }
+            line-height: 1.9;
+        }
 
-    .hero-intro {
-        font-size: 16px;
-    }
 
-    .treatments-section {
-        padding: 60px 20px 75px;
-    }
+        .question-button {
+            display: inline-block;
 
-    .section-heading h2 {
-        font-size: 32px;
-    }
+            margin-top: 28px;
 
-    .treatment-grid {
-        grid-template-columns: 1fr 1fr;
+            background: #29483F;
 
-        gap: 20px;
-    }
+            color: #FAF7F2;
 
-    .treatment-card {
-        min-height: 310px;
+            padding: 14px 28px;
 
-        padding: 30px 25px;
-    }
+            font-size: 12px;
 
-    .understanding-section {
-        margin-top: 55px;
+            letter-spacing: 2px;
 
-        padding: 40px 25px;
-    }
+            text-transform: uppercase;
 
-    .understanding-section h2 {
-        font-size: 29px;
-    }
+            transition: 0.3s ease;
+        }
 
-    .question-section {
-        padding: 70px 25px;
-    }
 
-    .question-section h2 {
-        font-size: 31px;
-    }
+        .question-button:hover {
+            background: #D8A6A1;
 
-    .footer-links {
-        gap: 12px 18px;
-    }
+            color: #29483F;
+        }
 
-}
 
+        /* DISCLAIMER */
 
-@media(max-width:550px) {
+        .disclaimer {
+            max-width: 800px;
 
-    .treatment-grid {
-        grid-template-columns: 1fr;
-    }
+            margin: auto;
 
-    .treatment-card {
-        min-height: auto;
-    }
+            padding: 20px 25px 75px;
 
-}
+            text-align: center;
+        }
 
-</style>
+
+        .disclaimer p {
+            color: #7A817C;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+
+        .disclaimer a {
+            color: #29483F;
+
+            border-bottom: 1px solid #D8A6A1;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #D8A6A1;
+
+            color: #29483F;
+
+            padding: 45px 25px;
+
+            text-align: center;
+        }
+
+
+        footer strong {
+            font-size: 17px;
+
+            letter-spacing: 2px;
+        }
+
+
+        footer p {
+            margin-top: 8px;
+
+            font-size: 14px;
+        }
+
+
+        .footer-links {
+            margin-top: 20px;
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 20px;
+        }
+
+
+        .footer-links a {
+            color: #29483F;
+
+            font-size: 12px;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+
+        .footer-links a:hover {
+            color: #FAF7F2;
+        }
+
+
+        /* MOBILE */
+
+        @media(max-width:800px) {
+
+            header {
+                padding: 20px 25px;
+            }
+
+
+            nav {
+                display: none;
+            }
+
+
+            .logo {
+                font-size: 17px;
+            }
+
+
+            .treatment-hero {
+                padding: 70px 25px 55px;
+            }
+
+
+            h1 {
+                font-size: 43px;
+            }
+
+
+            .hero-intro {
+                font-size: 16px;
+            }
+
+
+            .treatments-section {
+                padding: 60px 20px 75px;
+            }
+
+
+            .section-heading h2 {
+                font-size: 32px;
+            }
+
+
+            .treatment-grid {
+                grid-template-columns: 1fr;
+
+                gap: 20px;
+            }
+
+
+            .treatment-card {
+                min-height: auto;
+
+                padding: 30px 25px;
+            }
+
+
+            .understanding-section {
+                margin-top: 55px;
+
+                padding: 40px 25px;
+            }
+
+
+            .understanding-section h2 {
+                font-size: 29px;
+            }
+
+
+            .question-section {
+                padding: 70px 25px;
+            }
+
+
+            .question-section h2 {
+                font-size: 31px;
+            }
+
+
+            .footer-links {
+                gap: 12px 18px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -596,9 +585,7 @@ footer p {
 <body>
 
 
-<!-- =========================
-     HEADER
-========================= -->
+<!-- HEADER -->
 
 <header>
 
@@ -631,9 +618,7 @@ footer p {
 
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <section class="treatment-hero">
 
@@ -641,10 +626,12 @@ footer p {
         Dental Treatments
     </div>
 
+
     <h1>
         Dental treatment,<br>
         explained simply.
     </h1>
+
 
     <p class="hero-intro">
 
@@ -659,9 +646,7 @@ footer p {
 
 
 
-<!-- =========================
-     TREATMENTS
-========================= -->
+<!-- TREATMENTS -->
 
 <section class="treatments-section">
 
@@ -674,9 +659,11 @@ footer p {
                 Explore Treatments
             </div>
 
+
             <h2>
                 Start with the treatment you're curious about.
             </h2>
+
 
             <p>
 
@@ -694,11 +681,9 @@ footer p {
         <div class="treatment-grid">
 
 
-            <!-- =========================
-                 FILLINGS
-            ========================= -->
+            <!-- 1. FILLINGS -->
 
-            <a href="#" class="treatment-card">
+            <a href="fillings.html" class="treatment-card">
 
                 <div class="treatment-icon">
                     🦷
@@ -720,17 +705,15 @@ footer p {
                     Learn about cavity treatment
                 </div>
 
-                <span class="treatment-link">
-                    Explore Treatment →
-                </span>
+                <div class="learn-more">
+                    Read more →
+                </div>
 
             </a>
 
 
 
-            <!-- =========================
-                 ROOT CANAL
-            ========================= -->
+            <!-- 2. ROOT CANAL -->
 
             <a href="root-canal.html" class="treatment-card">
 
@@ -755,19 +738,17 @@ footer p {
                     Tooth-preserving treatment
                 </div>
 
-                <span class="treatment-link">
-                    Explore Treatment →
-                </span>
+                <div class="learn-more">
+                    Read more →
+                </div>
 
             </a>
 
 
 
-            <!-- =========================
-                 CROWNS
-            ========================= -->
+            <!-- 3. CROWNS -->
 
-            <a href="#" class="treatment-card">
+            <a href="crowns.html" class="treatment-card">
 
                 <div class="treatment-icon">
                     👑
@@ -790,19 +771,17 @@ footer p {
                     Protect and restore
                 </div>
 
-                <span class="treatment-link">
-                    Explore Treatment →
-                </span>
+                <div class="learn-more">
+                    Read more →
+                </div>
 
             </a>
 
 
 
-            <!-- =========================
-                 EXTRACTION
-            ========================= -->
+            <!-- 4. EXTRACTION -->
 
-            <a href="#" class="treatment-card">
+            <a href="extraction.html" class="treatment-card">
 
                 <div class="treatment-icon">
                     🦷
@@ -824,17 +803,15 @@ footer p {
                     When removal may be necessary
                 </div>
 
-                <span class="treatment-link">
-                    Explore Treatment →
-                </span>
+                <div class="learn-more">
+                    Read more →
+                </div>
 
             </a>
 
 
 
-            <!-- =========================
-                 SCALING
-            ========================= -->
+            <!-- 5. SCALING -->
 
             <a href="scaling-treatment.html" class="treatment-card">
 
@@ -858,19 +835,17 @@ footer p {
                     Gum and oral hygiene
                 </div>
 
-                <span class="treatment-link">
-                    Explore Treatment →
-                </span>
+                <div class="learn-more">
+                    Read more →
+                </div>
 
             </a>
 
 
 
-            <!-- =========================
-                 WHITENING
-            ========================= -->
+            <!-- 6. WHITENING -->
 
-            <a href="#" class="treatment-card">
+            <a href="whitening.html" class="treatment-card">
 
                 <div class="treatment-icon">
                     ✨
@@ -892,19 +867,17 @@ footer p {
                     Cosmetic dental treatment
                 </div>
 
-                <span class="treatment-link">
-                    Explore Treatment →
-                </span>
+                <div class="learn-more">
+                    Read more →
+                </div>
 
             </a>
 
 
 
-            <!-- =========================
-                 BRIDGES
-            ========================= -->
+            <!-- 7. BRIDGES -->
 
-            <a href="#" class="treatment-card">
+            <a href="bridges.html" class="treatment-card">
 
                 <div class="treatment-icon">
                     🦷
@@ -926,19 +899,17 @@ footer p {
                     Replacing missing teeth
                 </div>
 
-                <span class="treatment-link">
-                    Explore Treatment →
-                </span>
+                <div class="learn-more">
+                    Read more →
+                </div>
 
             </a>
 
 
 
-            <!-- =========================
-                 IMPLANTS
-            ========================= -->
+            <!-- 8. IMPLANTS -->
 
-            <a href="#" class="treatment-card">
+            <a href="implants.html" class="treatment-card">
 
                 <div class="treatment-icon">
                     🔩
@@ -961,19 +932,17 @@ footer p {
                     Tooth replacement option
                 </div>
 
-                <span class="treatment-link">
-                    Explore Treatment →
-                </span>
+                <div class="learn-more">
+                    Read more →
+                </div>
 
             </a>
 
 
 
-            <!-- =========================
-                 WISDOM TEETH
-            ========================= -->
+            <!-- 9. WISDOM TEETH -->
 
-            <a href="#" class="treatment-card">
+            <a href="wisdom-teeth.html" class="treatment-card">
 
                 <div class="treatment-icon">
                     🦷
@@ -996,19 +965,17 @@ footer p {
                     Not every wisdom tooth needs removal
                 </div>
 
-                <span class="treatment-link">
-                    Explore Treatment →
-                </span>
+                <div class="learn-more">
+                    Read more →
+                </div>
 
             </a>
 
 
 
-            <!-- =========================
-                 GUM TREATMENT
-            ========================= -->
+            <!-- 10. GUM TREATMENT -->
 
-            <a href="#" class="treatment-card">
+            <a href="gum-treatment.html" class="treatment-card">
 
                 <div class="treatment-icon">
                     🌿
@@ -1030,19 +997,17 @@ footer p {
                     Protecting supporting tissues
                 </div>
 
-                <span class="treatment-link">
-                    Explore Treatment →
-                </span>
+                <div class="learn-more">
+                    Read more →
+                </div>
 
             </a>
 
 
 
-            <!-- =========================
-                 DENTURES
-            ========================= -->
+            <!-- 11. DENTURES -->
 
-            <a href="#" class="treatment-card">
+            <a href="dentures.html" class="treatment-card">
 
                 <div class="treatment-icon">
                     😁
@@ -1064,19 +1029,17 @@ footer p {
                     Removable tooth replacement
                 </div>
 
-                <span class="treatment-link">
-                    Explore Treatment →
-                </span>
+                <div class="learn-more">
+                    Read more →
+                </div>
 
             </a>
 
 
 
-            <!-- =========================
-                 DENTAL SEALANTS
-            ========================= -->
+            <!-- 12. DENTAL SEALANTS -->
 
-            <a href="#" class="treatment-card">
+            <a href="sealants.html" class="treatment-card">
 
                 <div class="treatment-icon">
                     🛡️
@@ -1098,9 +1061,9 @@ footer p {
                     Preventive dental care
                 </div>
 
-                <span class="treatment-link">
-                    Explore Treatment →
-                </span>
+                <div class="learn-more">
+                    Read more →
+                </div>
 
             </a>
 
@@ -1109,9 +1072,7 @@ footer p {
 
 
 
-        <!-- =========================
-             UNDERSTANDING BOX
-        ========================= -->
+        <!-- UNDERSTANDING BOX -->
 
         <div class="understanding-section">
 
@@ -1119,9 +1080,11 @@ footer p {
                 Important to remember
             </div>
 
+
             <h2>
                 Not every dental problem needs the same treatment.
             </h2>
+
 
             <p>
 
@@ -1142,9 +1105,7 @@ footer p {
 
 
 
-<!-- =========================
-     QUESTION CTA
-========================= -->
+<!-- QUESTION CTA -->
 
 <section class="question-section">
 
@@ -1152,9 +1113,11 @@ footer p {
         Still wondering?
     </div>
 
+
     <h2>
         Have a dental question?
     </h2>
+
 
     <p>
 
@@ -1163,6 +1126,7 @@ footer p {
         directly.
 
     </p>
+
 
     <a
         href="questions.html"
@@ -1175,9 +1139,7 @@ footer p {
 
 
 
-<!-- =========================
-     DISCLAIMER
-========================= -->
+<!-- DISCLAIMER -->
 
 <section class="disclaimer">
 
@@ -1188,6 +1150,7 @@ footer p {
         examination, diagnosis or personalised professional advice.
 
     </p>
+
 
     <p style="margin-top: 12px;">
 
@@ -1201,9 +1164,7 @@ footer p {
 
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -1211,9 +1172,11 @@ footer p {
         DR. ANUSHKA CHOUDHARY
     </strong>
 
+
     <p>
         Dentistry, explained simply.
     </p>
+
 
     <div class="footer-links">
 
@@ -1243,3 +1206,4 @@ footer p {
 </body>
 
 </html>
+```
