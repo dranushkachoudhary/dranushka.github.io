@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +12,7 @@
     <title>Dentures Explained | Dr. Anushka Choudhary, BDS</title>
 
     <meta name="description"
-    content="Understand dentures in simple language. Learn what dentures are, when they may be recommended, different types of dentures and what to expect with Dr. Anushka Choudhary, BDS.">
+    content="What are dentures? Learn about complete, partial and implant-supported dentures, when they may be recommended, how dentures feel, denture care and common questions explained simply by Dr. Anushka Choudhary, BDS.">
 
     <meta name="author" content="Dr. Anushka Choudhary">
 
@@ -26,6 +25,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
         }
 
 
@@ -42,10 +46,12 @@
         }
 
 
-        /* HEADER */
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
-            padding: 20px 60px;
+            padding: 20px 40px;
             border-bottom: 1px solid #DDD8D2;
 
             display: flex;
@@ -57,28 +63,36 @@
             position: sticky;
             top: 0;
             z-index: 100;
+
+            gap: 30px;
         }
 
 
         .logo {
-            font-size: 21px;
+            font-size: 20px;
             letter-spacing: 2px;
             font-weight: bold;
             color: #29483F;
+            white-space: nowrap;
         }
 
 
         nav {
             display: flex;
-            gap: 30px;
+            gap: 18px;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
         }
 
 
         nav a {
             color: #29483F;
-            font-size: 13px;
-            letter-spacing: 1px;
+            font-size: 12px;
+            letter-spacing: 0.8px;
             text-transform: uppercase;
+            white-space: nowrap;
+            transition: 0.3s ease;
         }
 
 
@@ -87,13 +101,15 @@
         }
 
 
-        /* HERO */
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
             max-width: 900px;
             margin: auto;
 
-            padding: 100px 25px 75px;
+            padding: 100px 25px 80px;
 
             text-align: center;
         }
@@ -117,7 +133,7 @@
 
             font-size: 58px;
 
-            line-height: 1.2;
+            line-height: 1.15;
 
             font-weight: 600;
 
@@ -140,7 +156,20 @@
         }
 
 
-        /* CONTENT */
+        .article-meta {
+            margin-top: 25px;
+
+            color: #7F9C8D;
+
+            font-size: 12px;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* =========================
+           CONTENT
+        ========================= */
 
         .content-section {
             background: #F1EEE8;
@@ -159,22 +188,41 @@
         .content-box {
             background: #FAF7F2;
 
-            padding: 50px;
+            padding: 45px;
 
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
 
         .content-box h2 {
             font-family: Georgia, serif;
 
+            color: #5A4A48;
+
             font-size: 34px;
 
             font-weight: normal;
 
+            line-height: 1.3;
+
+            margin-bottom: 18px;
+        }
+
+
+        .content-box h3 {
+            font-family: Georgia, serif;
+
             color: #5A4A48;
 
-            margin-bottom: 20px;
+            font-size: 25px;
+
+            font-weight: normal;
+
+            line-height: 1.4;
+
+            margin-top: 30px;
+
+            margin-bottom: 12px;
         }
 
 
@@ -194,34 +242,38 @@
         }
 
 
-        /* LIST */
+        /* =========================
+           LIST
+        ========================= */
 
         .simple-list {
-            margin-top: 20px;
+            margin: 15px 0 10px 22px;
 
-            padding-left: 22px;
+            color: #5D6761;
         }
 
 
         .simple-list li {
-            color: #5D6761;
+            margin-bottom: 12px;
+
+            padding-left: 5px;
 
             font-size: 16px;
 
             line-height: 1.9;
-
-            margin-bottom: 12px;
         }
 
 
-        /* HIGHLIGHT */
+        /* =========================
+           HIGHLIGHT
+        ========================= */
 
         .highlight {
-            background: #F8EDEC;
+            background: #F1EEE8;
 
             border-left: 4px solid #D8A6A1;
 
-            padding: 30px;
+            padding: 28px 30px;
 
             margin: 30px 0;
         }
@@ -236,34 +288,197 @@
 
             font-size: 23px;
 
+            line-height: 1.4;
+
             margin-bottom: 10px;
         }
 
 
         .highlight p {
             margin-bottom: 0;
+
+            color: #5D6761;
         }
 
 
-        /* CTA */
+        /* =========================
+           DENTURE TYPES
+        ========================= */
+
+        .type-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 18px;
+
+            margin-top: 30px;
+        }
+
+
+        .type-card {
+            background: #F1EEE8;
+
+            padding: 25px 22px;
+
+            border-top: 3px solid #7F9C8D;
+        }
+
+
+        .type-card h3 {
+            margin-top: 0;
+
+            font-size: 21px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .type-card p {
+            font-size: 14px;
+
+            line-height: 1.8;
+
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           STEPS
+        ========================= */
+
+        .steps {
+            margin-top: 25px;
+        }
+
+
+        .step {
+            display: flex;
+
+            gap: 22px;
+
+            padding: 24px 0;
+
+            border-bottom: 1px solid #DDD8D2;
+        }
+
+
+        .step:last-child {
+            border-bottom: none;
+
+            padding-bottom: 0;
+        }
+
+
+        .step-number {
+            min-width: 42px;
+
+            height: 42px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: #D8A6A1;
+
+            color: #29483F;
+
+            font-family: Georgia, serif;
+
+            font-size: 17px;
+        }
+
+
+        .step-content h3 {
+            margin: 0 0 7px;
+
+            font-size: 22px;
+        }
+
+
+        .step-content p {
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           FAQ
+        ========================= */
+
+        .faq-section {
+            margin-top: 30px;
+        }
+
+
+        .faq {
+            background: #F1EEE8;
+
+            padding: 25px 28px;
+
+            margin-bottom: 15px;
+
+            border-left: 3px solid #D8A6A1;
+        }
+
+
+        .faq h3 {
+            font-family: Georgia, serif;
+
+            color: #5A4A48;
+
+            font-size: 21px;
+
+            font-weight: normal;
+
+            line-height: 1.4;
+
+            margin-bottom: 10px;
+        }
+
+
+        .faq p {
+            color: #65706A;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
 
         .question-section {
             padding: 90px 25px;
 
             text-align: center;
 
-            background: #FAF7F2;
+            background: #29483F;
+
+            color: #FAF7F2;
+        }
+
+
+        .question-section .eyebrow {
+            color: #D8A6A1;
         }
 
 
         .question-section h2 {
             font-family: Georgia, serif;
 
-            color: #5A4A48;
+            color: #FAF7F2;
 
             font-size: 38px;
 
             font-weight: normal;
+
+            line-height: 1.35;
 
             margin-bottom: 15px;
         }
@@ -274,7 +489,7 @@
 
             margin: auto;
 
-            color: #5D6761;
+            color: #E7E4DE;
 
             font-size: 16px;
 
@@ -287,7 +502,7 @@
 
             margin-top: 28px;
 
-            background: #29483F;
+            border: 1px solid #D8A6A1;
 
             color: #FAF7F2;
 
@@ -310,14 +525,16 @@
         }
 
 
-        /* DISCLAIMER */
+        /* =========================
+           DISCLAIMER
+        ========================= */
 
         .disclaimer {
             max-width: 800px;
 
             margin: auto;
 
-            padding: 20px 25px 75px;
+            padding: 55px 25px 75px;
 
             text-align: center;
         }
@@ -339,7 +556,9 @@
         }
 
 
-        /* FOOTER */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             background: #D8A6A1;
@@ -395,7 +614,9 @@
         }
 
 
-        /* MOBILE */
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media(max-width:800px) {
 
@@ -444,6 +665,37 @@
             }
 
 
+            .content-box h3 {
+                font-size: 23px;
+            }
+
+
+            .content-box p,
+            .simple-list li {
+                font-size: 15px;
+            }
+
+
+            .highlight {
+                padding: 23px 24px;
+            }
+
+
+            .highlight strong {
+                font-size: 21px;
+            }
+
+
+            .type-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .step {
+                gap: 15px;
+            }
+
+
             .question-section {
                 padding: 70px 25px;
             }
@@ -468,7 +720,9 @@
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -501,18 +755,20 @@
 
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
     <div class="eyebrow">
-        Dentures
+        Tooth Replacement
     </div>
 
 
     <h1>
-        Replacing missing teeth,<br>
-        simply explained.
+        Dentures,<br>
+        explained simply.
     </h1>
 
 
@@ -524,11 +780,18 @@
 
     </p>
 
+
+    <div class="article-meta">
+        Dentistry · Patient Education · August 2026
+    </div>
+
 </section>
 
 
 
-<!-- CONTENT -->
+<!-- =========================
+     CONTENT
+========================= -->
 
 <section class="content-section">
 
@@ -552,20 +815,38 @@
             <p>
 
                 Dentures are removable dental appliances designed to
-                replace missing teeth and, depending on the type, some
-                of the surrounding oral structures.
+                replace missing teeth. Depending on their design, they
+                can replace several missing teeth or all of the teeth
+                in an arch.
 
             </p>
 
 
             <p>
 
-                They can be used to replace several missing teeth or,
-                in some situations, all of the teeth in one or both
-                arches.
+                They are made to fit the mouth and can help restore
+                functions such as chewing and speech while also
+                supporting the appearance of the smile.
 
             </p>
 
+
+            <div class="highlight">
+
+                <strong>
+                    Dentures are removable — but they still require
+                    professional planning and proper care.
+                </strong>
+
+
+                <p>
+
+                    A good fit is important for comfort, function and
+                    the health of the tissues supporting the denture.
+
+                </p>
+
+            </div>
 
         </div>
 
@@ -587,33 +868,67 @@
 
             <p>
 
-                The type of denture recommended depends on the number
-                of missing teeth, the condition of the remaining teeth,
-                the gums and jawbone, and individual needs.
+                The appropriate type depends on the number of missing
+                teeth, the condition of the remaining teeth and gums,
+                bone support and the individual's overall oral health.
 
             </p>
 
 
-            <ul class="simple-list">
+            <div class="type-grid">
 
-                <li>
-                    <strong>Complete dentures</strong> can replace all
-                    teeth in an arch.
-                </li>
 
-                <li>
-                    <strong>Partial dentures</strong> can replace some
-                    missing teeth when other natural teeth remain.
-                </li>
+                <div class="type-card">
 
-                <li>
-                    <strong>Implant-supported dentures</strong> use
-                    dental implants to provide additional support and
-                    stability in suitable patients.
-                </li>
+                    <h3>
+                        Complete dentures
+                    </h3>
 
-            </ul>
+                    <p>
 
+                        Designed to replace all of the teeth in an
+                        upper arch, lower arch or both arches.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="type-card">
+
+                    <h3>
+                        Partial dentures
+                    </h3>
+
+                    <p>
+
+                        Used when some natural teeth remain and
+                        additional teeth need to be replaced.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="type-card">
+
+                    <h3>
+                        Implant-supported dentures
+                    </h3>
+
+                    <p>
+
+                        Supported by dental implants to provide
+                        additional stability in suitable cases.
+
+                    </p>
+
+                </div>
+
+
+            </div>
 
         </div>
 
@@ -636,8 +951,8 @@
             <p>
 
                 Dentures may be considered when multiple teeth are
-                missing or when remaining teeth cannot be predictably
-                maintained.
+                missing or when some or all remaining teeth cannot
+                be predictably maintained.
 
             </p>
 
@@ -654,31 +969,196 @@
             <div class="highlight">
 
                 <strong>
-                    Dentures are not the only option.
+                    Dentures are not the only tooth-replacement option.
                 </strong>
 
 
                 <p>
 
-                    Depending on the individual situation, other tooth
-                    replacement options such as bridges or dental
-                    implants may also be considered.
+                    Depending on the situation, alternatives may
+                    include dental bridges, implants or combinations
+                    of different treatments.
 
                 </p>
 
             </div>
 
+        </div>
+
+
+
+        <!-- PROCEDURE -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                Getting dentures
+            </div>
+
+
+            <h2>
+                What happens when you get dentures?
+            </h2>
+
+
+            <p>
+
+                Getting dentures usually involves several stages.
+                The exact process depends on the type of denture
+                and your individual dental needs.
+
+            </p>
+
+
+            <div class="steps">
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        1
+                    </div>
+
+
+                    <div class="step-content">
+
+                        <h3>
+                            Examination and planning
+                        </h3>
+
+                        <p>
+
+                            Your dentist examines your mouth, remaining
+                            teeth, gums and supporting tissues and
+                            discusses suitable tooth-replacement options.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+
+                    <div class="step-content">
+
+                        <h3>
+                            Impressions or digital records
+                        </h3>
+
+                        <p>
+
+                            Measurements, impressions or digital scans
+                            may be taken to help create a denture that
+                            fits your mouth.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+
+                    <div class="step-content">
+
+                        <h3>
+                            Try-in and adjustments
+                        </h3>
+
+                        <p>
+
+                            Depending on the type of denture, trial
+                            stages may be used to assess fit, appearance,
+                            speech and the relationship between the jaws.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        4
+                    </div>
+
+
+                    <div class="step-content">
+
+                        <h3>
+                            Final denture
+                        </h3>
+
+                        <p>
+
+                            The completed denture is fitted and your
+                            dentist checks its comfort, stability and
+                            function.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        5
+                    </div>
+
+
+                    <div class="step-content">
+
+                        <h3>
+                            Follow-up
+                        </h3>
+
+                        <p>
+
+                            Follow-up appointments may be needed to
+                            make adjustments and ensure the denture
+                            remains comfortable.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
 
         </div>
 
 
 
-        <!-- FIT -->
+        <!-- ADJUSTMENT -->
 
         <div class="content-box">
 
             <div class="eyebrow">
-                Getting used to dentures
+                Getting used to them
             </div>
 
 
@@ -689,22 +1169,28 @@
 
             <p>
 
-                New dentures can take some time to get used to.
-                During the adjustment period, some people may notice
-                changes in speech, chewing or how the appliance feels
-                in the mouth.
+                New dentures can feel unfamiliar at first. Some people
+                notice temporary changes in speech, chewing or how the
+                appliance feels in the mouth.
 
             </p>
 
 
             <p>
 
-                With time and practice, many people become more
-                comfortable using their dentures. Follow-up visits may
-                sometimes be needed to improve fit and comfort.
+                It can take time and practice to become comfortable
+                with eating and speaking while wearing a new denture.
 
             </p>
 
+
+            <p>
+
+                If a denture causes persistent soreness, slipping,
+                difficulty chewing or other problems, it should be
+                assessed by your dentist rather than simply tolerated.
+
+            </p>
 
         </div>
 
@@ -726,8 +1212,8 @@
 
             <p>
 
-                Proper care helps keep dentures clean and comfortable
-                and also supports good oral hygiene.
+                Proper care helps keep dentures clean and supports
+                the health of the mouth and any remaining natural teeth.
 
             </p>
 
@@ -735,29 +1221,37 @@
             <ul class="simple-list">
 
                 <li>
-                    Clean dentures regularly as advised by your dentist.
+                    Clean your dentures regularly according to your
+                    dentist's instructions.
                 </li>
 
                 <li>
-                    Handle them carefully to avoid dropping or damaging them.
+                    Clean your gums, tongue and palate gently as part
+                    of your daily oral hygiene routine.
                 </li>
 
                 <li>
-                    Keep the mouth and any remaining natural teeth clean.
+                    If natural teeth remain, continue brushing them
+                    and cleaning between them.
                 </li>
 
                 <li>
-                    Follow instructions regarding how and where to store
-                    the dentures when they are not being worn.
+                    Handle dentures carefully to reduce the risk of
+                    dropping or damaging them.
                 </li>
 
                 <li>
-                    Attend dental check-ups to assess the fit and condition
-                    of the dentures and oral tissues.
+                    Follow professional advice about storing the
+                    dentures when they are not being worn.
+                </li>
+
+                <li>
+                    Attend regular dental appointments so the fit,
+                    denture and oral tissues can be assessed.
+
                 </li>
 
             </ul>
-
 
         </div>
 
@@ -768,33 +1262,222 @@
         <div class="content-box">
 
             <div class="eyebrow">
-                Important to remember
+                An important point
             </div>
 
 
             <h2>
-                A denture should be comfortable and properly fitted.
+                Dentures can change over time.
             </h2>
 
 
             <p>
 
-                Dentures that become loose, uncomfortable or damaged
-                may need professional assessment. The shape of the
-                gums and supporting tissues can change over time, which
-                may affect how a denture fits.
+                The gums and supporting tissues underneath a denture
+                can change over time. As a result, a denture that was
+                once comfortable may gradually become loose or less
+                stable.
 
             </p>
 
 
             <p>
 
-                If you experience persistent soreness, difficulty
-                chewing or a change in fit, speak with your dentist
-                rather than continuing to use an uncomfortable appliance.
+                Your dentist may recommend an adjustment, repair,
+                relining or replacement depending on the condition
+                of the denture and the tissues underneath it.
 
             </p>
 
+
+            <div class="highlight">
+
+                <strong>
+                    Don't keep wearing a painful or poorly fitting denture.
+                </strong>
+
+
+                <p>
+
+                    Persistent rubbing, sores, instability or difficulty
+                    chewing should be discussed with your dentist.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FAQ -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                Common questions
+            </div>
+
+
+            <h2>
+                Denture FAQs.
+            </h2>
+
+
+            <div class="faq-section">
+
+
+                <div class="faq">
+
+                    <h3>
+                        Can you eat normally with dentures?
+                    </h3>
+
+                    <p>
+
+                        Many people can eat a wide range of foods with
+                        dentures, although it may take time to adjust.
+                        Starting with softer foods and gradually
+                        increasing the variety can help during the
+                        adjustment period.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Can dentures improve speech?
+                    </h3>
+
+                    <p>
+
+                        Dentures can help restore some speech function
+                        when teeth are missing, but new dentures may
+                        temporarily affect pronunciation while you
+                        become accustomed to them.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Can dentures become loose?
+                    </h3>
+
+                    <p>
+
+                        Yes. Changes in the gums and supporting tissues,
+                        wear of the denture or other factors can affect
+                        its fit over time. Your dentist can assess
+                        whether an adjustment or replacement is needed.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Are dentures a permanent solution?
+                    </h3>
+
+                    <p>
+
+                        Dentures are designed to provide long-term tooth
+                        replacement, but they may need maintenance,
+                        adjustment, repair or replacement over time.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Are implants better than dentures?
+                    </h3>
+
+                    <p>
+
+                        Neither option is automatically better for
+                        everyone. The most appropriate treatment depends
+                        on factors such as oral health, bone support,
+                        remaining teeth, general health, expectations
+                        and individual circumstances.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FINAL -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                Making the decision
+            </div>
+
+
+            <h2>
+                Are dentures right for you?
+            </h2>
+
+
+            <p>
+
+                There is no single tooth-replacement option that is
+                suitable for everyone. Your dentist will consider the
+                number and position of missing teeth, the condition of
+                the remaining teeth and gums, bone support, your bite
+                and your overall oral health.
+
+            </p>
+
+
+            <p>
+
+                A proper examination is important before deciding
+                whether dentures, bridges, implants or another
+                treatment option is most appropriate.
+
+            </p>
+
+
+            <div class="highlight">
+
+                <strong>
+                    The goal is not simply to replace teeth.
+                </strong>
+
+
+                <p>
+
+                    Good treatment planning should also consider comfort,
+                    function, oral health and how the restoration can
+                    be maintained over time.
+
+                </p>
+
+            </div>
 
         </div>
 
@@ -805,7 +1488,9 @@
 
 
 
-<!-- CTA -->
+<!-- =========================
+     QUESTION CTA
+========================= -->
 
 <section class="question-section">
 
@@ -822,7 +1507,8 @@
     <p>
 
         If you are considering tooth replacement or want to understand
-        your options better, you can ask your dental question directly.
+        your options better, you can submit your dental question
+        through the website.
 
     </p>
 
@@ -838,7 +1524,9 @@
 
 
 
-<!-- DISCLAIMER -->
+<!-- =========================
+     DISCLAIMER
+========================= -->
 
 <section class="disclaimer">
 
@@ -863,7 +1551,9 @@
 
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -905,4 +1595,3 @@
 </body>
 
 </html>
-```
