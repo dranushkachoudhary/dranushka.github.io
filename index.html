@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -257,13 +258,6 @@ h1 {
     gap: 18px;
 }
 
-
-/*
-   IMPORTANT:
-   The entire card is an <a>.
-   Therefore the complete card is clickable.
-*/
-
 .explore-card {
     background: #F1EEE8;
 
@@ -281,6 +275,8 @@ h1 {
     color: #29483F;
 
     cursor: pointer;
+
+    position: relative;
 }
 
 .explore-card:hover {
@@ -447,7 +443,7 @@ h1 {
 
 /*
    IMPORTANT:
-   Whole treatment card is clickable.
+   The COMPLETE card is a clickable link.
 */
 
 .treatment-card {
@@ -467,6 +463,10 @@ h1 {
     color: #29483F;
 
     cursor: pointer;
+
+    position: relative;
+
+    z-index: 1;
 }
 
 .treatment-card:hover {
@@ -880,7 +880,6 @@ footer p {
         DR. ANUSHKA CHOUDHARY
     </div>
 
-
     <nav>
 
         <a href="index.html">Home</a>
@@ -1001,17 +1000,11 @@ footer p {
         <div class="explore-grid">
 
 
-            <!-- SYMPTOMS -->
-
             <a href="symptoms.html" class="explore-card">
 
-                <div class="explore-icon">
-                    🩺
-                </div>
+                <div class="explore-icon">🩺</div>
 
-                <h3>
-                    Symptoms
-                </h3>
+                <h3>Symptoms</h3>
 
                 <p>
                     Understand common dental symptoms,
@@ -1026,18 +1019,11 @@ footer p {
             </a>
 
 
-
-            <!-- TREATMENTS -->
-
             <a href="treatments.html" class="explore-card">
 
-                <div class="explore-icon">
-                    🦷
-                </div>
+                <div class="explore-icon">🦷</div>
 
-                <h3>
-                    Treatments
-                </h3>
+                <h3>Treatments</h3>
 
                 <p>
                     Simple explanations of common dental
@@ -1052,18 +1038,11 @@ footer p {
             </a>
 
 
-
-            <!-- VISUAL GUIDES -->
-
             <a href="guides.html" class="explore-card">
 
-                <div class="explore-icon">
-                    👁️
-                </div>
+                <div class="explore-icon">👁️</div>
 
-                <h3>
-                    Visual Guides
-                </h3>
+                <h3>Visual Guides</h3>
 
                 <p>
                     Short visual explanations designed to
@@ -1078,18 +1057,11 @@ footer p {
             </a>
 
 
-
-            <!-- BLOG -->
-
             <a href="blog.html" class="explore-card">
 
-                <div class="explore-icon">
-                    📖
-                </div>
+                <div class="explore-icon">📖</div>
 
-                <h3>
-                    Dental Blog
-                </h3>
+                <h3>Dental Blog</h3>
 
                 <p>
                     Read simple, patient-friendly articles
@@ -1104,18 +1076,11 @@ footer p {
             </a>
 
 
-
-            <!-- QUESTIONS -->
-
             <a href="questions.html" class="explore-card">
 
-                <div class="explore-icon">
-                    💬
-                </div>
+                <div class="explore-icon">💬</div>
 
-                <h3>
-                    Ask Dr. Anushka
-                </h3>
+                <h3>Ask Dr. Anushka</h3>
 
                 <p>
                     Have a dental question you've always
@@ -1159,8 +1124,6 @@ footer p {
     <div class="blog-grid">
 
 
-        <!-- SCALING ARTICLE -->
-
         <article class="article-card">
 
             <a href="scaling.html">
@@ -1201,9 +1164,6 @@ footer p {
         </article>
 
 
-
-        <!-- BLEEDING GUMS -->
-
         <article class="article-card">
 
             <a href="gums-bleeding.html">
@@ -1243,9 +1203,6 @@ footer p {
 
         </article>
 
-
-
-        <!-- YELLOW TEETH -->
 
         <article class="article-card">
 
@@ -1310,7 +1267,6 @@ footer p {
 
     <div class="treatment-container">
 
-
         <div class="section-heading">
 
             <div class="eyebrow">
@@ -1328,12 +1284,13 @@ footer p {
 
 
             <!-- =========================
-                 SCALING
+                 DENTAL SCALING
             ========================= -->
 
             <a
-                href="scaling-treatment.html"
+                href="./scaling-treatment.html"
                 class="treatment-card"
+                aria-label="Open Dental Scaling treatment guide"
             >
 
                 <div class="treatment-icon">
@@ -1356,14 +1313,14 @@ footer p {
             </a>
 
 
-
             <!-- =========================
-                 ROOT CANAL
+                 ROOT CANAL TREATMENT
             ========================= -->
 
             <a
-                href="root-canal.html"
+                href="./root-canal.html"
                 class="treatment-card"
+                aria-label="Open Root Canal Treatment guide"
             >
 
                 <div class="treatment-icon">
@@ -1392,7 +1349,7 @@ footer p {
         <div class="treatment-button-wrapper">
 
             <a
-                href="treatments.html"
+                href="./treatments.html"
                 class="treatment-button"
             >
                 View All Treatment Guides
@@ -1432,7 +1389,7 @@ footer p {
 
         <a
             class="question-button"
-            href="questions.html"
+            href="./questions.html"
         >
             Ask Your Question
         </a>
@@ -1468,7 +1425,7 @@ footer p {
 
     <a
         class="about-button"
-        href="about.html"
+        href="./about.html"
     >
         More About Me
     </a>
@@ -1491,26 +1448,25 @@ footer p {
         Dentistry, explained simply.
     </p>
 
-
     <div class="footer-links">
 
-        <a href="index.html">Home</a>
+        <a href="./index.html">Home</a>
 
-        <a href="blog.html">Dental Blog</a>
+        <a href="./blog.html">Dental Blog</a>
 
-        <a href="guides.html">Visual Guides</a>
+        <a href="./guides.html">Visual Guides</a>
 
-        <a href="symptoms.html">Symptoms</a>
+        <a href="./symptoms.html">Symptoms</a>
 
-        <a href="treatments.html">Treatments</a>
+        <a href="./treatments.html">Treatments</a>
 
-        <a href="about.html">About</a>
+        <a href="./about.html">About</a>
 
-        <a href="questions.html">Ask Dr. Anushka</a>
+        <a href="./questions.html">Ask Dr. Anushka</a>
 
-        <a href="contact.html">Contact</a>
+        <a href="./contact.html">Contact</a>
 
-        <a href="disclaimer.html">Disclaimer</a>
+        <a href="./disclaimer.html">Disclaimer</a>
 
     </div>
 
@@ -1520,3 +1476,4 @@ footer p {
 </body>
 
 </html>
+```
