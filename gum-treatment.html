@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,454 +12,616 @@
     <title>Gum Treatment Explained | Dr. Anushka Choudhary, BDS</title>
 
     <meta name="description"
-    content="Understand gum treatment in simple language. Learn about gum inflammation, gum disease, professional cleaning and periodontal care with Dr. Anushka Choudhary, BDS.">
+    content="Understand gum treatment in simple language. Learn about gum inflammation, gum disease, professional cleaning, periodontal treatment and how to protect your gums.">
 
     <meta name="author" content="Dr. Anushka Choudhary">
 
     <meta name="robots" content="index, follow">
 
 
-    <style>
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FAF7F2;
+    color: #29483F;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    padding: 20px 40px;
+    border-bottom: 1px solid #DDD8D2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #FAF7F2;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    gap: 30px;
+}
+
+.logo {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #29483F;
+    white-space: nowrap;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+nav {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
 
+nav a {
+    color: #29483F;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #D8A6A1;
+}
 
-        body {
-            background: #FAF7F2;
-            color: #29483F;
-            font-family: Arial, sans-serif;
-            line-height: 1.8;
-        }
 
+/* =========================
+   HERO
+========================= */
 
-        a {
-            text-decoration: none;
-        }
+.hero {
+    max-width: 900px;
+    margin: auto;
 
+    padding: 100px 25px 50px;
 
-        /* HEADER */
+    text-align: center;
+}
 
-        header {
-            padding: 20px 60px;
-            border-bottom: 1px solid #DDD8D2;
+.eyebrow {
+    color: #7F9C8D;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+h1 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    line-height: 1.15;
+    font-weight: 600;
+    color: #5A4A48;
+    margin-bottom: 25px;
+}
 
-            background: #FAF7F2;
+.hero-intro {
+    max-width: 720px;
+    margin: auto;
 
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+    color: #5D6761;
 
+    font-size: 18px;
+    line-height: 1.9;
+}
 
-        .logo {
-            font-size: 21px;
-            letter-spacing: 2px;
-            font-weight: bold;
-            color: #29483F;
-        }
 
+/* =========================
+   TREATMENT IMAGE
+========================= */
 
-        nav {
-            display: flex;
-            gap: 30px;
-        }
+.treatment-visual {
+    max-width: 850px;
+    margin: 0 auto 70px;
+    padding: 0 25px;
+}
 
+.treatment-visual img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
 
-        nav a {
-            color: #29483F;
-            font-size: 13px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
+    border-radius: 2px;
 
+    box-shadow:
+        0 15px 40px rgba(41, 72, 63, 0.10);
+}
 
-        nav a:hover {
-            color: #D8A6A1;
-        }
+.image-caption {
+    text-align: center;
 
+    margin-top: 12px;
 
-        /* HERO */
+    color: #7A817C;
 
-        .hero {
-            max-width: 900px;
-            margin: auto;
+    font-size: 12px;
 
-            padding: 100px 25px 75px;
+    letter-spacing: 0.5px;
+}
 
-            text-align: center;
-        }
 
+/* =========================
+   MAIN CONTENT
+========================= */
 
-        .eyebrow {
-            color: #7F9C8D;
+.content-section {
+    background: #F1EEE8;
+    padding: 80px 25px 100px;
+}
 
-            font-size: 12px;
+.content-container {
+    max-width: 900px;
+    margin: auto;
+}
 
-            letter-spacing: 4px;
 
-            text-transform: uppercase;
+/* =========================
+   CONTENT CARDS
+========================= */
 
-            margin-bottom: 20px;
-        }
+.content-box {
+    background: #FAF7F2;
 
+    padding: 45px;
 
-        h1 {
-            font-family: Georgia, serif;
+    margin-bottom: 25px;
+}
 
-            font-size: 58px;
+.content-box h2 {
+    font-family: Georgia, serif;
 
-            line-height: 1.2;
+    color: #5A4A48;
 
-            font-weight: 600;
+    font-size: 32px;
 
-            color: #5A4A48;
+    font-weight: normal;
 
-            margin-bottom: 25px;
-        }
+    line-height: 1.3;
 
+    margin-bottom: 18px;
+}
 
-        .hero-intro {
-            max-width: 720px;
+.content-box p {
+    color: #5D6761;
 
-            margin: auto;
+    font-size: 16px;
 
-            color: #5D6761;
+    line-height: 1.9;
 
-            font-size: 18px;
+    margin-bottom: 15px;
+}
 
-            line-height: 1.9;
-        }
+.content-box p:last-child {
+    margin-bottom: 0;
+}
 
 
-        /* MAIN CONTENT */
+/* =========================
+   LIST
+========================= */
 
-        .content-section {
-            background: #F1EEE8;
+.simple-list {
+    margin-top: 20px;
+    padding-left: 22px;
+}
 
-            padding: 80px 25px 100px;
-        }
+.simple-list li {
+    color: #5D6761;
 
+    font-size: 16px;
 
-        .content-container {
-            max-width: 900px;
+    line-height: 1.9;
 
-            margin: auto;
-        }
+    margin-bottom: 10px;
+}
 
 
-        .content-box {
-            background: #FAF7F2;
+/* =========================
+   HIGHLIGHT
+========================= */
 
-            padding: 50px;
+.highlight {
+    background: #29483F;
 
-            margin-bottom: 30px;
-        }
+    color: #FAF7F2;
 
+    padding: 40px;
 
-        .content-box h2 {
-            font-family: Georgia, serif;
+    margin: 30px 0;
+}
 
-            font-size: 34px;
+.highlight .eyebrow {
+    color: #D8A6A1;
+}
 
-            font-weight: normal;
+.highlight h3 {
+    font-family: Georgia, serif;
 
-            color: #5A4A48;
+    color: #FAF7F2;
 
-            margin-bottom: 20px;
-        }
+    font-size: 27px;
 
+    font-weight: normal;
 
-        .content-box p {
-            color: #5D6761;
+    line-height: 1.4;
 
-            font-size: 16px;
+    margin-bottom: 12px;
+}
 
-            line-height: 1.9;
+.highlight p {
+    color: #E7E4DE;
 
-            margin-bottom: 18px;
-        }
+    margin-bottom: 0;
+}
 
 
-        .content-box p:last-child {
-            margin-bottom: 0;
-        }
+/* =========================
+   TREATMENT STEPS
+========================= */
 
+.steps {
+    margin-top: 20px;
+}
 
-        /* LIST */
+.step {
+    display: flex;
 
-        .simple-list {
-            margin-top: 20px;
+    gap: 25px;
 
-            padding-left: 22px;
-        }
+    padding: 25px 0;
 
+    border-bottom: 1px solid #DDD8D2;
+}
 
-        .simple-list li {
-            color: #5D6761;
+.step:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
 
-            font-size: 16px;
+.step-number {
+    min-width: 42px;
+    height: 42px;
 
-            line-height: 1.9;
+    display: flex;
 
-            margin-bottom: 12px;
-        }
+    align-items: center;
+    justify-content: center;
 
+    background: #D8A6A1;
 
-        /* HIGHLIGHT */
+    color: #29483F;
 
-        .highlight {
-            background: #F8EDEC;
+    font-family: Georgia, serif;
 
-            border-left: 4px solid #D8A6A1;
+    font-size: 18px;
+}
 
-            padding: 30px;
+.step-content h3 {
+    font-family: Georgia, serif;
 
-            margin: 30px 0;
-        }
+    color: #5A4A48;
 
+    font-size: 22px;
 
-        .highlight strong {
-            display: block;
+    font-weight: normal;
 
-            font-family: Georgia, serif;
+    margin-bottom: 7px;
+}
 
-            color: #5A4A48;
+.step-content p {
+    margin: 0;
+}
 
-            font-size: 23px;
 
-            margin-bottom: 10px;
-        }
+/* =========================
+   FAQ
+========================= */
 
+.faq-section {
+    margin-top: 25px;
+}
 
-        .highlight p {
-            margin-bottom: 0;
-        }
+.faq {
+    background: #F1EEE8;
 
+    padding: 25px 28px;
 
-        /* CTA */
+    margin-bottom: 15px;
+}
 
-        .question-section {
-            padding: 90px 25px;
+.faq:last-child {
+    margin-bottom: 0;
+}
 
-            text-align: center;
+.faq h3 {
+    font-family: Georgia, serif;
 
-            background: #FAF7F2;
-        }
+    color: #5A4A48;
 
+    font-size: 21px;
 
-        .question-section h2 {
-            font-family: Georgia, serif;
+    font-weight: normal;
 
-            color: #5A4A48;
+    margin-bottom: 10px;
+}
 
-            font-size: 38px;
+.faq p {
+    color: #65706A;
 
-            font-weight: normal;
+    font-size: 15px;
 
-            margin-bottom: 15px;
-        }
+    line-height: 1.8;
+}
 
 
-        .question-section p {
-            max-width: 650px;
+/* =========================
+   CTA
+========================= */
 
-            margin: auto;
+.question-section {
+    padding: 90px 25px;
 
-            color: #5D6761;
+    text-align: center;
 
-            font-size: 16px;
+    background: #FAF7F2;
+}
 
-            line-height: 1.9;
-        }
+.question-section h2 {
+    font-family: Georgia, serif;
 
+    color: #5A4A48;
 
-        .question-button {
-            display: inline-block;
+    font-size: 38px;
 
-            margin-top: 28px;
+    font-weight: normal;
 
-            background: #29483F;
+    margin-bottom: 15px;
+}
 
-            color: #FAF7F2;
+.question-section p {
+    max-width: 650px;
 
-            padding: 14px 28px;
+    margin: auto;
 
-            font-size: 12px;
+    color: #5D6761;
 
-            letter-spacing: 2px;
+    font-size: 16px;
 
-            text-transform: uppercase;
+    line-height: 1.9;
+}
 
-            transition: 0.3s ease;
-        }
+.question-button {
+    display: inline-block;
 
+    margin-top: 28px;
 
-        .question-button:hover {
-            background: #D8A6A1;
+    background: #29483F;
 
-            color: #29483F;
-        }
+    color: #FAF7F2;
 
+    padding: 14px 28px;
 
-        /* DISCLAIMER */
+    font-size: 12px;
 
-        .disclaimer {
-            max-width: 800px;
+    letter-spacing: 2px;
 
-            margin: auto;
+    text-transform: uppercase;
 
-            padding: 20px 25px 75px;
+    transition: 0.3s ease;
+}
 
-            text-align: center;
-        }
+.question-button:hover {
+    background: #D8A6A1;
 
+    color: #29483F;
+}
 
-        .disclaimer p {
-            color: #7A817C;
 
-            font-size: 13px;
+/* =========================
+   DISCLAIMER
+========================= */
 
-            line-height: 1.8;
-        }
+.disclaimer {
+    max-width: 800px;
 
+    margin: auto;
 
-        .disclaimer a {
-            color: #29483F;
+    padding: 20px 25px 75px;
 
-            border-bottom: 1px solid #D8A6A1;
-        }
+    text-align: center;
+}
 
+.disclaimer p {
+    color: #7A817C;
 
-        /* FOOTER */
+    font-size: 13px;
 
-        footer {
-            background: #D8A6A1;
+    line-height: 1.8;
+}
 
-            color: #29483F;
+.disclaimer a {
+    color: #29483F;
 
-            padding: 45px 25px;
+    border-bottom: 1px solid #D8A6A1;
+}
 
-            text-align: center;
-        }
 
+/* =========================
+   FOOTER
+========================= */
 
-        footer strong {
-            font-size: 17px;
+footer {
+    background: #D8A6A1;
 
-            letter-spacing: 2px;
-        }
+    color: #29483F;
 
+    padding: 45px 25px;
 
-        footer p {
-            margin-top: 8px;
+    text-align: center;
+}
 
-            font-size: 14px;
-        }
+footer strong {
+    font-size: 17px;
 
+    letter-spacing: 2px;
+}
 
-        .footer-links {
-            margin-top: 20px;
+footer p {
+    margin-top: 8px;
 
-            display: flex;
+    font-size: 14px;
+}
 
-            justify-content: center;
+.footer-links {
+    margin-top: 20px;
 
-            flex-wrap: wrap;
+    display: flex;
 
-            gap: 20px;
-        }
+    justify-content: center;
 
+    flex-wrap: wrap;
 
-        .footer-links a {
-            color: #29483F;
+    gap: 20px;
+}
 
-            font-size: 12px;
+.footer-links a {
+    color: #29483F;
 
-            letter-spacing: 1px;
+    font-size: 12px;
 
-            text-transform: uppercase;
-        }
+    letter-spacing: 1px;
 
+    text-transform: uppercase;
+}
 
-        .footer-links a:hover {
-            color: #FAF7F2;
-        }
+.footer-links a:hover {
+    color: #FAF7F2;
+}
 
 
-        /* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
-        @media(max-width:800px) {
+@media(max-width:800px) {
 
-            header {
-                padding: 20px 25px;
-            }
+    header {
+        padding: 20px 25px;
 
+        flex-direction: column;
 
-            nav {
-                display: none;
-            }
+        gap: 15px;
+    }
 
+    nav {
+        justify-content: center;
 
-            .logo {
-                font-size: 17px;
-            }
+        gap: 12px 18px;
+    }
 
+    nav a {
+        font-size: 11px;
+    }
 
-            .hero {
-                padding: 70px 25px 55px;
-            }
+    .logo {
+        font-size: 17px;
+    }
 
+    .hero {
+        padding: 70px 25px 40px;
+    }
 
-            h1 {
-                font-size: 43px;
-            }
+    h1 {
+        font-size: 43px;
+    }
 
+    .hero-intro {
+        font-size: 16px;
+    }
 
-            .hero-intro {
-                font-size: 16px;
-            }
+    .treatment-visual {
+        margin-bottom: 50px;
 
+        padding: 0 20px;
+    }
 
-            .content-section {
-                padding: 60px 20px 75px;
-            }
+    .treatment-visual img {
+        height: 250px;
+    }
 
+    .content-section {
+        padding: 60px 20px 75px;
+    }
 
-            .content-box {
-                padding: 30px 25px;
-            }
+    .content-box {
+        padding: 30px 25px;
+    }
 
+    .content-box h2 {
+        font-size: 29px;
+    }
 
-            .content-box h2 {
-                font-size: 29px;
-            }
+    .highlight {
+        padding: 30px 25px;
+    }
 
+    .highlight h3 {
+        font-size: 25px;
+    }
 
-            .question-section {
-                padding: 70px 25px;
-            }
+    .step {
+        gap: 15px;
+    }
 
+    .question-section {
+        padding: 70px 25px;
+    }
 
-            .question-section h2 {
-                font-size: 31px;
-            }
+    .question-section h2 {
+        font-size: 31px;
+    }
 
+    .footer-links {
+        gap: 12px 18px;
+    }
 
-            .footer-links {
-                gap: 12px 18px;
-            }
+}
 
-        }
-
-    </style>
+</style>
 
 </head>
 
@@ -468,14 +629,15 @@
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
     <div class="logo">
         DR. ANUSHKA CHOUDHARY
     </div>
-
 
     <nav>
 
@@ -501,27 +663,28 @@
 
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
     <div class="eyebrow">
-        Gum Treatment
+        Dental Treatment Guide
     </div>
 
-
     <h1>
-        Healthy gums<br>
-        support healthy teeth.
+        Gum treatment,<br>
+        explained simply.
     </h1>
-
 
     <p class="hero-intro">
 
-        Gum problems are common and can sometimes develop gradually
-        without causing significant discomfort. Understanding what
-        happens to the gums and how gum problems are treated can help
-        you recognise the importance of professional dental care.
+        Healthy gums are an important part of a healthy mouth.
+        Gum problems can develop gradually and may sometimes
+        cause few noticeable symptoms in the early stages.
+        Understanding gum disease and its treatment can help
+        you recognise when professional dental care may be needed.
 
     </p>
 
@@ -529,7 +692,28 @@
 
 
 
-<!-- CONTENT -->
+<!-- =========================
+     TREATMENT IMAGE
+========================= -->
+
+<div class="treatment-visual">
+
+    <img
+        src="gum treatment.jpg"
+        alt="Gum treatment and healthy gum care illustration"
+    >
+
+    <div class="image-caption">
+        Understanding gum health, gum inflammation and professional gum care.
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
 
 <section class="content-section">
 
@@ -544,37 +728,39 @@
                 Understanding the problem
             </div>
 
-
             <h2>
                 What is gum disease?
             </h2>
 
-
             <p>
 
                 Gum disease refers to inflammation and infection affecting
-                the tissues that surround and support the teeth. It can
-                range from early gum inflammation to more advanced disease
-                involving deeper supporting tissues.
+                the tissues that surround and support the teeth.
 
             </p>
-
 
             <p>
 
-                Plaque, a sticky layer of bacteria that forms on the teeth,
-                plays an important role in the development of gum problems.
-                If plaque is not removed effectively, it can contribute to
-                inflammation of the gums.
+                It can range from early gum inflammation, commonly known
+                as gingivitis, to more advanced periodontal disease where
+                the deeper supporting tissues around the teeth are affected.
 
             </p>
 
+            <p>
+
+                Dental plaque, a sticky layer containing bacteria, plays
+                an important role in the development of gum inflammation.
+                If plaque is not removed effectively, it can contribute
+                to irritation and inflammation of the gums.
+
+            </p>
 
         </div>
 
 
 
-        <!-- COMMON SIGNS -->
+        <!-- SIGNS -->
 
         <div class="content-box">
 
@@ -582,46 +768,72 @@
                 What to look for
             </div>
 
-
             <h2>
                 Common signs of gum problems
             </h2>
 
-
             <p>
-                Gum problems can present in different ways. Some common
-                signs include:
-            </p>
 
+                Gum problems can appear differently from person to person.
+                Some common signs include:
+
+            </p>
 
             <ul class="simple-list">
 
                 <li>
-                    Bleeding while brushing or flossing
+                    Bleeding while brushing or cleaning between the teeth.
                 </li>
 
                 <li>
-                    Red, swollen or tender gums
+                    Red, swollen or tender gums.
                 </li>
 
                 <li>
-                    Persistent bad breath
+                    Persistent bad breath.
                 </li>
 
                 <li>
-                    Gums that appear to be pulling away from the teeth
+                    Gums that appear to be pulling away from the teeth.
                 </li>
 
                 <li>
-                    Increased tooth sensitivity
+                    Increased tooth sensitivity.
                 </li>
 
                 <li>
-                    Loose teeth in more advanced cases
+                    Changes in the way teeth feel or fit together.
+                </li>
+
+                <li>
+                    Loose teeth in more advanced cases.
                 </li>
 
             </ul>
 
+        </div>
+
+
+
+        <!-- HIGHLIGHT -->
+
+        <div class="highlight">
+
+            <div class="eyebrow">
+                Important
+            </div>
+
+            <h3>
+                Bleeding gums are not something you should simply accept.
+            </h3>
+
+            <p>
+
+                Persistent bleeding can be a sign of gum inflammation.
+                It is worth having the cause assessed rather than
+                simply stopping brushing or avoiding the area.
+
+            </p>
 
         </div>
 
@@ -635,48 +847,35 @@
                 Treatment
             </div>
 
-
             <h2>
                 How are gum problems treated?
             </h2>
 
-
             <p>
 
-                Treatment depends on the severity and cause of the gum
-                problem. Early gum inflammation may often be managed with
-                improved oral hygiene and professional dental cleaning.
+                Gum treatment depends on the cause and severity of the
+                problem. Early gum inflammation may often be managed
+                through improved oral hygiene, professional cleaning
+                and appropriate follow-up.
 
             </p>
 
-
             <p>
 
-                When gum disease has progressed deeper around the teeth,
-                additional professional treatment may be required to
-                remove deposits and control the infection and inflammation.
+                When periodontal disease has progressed deeper around
+                the teeth, additional professional treatment may be
+                required to remove deposits and control inflammation.
 
             </p>
 
+            <p>
 
-            <div class="highlight">
+                Your dentist may assess the gums, measure periodontal
+                pockets when appropriate, check for plaque and calculus
+                and evaluate the supporting tissues before deciding
+                on the most suitable treatment.
 
-                <strong>
-                    Treatment is not always the same for everyone.
-                </strong>
-
-
-                <p>
-
-                    A dentist may examine the gums, check for plaque and
-                    calculus, assess the supporting tissues and determine
-                    the appropriate treatment based on the individual
-                    situation.
-
-                </p>
-
-            </div>
-
+            </p>
 
         </div>
 
@@ -690,29 +889,196 @@
                 Professional care
             </div>
 
-
             <h2>
-                Why professional cleaning may be recommended
+                Why might professional cleaning be recommended?
             </h2>
 
-
             <p>
 
-                Brushing and flossing are essential for daily plaque
-                control, but hardened deposits such as calculus cannot
-                always be removed effectively at home.
+                Brushing and cleaning between the teeth are essential
+                for daily plaque control. However, hardened deposits
+                such as calculus cannot be reliably removed with a
+                toothbrush at home.
 
             </p>
 
-
             <p>
 
-                Professional cleaning allows a dental professional to
-                remove deposits from areas that may be difficult to
-                clean with regular home care.
+                Professional dental cleaning allows deposits to be
+                removed from areas that may be difficult to clean
+                effectively during everyday oral hygiene.
 
             </p>
 
+            <div class="highlight">
+
+                <div class="eyebrow">
+                    Remember
+                </div>
+
+                <h3>
+                    Professional cleaning and good home care work together.
+                </h3>
+
+                <p>
+
+                    Cleaning can remove accumulated deposits, but maintaining
+                    effective daily plaque control is important for keeping
+                    the gums healthy over time.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- TREATMENT STEPS -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                What to expect
+            </div>
+
+            <h2>
+                What may happen during a gum assessment?
+            </h2>
+
+            <div class="steps">
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        1
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Examination
+                        </h3>
+
+                        <p>
+
+                            Your dentist examines the teeth and gums and
+                            looks for signs of inflammation, plaque,
+                            calculus and other changes.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Gum assessment
+                        </h3>
+
+                        <p>
+
+                            Depending on the situation, the dentist may
+                            assess the depth of the gum spaces around
+                            the teeth and check the supporting tissues.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Professional cleaning
+                        </h3>
+
+                        <p>
+
+                            If plaque or calculus is present, professional
+                            cleaning may be recommended to remove deposits
+                            that cannot be adequately removed at home.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        4
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Home-care guidance
+                        </h3>
+
+                        <p>
+
+                            Your dentist or dental professional may explain
+                            brushing technique and recommend suitable ways
+                            to clean between your teeth.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        5
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Follow-up
+                        </h3>
+
+                        <p>
+
+                            Further appointments may be recommended depending
+                            on the condition of the gums and how they respond
+                            to treatment.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
 
         </div>
 
@@ -726,24 +1092,21 @@
                 Prevention
             </div>
 
-
             <h2>
-                Protecting your gums every day
+                How can you protect your gums every day?
             </h2>
-
 
             <p>
 
-                Maintaining good oral hygiene is an important part of
-                preventing and controlling gum problems.
+                Daily plaque control is one of the most important parts
+                of maintaining healthy gums.
 
             </p>
-
 
             <ul class="simple-list">
 
                 <li>
-                    Brush your teeth twice a day with appropriate technique.
+                    Brush your teeth twice a day using an appropriate technique.
                 </li>
 
                 <li>
@@ -751,7 +1114,7 @@
                 </li>
 
                 <li>
-                    Have regular dental check-ups.
+                    Attend regular dental examinations.
                 </li>
 
                 <li>
@@ -759,47 +1122,146 @@
                 </li>
 
                 <li>
-                    Do not ignore persistent gum bleeding or swelling.
+                    Do not ignore persistent bleeding, swelling or gum changes.
                 </li>
 
             </ul>
-
 
         </div>
 
 
 
-        <!-- IMPORTANT -->
+        <!-- FAQ -->
 
         <div class="content-box">
 
             <div class="eyebrow">
-                Important to remember
+                Common questions
             </div>
 
-
             <h2>
-                Bleeding gums should not simply be ignored.
+                Gum treatment: quick answers
             </h2>
 
+            <div class="faq-section">
+
+
+                <div class="faq">
+
+                    <h3>
+                        Is bleeding while brushing normal?
+                    </h3>
+
+                    <p>
+
+                        Persistent bleeding is not something that should
+                        simply be ignored. It can be associated with gum
+                        inflammation and should be assessed if it continues.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Can gum disease be treated?
+                    </h3>
+
+                    <p>
+
+                        Gum problems can often be managed effectively when
+                        they are identified and treated appropriately.
+                        Treatment depends on the type and severity of the
+                        condition.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Can brushing alone remove calculus?
+                    </h3>
+
+                    <p>
+
+                        No. Brushing can help control plaque, but hardened
+                        calculus generally requires professional removal.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Can gum disease cause loose teeth?
+                    </h3>
+
+                    <p>
+
+                        Advanced periodontal disease can damage the tissues
+                        and bone supporting the teeth and may contribute
+                        to tooth mobility.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Should I stop brushing if my gums bleed?
+                    </h3>
+
+                    <p>
+
+                        In general, stopping oral hygiene around a bleeding
+                        area is not the solution. Persistent bleeding should
+                        be discussed with a dental professional so the cause
+                        can be identified and appropriate care recommended.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FINAL NOTE -->
+
+        <div class="highlight">
+
+            <div class="eyebrow">
+                Remember
+            </div>
+
+            <h3>
+                Healthy gums are part of a healthy smile.
+            </h3>
 
             <p>
 
-                Occasional bleeding can have different causes, but
-                persistent bleeding while brushing or flossing can be
-                a sign of gum inflammation and deserves attention.
+                If you notice persistent bleeding, swelling, bad breath,
+                gum recession, sensitivity or loose teeth, consider having
+                your gums assessed by a dental professional. Early attention
+                can help identify problems before they become more advanced.
 
             </p>
-
-
-            <p>
-
-                Early evaluation can help identify the cause and allow
-                appropriate care before a gum problem becomes more
-                advanced.
-
-            </p>
-
 
         </div>
 
@@ -810,7 +1272,9 @@
 
 
 
-<!-- CTA -->
+<!-- =========================
+     QUESTION CTA
+========================= -->
 
 <section class="question-section">
 
@@ -818,19 +1282,17 @@
         Still wondering?
     </div>
 
-
     <h2>
         Have a question about your gums?
     </h2>
 
-
     <p>
 
-        If you are experiencing bleeding, swelling, sensitivity or
-        another gum-related concern, you can ask your question directly.
+        If you have a question about bleeding gums, gum treatment,
+        professional cleaning or another dental concern, you can
+        submit your question through the website.
 
     </p>
-
 
     <a
         href="questions.html"
@@ -843,7 +1305,9 @@
 
 
 
-<!-- DISCLAIMER -->
+<!-- =========================
+     DISCLAIMER
+========================= -->
 
 <section class="disclaimer">
 
@@ -854,7 +1318,6 @@
         examination, diagnosis or personalised professional advice.
 
     </p>
-
 
     <p style="margin-top: 12px;">
 
@@ -868,7 +1331,9 @@
 
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -876,11 +1341,9 @@
         DR. ANUSHKA CHOUDHARY
     </strong>
 
-
     <p>
         Dentistry, explained simply.
     </p>
-
 
     <div class="footer-links">
 
@@ -910,4 +1373,3 @@
 </body>
 
 </html>
-```
