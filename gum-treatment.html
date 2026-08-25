@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -149,16 +150,35 @@ h1 {
     padding: 0 25px;
 }
 
+.treatment-visual a {
+    display: block;
+    cursor: zoom-in;
+}
+
 .treatment-visual img {
     width: 100%;
-    height: 430px;
-    object-fit: cover;
+    height: auto;
+    max-height: none;
+
+    object-fit: contain;
+
     display: block;
 
     border-radius: 2px;
 
     box-shadow:
         0 15px 40px rgba(41, 72, 63, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.treatment-visual img:hover {
+    transform: scale(1.01);
+
+    box-shadow:
+        0 18px 45px rgba(41, 72, 63, 0.15);
 }
 
 .image-caption {
@@ -579,8 +599,16 @@ footer p {
         padding: 0 20px;
     }
 
+    /*
+       IMPORTANT:
+       No fixed height is used here.
+       The image keeps its natural proportions.
+    */
+
     .treatment-visual img {
-        height: 250px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 
     .content-section {
@@ -620,6 +648,7 @@ footer p {
     }
 
 }
+
 
 </style>
 
@@ -698,13 +727,22 @@ footer p {
 
 <div class="treatment-visual">
 
-    <img
-        src="gum treatment.jpg"
-        alt="Gum treatment and healthy gum care illustration"
+    <a
+        href="gum treatment.jpg"
+        target="_blank"
+        rel="noopener"
+        aria-label="View gum treatment image in full size"
     >
 
+        <img
+            src="gum treatment.jpg"
+            alt="Gum treatment and healthy gum care illustration"
+        >
+
+    </a>
+
     <div class="image-caption">
-        Understanding gum health, gum inflammation and professional gum care.
+        Click the image to view it in full size.
     </div>
 
 </div>
@@ -733,27 +771,21 @@ footer p {
             </h2>
 
             <p>
-
                 Gum disease refers to inflammation and infection affecting
                 the tissues that surround and support the teeth.
-
             </p>
 
             <p>
-
                 It can range from early gum inflammation, commonly known
                 as gingivitis, to more advanced periodontal disease where
                 the deeper supporting tissues around the teeth are affected.
-
             </p>
 
             <p>
-
                 Dental plaque, a sticky layer containing bacteria, plays
                 an important role in the development of gum inflammation.
                 If plaque is not removed effectively, it can contribute
                 to irritation and inflammation of the gums.
-
             </p>
 
         </div>
@@ -773,10 +805,8 @@ footer p {
             </h2>
 
             <p>
-
                 Gum problems can appear differently from person to person.
                 Some common signs include:
-
             </p>
 
             <ul class="simple-list">
@@ -828,11 +858,9 @@ footer p {
             </h3>
 
             <p>
-
                 Persistent bleeding can be a sign of gum inflammation.
                 It is worth having the cause assessed rather than
                 simply stopping brushing or avoiding the area.
-
             </p>
 
         </div>
@@ -852,29 +880,23 @@ footer p {
             </h2>
 
             <p>
-
                 Gum treatment depends on the cause and severity of the
                 problem. Early gum inflammation may often be managed
                 through improved oral hygiene, professional cleaning
                 and appropriate follow-up.
-
             </p>
 
             <p>
-
                 When periodontal disease has progressed deeper around
                 the teeth, additional professional treatment may be
                 required to remove deposits and control inflammation.
-
             </p>
 
             <p>
-
                 Your dentist may assess the gums, measure periodontal
                 pockets when appropriate, check for plaque and calculus
                 and evaluate the supporting tissues before deciding
                 on the most suitable treatment.
-
             </p>
 
         </div>
@@ -894,20 +916,16 @@ footer p {
             </h2>
 
             <p>
-
                 Brushing and cleaning between the teeth are essential
                 for daily plaque control. However, hardened deposits
                 such as calculus cannot be reliably removed with a
                 toothbrush at home.
-
             </p>
 
             <p>
-
                 Professional dental cleaning allows deposits to be
                 removed from areas that may be difficult to clean
                 effectively during everyday oral hygiene.
-
             </p>
 
             <div class="highlight">
@@ -921,11 +939,9 @@ footer p {
                 </h3>
 
                 <p>
-
                     Cleaning can remove accumulated deposits, but maintaining
                     effective daily plaque control is important for keeping
                     the gums healthy over time.
-
                 </p>
 
             </div>
@@ -962,11 +978,9 @@ footer p {
                         </h3>
 
                         <p>
-
                             Your dentist examines the teeth and gums and
                             looks for signs of inflammation, plaque,
                             calculus and other changes.
-
                         </p>
 
                     </div>
@@ -988,11 +1002,9 @@ footer p {
                         </h3>
 
                         <p>
-
                             Depending on the situation, the dentist may
                             assess the depth of the gum spaces around
                             the teeth and check the supporting tissues.
-
                         </p>
 
                     </div>
@@ -1014,11 +1026,9 @@ footer p {
                         </h3>
 
                         <p>
-
                             If plaque or calculus is present, professional
                             cleaning may be recommended to remove deposits
                             that cannot be adequately removed at home.
-
                         </p>
 
                     </div>
@@ -1040,11 +1050,9 @@ footer p {
                         </h3>
 
                         <p>
-
                             Your dentist or dental professional may explain
                             brushing technique and recommend suitable ways
                             to clean between your teeth.
-
                         </p>
 
                     </div>
@@ -1066,11 +1074,9 @@ footer p {
                         </h3>
 
                         <p>
-
                             Further appointments may be recommended depending
                             on the condition of the gums and how they respond
                             to treatment.
-
                         </p>
 
                     </div>
@@ -1097,10 +1103,8 @@ footer p {
             </h2>
 
             <p>
-
                 Daily plaque control is one of the most important parts
                 of maintaining healthy gums.
-
             </p>
 
             <ul class="simple-list">
@@ -1153,11 +1157,9 @@ footer p {
                     </h3>
 
                     <p>
-
                         Persistent bleeding is not something that should
                         simply be ignored. It can be associated with gum
                         inflammation and should be assessed if it continues.
-
                     </p>
 
                 </div>
@@ -1171,12 +1173,10 @@ footer p {
                     </h3>
 
                     <p>
-
                         Gum problems can often be managed effectively when
                         they are identified and treated appropriately.
                         Treatment depends on the type and severity of the
                         condition.
-
                     </p>
 
                 </div>
@@ -1190,10 +1190,8 @@ footer p {
                     </h3>
 
                     <p>
-
                         No. Brushing can help control plaque, but hardened
                         calculus generally requires professional removal.
-
                     </p>
 
                 </div>
@@ -1207,11 +1205,9 @@ footer p {
                     </h3>
 
                     <p>
-
                         Advanced periodontal disease can damage the tissues
                         and bone supporting the teeth and may contribute
                         to tooth mobility.
-
                     </p>
 
                 </div>
@@ -1225,12 +1221,10 @@ footer p {
                     </h3>
 
                     <p>
-
                         In general, stopping oral hygiene around a bleeding
                         area is not the solution. Persistent bleeding should
                         be discussed with a dental professional so the cause
                         can be identified and appropriate care recommended.
-
                     </p>
 
                 </div>
@@ -1255,12 +1249,10 @@ footer p {
             </h3>
 
             <p>
-
                 If you notice persistent bleeding, swelling, bad breath,
                 gum recession, sensitivity or loose teeth, consider having
                 your gums assessed by a dental professional. Early attention
                 can help identify problems before they become more advanced.
-
             </p>
 
         </div>
@@ -1287,11 +1279,9 @@ footer p {
     </h2>
 
     <p>
-
         If you have a question about bleeding gums, gum treatment,
         professional cleaning or another dental concern, you can
         submit your question through the website.
-
     </p>
 
     <a
@@ -1312,11 +1302,9 @@ footer p {
 <section class="disclaimer">
 
     <p>
-
         The information on this page is for general educational
         purposes only and does not replace an in-person dental
         examination, diagnosis or personalised professional advice.
-
     </p>
 
     <p style="margin-top: 12px;">
@@ -1373,3 +1361,4 @@ footer p {
 </body>
 
 </html>
+```
