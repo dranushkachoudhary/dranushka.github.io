@@ -14,14 +14,25 @@
     <meta name="description"
     content="Why do gums bleed when brushing? Dr. Anushka explains common causes of bleeding gums, gingivitis, brushing, flossing and when you should see a dentist.">
 
+    <meta name="author" content="Dr. Anushka Choudhary">
+
+    <meta name="robots" content="index, follow">
+
+
     <style>
 
-        /* ---------- BASIC SETTINGS ---------- */
+        /* =========================
+           RESET
+        ========================= */
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -36,19 +47,25 @@
         }
 
 
-        /* ---------- HEADER ---------- */
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
             padding: 20px 60px;
             border-bottom: 1px solid #DDD8D2;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             background: #FAF7F2;
 
             position: sticky;
             top: 0;
             z-index: 100;
+
+            gap: 30px;
         }
 
         .logo {
@@ -56,18 +73,24 @@
             letter-spacing: 2px;
             font-weight: bold;
             color: #29483F;
+            white-space: nowrap;
         }
 
         nav {
             display: flex;
-            gap: 30px;
+            gap: 22px;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: #29483F;
-            font-size: 13px;
-            letter-spacing: 1px;
+            font-size: 12px;
+            letter-spacing: 0.8px;
             text-transform: uppercase;
+            white-space: nowrap;
+            transition: 0.3s ease;
         }
 
         nav a:hover {
@@ -75,7 +98,9 @@
         }
 
 
-        /* ---------- ARTICLE ---------- */
+        /* =========================
+           ARTICLE
+        ========================= */
 
         main {
             max-width: 850px;
@@ -101,7 +126,9 @@
         }
 
 
-        /* ---------- FEATURED IMAGE ---------- */
+        /* =========================
+           FEATURED IMAGE
+        ========================= */
 
         .featured-image {
             margin: 35px 0 40px;
@@ -111,10 +138,13 @@
             width: 100%;
             display: block;
             border-radius: 4px;
+            box-shadow: 0 12px 35px rgba(41, 72, 63, 0.10);
         }
 
 
-        /* ---------- INTRO ---------- */
+        /* =========================
+           INTRO
+        ========================= */
 
         .intro {
             font-family: Georgia, serif;
@@ -132,7 +162,9 @@
         }
 
 
-        /* ---------- HEADINGS ---------- */
+        /* =========================
+           HEADINGS
+        ========================= */
 
         h2 {
             font-family: Georgia, serif;
@@ -145,7 +177,9 @@
         }
 
 
-        /* ---------- PARAGRAPHS ---------- */
+        /* =========================
+           PARAGRAPHS
+        ========================= */
 
         p {
             margin-bottom: 28px;
@@ -159,7 +193,9 @@
         }
 
 
-        /* ---------- HIGHLIGHT BOX ---------- */
+        /* =========================
+           HIGHLIGHT BOX
+        ========================= */
 
         .highlight {
             background: #F1EEE8;
@@ -181,7 +217,9 @@
         }
 
 
-        /* ---------- AUTHOR BOX ---------- */
+        /* =========================
+           AUTHOR BOX
+        ========================= */
 
         .author-box {
             margin-top: 60px;
@@ -211,7 +249,9 @@
         }
 
 
-        /* ---------- REFERENCES / DISCLAIMER ---------- */
+        /* =========================
+           REFERENCES / DISCLAIMER
+        ========================= */
 
         .disclaimer {
             margin-top: 70px;
@@ -251,13 +291,20 @@
         }
 
 
-        /* ---------- FOOTER ---------- */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             background: #D8A6A1;
             color: #29483F;
-            padding: 45px;
+            padding: 45px 25px;
             text-align: center;
+        }
+
+        footer strong {
+            font-size: 17px;
+            letter-spacing: 2px;
         }
 
         footer p {
@@ -267,13 +314,37 @@
             font-size: 14px;
         }
 
+        .footer-links {
+            margin-top: 20px;
 
-        /* ---------- MOBILE ---------- */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #29483F;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .footer-links a:hover {
+            color: #FAF7F2;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media(max-width:700px) {
 
             header {
                 padding: 20px 25px;
+                flex-direction: column;
+                gap: 15px;
             }
 
             nav {
@@ -315,12 +386,20 @@
                 margin: 25px 0 35px;
             }
 
+            .featured-image img {
+                border-radius: 3px;
+            }
+
             .author-box {
                 padding: 25px 22px;
             }
 
             footer {
                 padding: 35px 20px;
+            }
+
+            .footer-links {
+                gap: 12px 18px;
             }
 
         }
@@ -333,7 +412,9 @@
 <body>
 
 
-<!-- ==================== HEADER ==================== -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -341,24 +422,34 @@
         DR. ANUSHKA CHOUDHARY
     </div>
 
+
     <nav>
 
-    <a href="index.html">Home</a>
+        <a href="index.html">Home</a>
 
-    <a href="about.html">About</a>
+        <a href="about.html">About</a>
 
-    <a href="blog.html">Dental Blog</a>
+        <a href="blog.html">Dental Blog</a>
 
-    <a href="questions.html">Ask Dr. Anushka</a>
+        <a href="guides.html">Visual Guides</a>
 
-    <a href="contact.html">Contact</a>
+        <a href="symptoms.html">Symptoms</a>
 
-</nav>
+        <a href="treatments.html">Treatments</a>
+
+        <a href="questions.html">Ask Dr. Anushka</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
 
 </header>
 
 
-<!-- ==================== ARTICLE ==================== -->
+
+<!-- =========================
+     ARTICLE
+========================= -->
 
 <main>
 
@@ -373,11 +464,13 @@
     </h1>
 
 
+    <!-- FEATURED IMAGE -->
+
     <div class="featured-image">
 
         <img
-            src="gums-bleeding-image.jpg"
-            alt="Healthy and inflamed gums showing the importance of good oral hygiene"
+            src="gums-bleeding-image (1).jpg"
+            alt="Bleeding gums and gum inflammation during brushing"
         >
 
     </div>
@@ -397,6 +490,7 @@
         By Dr. Anushka Choudhary · August 2026 · 5 min read
 
     </div>
+
 
 
     <!-- INTRODUCTION -->
@@ -420,6 +514,7 @@
     </div>
 
 
+
     <h2>
         First: Is it normal for gums to bleed?
     </h2>
@@ -441,6 +536,7 @@
         One of the most common causes is inflammation of the gums,
         known as <strong>gingivitis</strong>.
     </p>
+
 
 
     <h2>
@@ -476,6 +572,7 @@
     </div>
 
 
+
     <h2>
         “But if my gums bleed when I brush, shouldn't I brush less?”
     </h2>
@@ -504,6 +601,7 @@
     </p>
 
 
+
     <h2>
         What about brushing too hard?
     </h2>
@@ -528,9 +626,10 @@
 
 
     <p>
-        The American Dental Association recommends brushing twice a day
-        with fluoride toothpaste for two minutes. :contentReference[oaicite:1]{index=1}
+        Brushing twice a day with fluoride toothpaste for around
+        two minutes is a commonly recommended approach to daily oral care.
     </p>
+
 
 
     <h2>
@@ -552,7 +651,7 @@
     <p>
         Dental floss, interdental brushes and other interdental cleaners
         can help remove plaque and debris from areas that are difficult
-        to reach with a toothbrush alone. :contentReference[oaicite:2]{index=2}
+        to reach with a toothbrush alone.
     </p>
 
 
@@ -567,6 +666,7 @@
         However, if bleeding is persistent or you are unsure about
         your technique, speak with your dentist.
     </p>
+
 
 
     <h2>
@@ -594,8 +694,9 @@
 
     <p>
         Calculus can also make effective plaque control more difficult
-        and is associated with gum inflammation. :contentReference[oaicite:3]{index=3}
+        and is associated with gum inflammation.
     </p>
+
 
 
     <h2>
@@ -627,6 +728,7 @@
     </p>
 
 
+
     <h2>
         Gingivitis vs periodontitis: what's the difference?
     </h2>
@@ -634,7 +736,7 @@
 
     <p>
         <strong>Gingivitis</strong> refers to inflammation of the gums.
-        It is often associated with plaque accumulation and can usually
+        It is often associated with plaque accumulation and can often
         be managed with appropriate oral hygiene and professional care
         when needed.
     </p>
@@ -651,6 +753,7 @@
         This is one reason dentists take persistent gum inflammation
         seriously rather than simply saying, “Everyone's gums bleed.”
     </p>
+
 
 
     <h2>
@@ -704,6 +807,7 @@
     </p>
 
 
+
     <h2>
         What will your dentist actually check?
     </h2>
@@ -729,6 +833,7 @@
     </p>
 
 
+
     <h2>
         What can you do at home?
     </h2>
@@ -742,7 +847,6 @@
     <p>
         Brush twice a day with a fluoride toothpaste and clean between
         your teeth once a day using an appropriate interdental cleaner.
-        :contentReference[oaicite:4]{index=4}
     </p>
 
 
@@ -756,6 +860,7 @@
         And if you haven't had a dental examination in a while,
         persistent bleeding is a good reason to book one.
     </p>
+
 
 
     <h2>
@@ -794,6 +899,7 @@
         </p>
 
     </div>
+
 
 
     <h2>
@@ -840,7 +946,10 @@
     </p>
 
 
-    <!-- AUTHOR BOX -->
+
+    <!-- =========================
+         AUTHOR BOX
+    ========================= -->
 
     <div class="author-box">
 
@@ -862,7 +971,10 @@
     </div>
 
 
-    <!-- REFERENCES -->
+
+    <!-- =========================
+         REFERENCES
+    ========================= -->
 
     <div class="disclaimer">
 
@@ -930,7 +1042,10 @@
 </main>
 
 
-<!-- ==================== FOOTER ==================== -->
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -949,6 +1064,14 @@
         <a href="blog.html">Dental Blog</a>
 
         <a href="about.html">About</a>
+
+        <a href="guides.html">Visual Guides</a>
+
+        <a href="symptoms.html">Symptoms</a>
+
+        <a href="treatments.html">Treatments</a>
+
+        <a href="questions.html">Ask Dr. Anushka</a>
 
         <a href="contact.html">Contact</a>
 
