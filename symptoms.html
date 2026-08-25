@@ -12,554 +12,685 @@
     <title>Dental Symptoms | Dr. Anushka Choudhary, BDS</title>
 
     <meta name="description"
-    content="Understand common dental symptoms in simple language. Explore tooth pain, sensitivity, bleeding gums, bad breath, mouth ulcers and more with Dr. Anushka Choudhary, BDS.">
+    content="Understand common dental symptoms including tooth pain, sensitivity, bleeding gums, swollen gums, bad breath, mouth ulcers and more. Simple dental explanations by Dr. Anushka Choudhary, BDS.">
 
     <meta name="author" content="Dr. Anushka Choudhary">
 
     <meta name="robots" content="index, follow">
 
+    <link rel="canonical" href="https://dranushkachoudhary.github.io/dranushka.github.io/symptoms.html">
 
-    <style>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
 
+/* =========================
+   RESET
+========================= */
 
-        body {
-            background: #FAF7F2;
-            color: #29483F;
-            font-family: Arial, sans-serif;
-            line-height: 1.8;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
 
-        a {
-            text-decoration: none;
-        }
+body {
+    background: #FAF7F2;
+    color: #29483F;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+}
 
+a {
+    text-decoration: none;
+}
 
-        /* HEADER */
 
-        header {
-            padding: 20px 60px;
-            border-bottom: 1px solid #DDD8D2;
+/* =========================
+   HEADER
+========================= */
 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+header {
+    padding: 20px 40px;
 
-            background: #FAF7F2;
+    border-bottom: 1px solid #DDD8D2;
 
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    background: #FAF7F2;
 
-        .logo {
-            font-size: 21px;
-            letter-spacing: 2px;
-            font-weight: bold;
-            color: #29483F;
-        }
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
+    gap: 30px;
+}
 
-        nav {
-            display: flex;
-            gap: 30px;
-        }
+.logo {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #29483F;
+    white-space: nowrap;
+}
 
+nav {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
 
-        nav a {
-            color: #29483F;
-            font-size: 13px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
+nav a {
+    color: #29483F;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: 0.3s ease;
+}
 
+nav a:hover {
+    color: #D8A6A1;
+}
 
-        nav a:hover {
-            color: #D8A6A1;
-        }
 
+/* =========================
+   HERO
+========================= */
 
-        /* HERO */
+.symptom-hero {
+    max-width: 900px;
 
-        .symptom-hero {
-            max-width: 900px;
-            margin: auto;
+    margin: auto;
 
-            padding: 100px 25px 75px;
+    padding: 105px 25px 80px;
 
-            text-align: center;
-        }
+    text-align: center;
+}
 
+.eyebrow {
+    color: #7F9C8D;
 
-        .eyebrow {
-            color: #7F9C8D;
+    font-size: 12px;
 
-            font-size: 12px;
+    letter-spacing: 4px;
 
-            letter-spacing: 4px;
+    text-transform: uppercase;
 
-            text-transform: uppercase;
+    margin-bottom: 20px;
+}
 
-            margin-bottom: 20px;
-        }
+.symptom-hero h1 {
+    font-family: Georgia, serif;
 
+    font-size: 58px;
 
-        h1 {
-            font-family: Georgia, serif;
+    line-height: 1.15;
 
-            font-size: 58px;
+    font-weight: 600;
 
-            line-height: 1.2;
+    color: #5A4A48;
 
-            font-weight: 600;
+    margin-bottom: 25px;
+}
 
-            color: #5A4A48;
+.hero-intro {
+    max-width: 700px;
 
-            margin-bottom: 25px;
-        }
+    margin: auto;
 
+    color: #5D6761;
 
-        .hero-intro {
-            max-width: 700px;
+    font-size: 18px;
 
-            margin: auto;
+    line-height: 1.9;
+}
 
-            color: #5D6761;
 
-            font-size: 18px;
+/* =========================
+   SYMPTOM SECTION
+========================= */
 
-            line-height: 1.9;
-        }
+.symptoms-section {
+    background: #F1EEE8;
 
+    padding: 90px 25px 105px;
+}
 
-        /* SYMPTOMS SECTION */
+.symptoms-container {
+    max-width: 1100px;
 
-        .symptoms-section {
-            background: #F1EEE8;
+    margin: auto;
+}
 
-            padding: 80px 25px 100px;
-        }
+.section-heading {
+    text-align: center;
 
+    margin-bottom: 55px;
+}
 
-        .symptoms-container {
-            max-width: 1100px;
+.section-heading h2 {
+    font-family: Georgia, serif;
 
-            margin: auto;
-        }
+    font-size: 40px;
 
+    font-weight: normal;
 
-        .section-heading {
-            text-align: center;
+    color: #5A4A48;
 
-            margin-bottom: 55px;
-        }
+    line-height: 1.3;
 
+    margin-bottom: 15px;
+}
 
-        .section-heading h2 {
-            font-family: Georgia, serif;
+.section-heading p {
+    max-width: 680px;
 
-            font-size: 40px;
+    margin: auto;
 
-            font-weight: normal;
+    color: #5D6761;
 
-            color: #5A4A48;
+    font-size: 16px;
 
-            margin-bottom: 15px;
-        }
+    line-height: 1.9;
+}
 
 
-        .section-heading p {
-            max-width: 680px;
+/* =========================
+   SYMPTOM GRID
+========================= */
 
-            margin: auto;
+.symptom-grid {
+    display: grid;
 
-            color: #5D6761;
+    grid-template-columns: repeat(3, 1fr);
 
-            font-size: 16px;
+    gap: 25px;
+}
 
-            line-height: 1.9;
-        }
 
+/* =========================
+   SYMPTOM CARD
+========================= */
 
-        /* SYMPTOM GRID */
+.symptom-card {
+    background: #FAF7F2;
 
-        .symptom-grid {
-            display: grid;
+    padding: 35px 30px 32px;
 
-            grid-template-columns: repeat(3, 1fr);
+    min-height: 270px;
 
-            gap: 25px;
-        }
+    display: flex;
 
+    flex-direction: column;
 
-        /* SYMPTOM CARD */
+    border-top: 3px solid transparent;
 
-        .symptom-card {
-            background: #FAF7F2;
+    transition: 0.3s ease;
+}
 
-            padding: 35px 30px 32px;
+.symptom-card:hover {
+    transform: translateY(-5px);
 
-            border-top: 3px solid transparent;
+    border-top-color: #D8A6A1;
 
-            transition: 0.3s ease;
+    box-shadow: 0 15px 40px rgba(41,72,63,0.08);
+}
 
-            display: flex;
+.symptom-icon {
+    font-size: 29px;
 
-            flex-direction: column;
+    margin-bottom: 18px;
+}
 
-            min-height: 245px;
-        }
+.symptom-card h3 {
+    font-family: Georgia, serif;
 
+    color: #5A4A48;
 
-        .symptom-card:hover {
-            transform: translateY(-5px);
+    font-size: 25px;
 
-            border-top-color: #D8A6A1;
+    line-height: 1.3;
 
-            box-shadow: 0 15px 40px rgba(41, 72, 63, 0.08);
-        }
+    font-weight: normal;
 
+    margin-bottom: 12px;
+}
 
-        .symptom-icon {
-            font-size: 30px;
+.symptom-card p {
+    color: #65706A;
 
-            margin-bottom: 18px;
-        }
+    font-size: 14px;
 
+    line-height: 1.8;
 
-        .symptom-card h3 {
-            font-family: Georgia, serif;
+    margin-bottom: 20px;
+}
 
-            color: #5A4A48;
+.symptom-link {
+    margin-top: auto;
 
-            font-size: 25px;
+    display: inline-block;
 
-            font-weight: normal;
+    width: fit-content;
 
-            line-height: 1.3;
+    color: #29483F;
 
-            margin-bottom: 12px;
-        }
+    font-size: 11px;
 
+    letter-spacing: 1.7px;
 
-        .symptom-card p {
-            color: #65706A;
+    text-transform: uppercase;
 
-            font-size: 14px;
+    border-bottom: 1px solid #D8A6A1;
 
-            line-height: 1.8;
+    padding-bottom: 4px;
 
-            margin-bottom: 20px;
-        }
+    transition: 0.3s ease;
+}
 
+.symptom-link:hover {
+    color: #D8A6A1;
+}
 
-        .symptom-link {
-            margin-top: auto;
 
-            color: #29483F;
+/* =========================
+   IMPORTANT MESSAGE
+========================= */
 
-            font-size: 11px;
+.help-section {
+    max-width: 850px;
 
-            letter-spacing: 2px;
+    margin: 75px auto 0;
 
-            text-transform: uppercase;
+    padding: 50px 40px;
 
-            border-bottom: 1px solid #D8A6A1;
+    background: #FAF7F2;
 
-            padding-bottom: 4px;
+    border-left: 4px solid #D8A6A1;
 
-            align-self: flex-start;
-        }
+    text-align: center;
+}
 
+.help-section h2 {
+    font-family: Georgia, serif;
 
-        .symptom-link:hover {
-            color: #D8A6A1;
-        }
+    color: #5A4A48;
 
+    font-size: 34px;
 
-        /* HELP SECTION */
+    font-weight: normal;
 
-        .help-section {
-            max-width: 850px;
+    line-height: 1.3;
 
-            margin: 80px auto 0;
+    margin-bottom: 15px;
+}
 
-            padding: 50px 35px;
+.help-section p {
+    color: #5D6761;
 
-            background: #FAF7F2;
+    font-size: 16px;
 
-            border-left: 4px solid #D8A6A1;
+    line-height: 1.9;
+}
 
-            text-align: center;
-        }
 
+/* =========================
+   EMERGENCY / URGENT CARE
+========================= */
 
-        .help-section h2 {
-            font-family: Georgia, serif;
+.urgent-section {
+    background: #FAF7F2;
 
-            color: #5A4A48;
+    padding: 90px 25px;
+}
 
-            font-size: 34px;
+.urgent-container {
+    max-width: 850px;
 
-            font-weight: normal;
+    margin: auto;
 
-            margin-bottom: 15px;
-        }
+    text-align: center;
+}
 
+.urgent-container h2 {
+    font-family: Georgia, serif;
 
-        .help-section p {
-            color: #5D6761;
+    color: #5A4A48;
 
-            font-size: 16px;
+    font-size: 38px;
 
-            line-height: 1.9;
-        }
+    font-weight: normal;
 
+    line-height: 1.3;
 
-        /* QUESTION CTA */
+    margin-bottom: 20px;
+}
 
-        .question-section {
-            padding: 90px 25px;
+.urgent-container > p {
+    max-width: 700px;
 
-            text-align: center;
+    margin: auto;
 
-            background: #FAF7F2;
-        }
+    color: #5D6761;
 
+    font-size: 16px;
 
-        .question-section h2 {
-            font-family: Georgia, serif;
+    line-height: 1.9;
+}
 
-            color: #5A4A48;
+.urgent-list {
+    margin: 30px auto 0;
 
-            font-size: 38px;
+    max-width: 650px;
 
-            font-weight: normal;
+    text-align: left;
 
-            margin-bottom: 15px;
-        }
+    background: #F1EEE8;
 
+    padding: 28px 35px;
+}
 
-        .question-section p {
-            max-width: 650px;
+.urgent-list li {
+    color: #5D6761;
 
-            margin: auto;
+    font-size: 14px;
 
-            color: #5D6761;
+    line-height: 1.8;
 
-            font-size: 16px;
+    margin-bottom: 10px;
+}
 
-            line-height: 1.9;
-        }
+.urgent-list li:last-child {
+    margin-bottom: 0;
+}
 
 
-        .question-button {
-            display: inline-block;
+/* =========================
+   QUESTION CTA
+========================= */
 
-            margin-top: 28px;
+.question-section {
+    background: #29483F;
 
-            background: #29483F;
+    padding: 90px 25px;
 
-            color: #FAF7F2;
+    text-align: center;
+}
 
-            padding: 14px 28px;
+.question-section .eyebrow {
+    color: #D8A6A1;
+}
 
-            font-size: 12px;
+.question-section h2 {
+    font-family: Georgia, serif;
 
-            letter-spacing: 2px;
+    color: #FAF7F2;
 
-            text-transform: uppercase;
+    font-size: 40px;
 
-            transition: 0.3s ease;
-        }
+    font-weight: normal;
 
+    line-height: 1.3;
 
-        .question-button:hover {
-            background: #D8A6A1;
+    margin-bottom: 18px;
+}
 
-            color: #29483F;
-        }
+.question-section p {
+    max-width: 650px;
 
+    margin: auto;
 
-        /* DISCLAIMER */
+    color: #E7E4DE;
 
-        .disclaimer {
-            max-width: 800px;
+    font-size: 16px;
 
-            margin: auto;
+    line-height: 1.9;
+}
 
-            padding: 55px 25px 75px;
+.question-button {
+    display: inline-block;
 
-            text-align: center;
-        }
+    margin-top: 30px;
 
+    background: #D8A6A1;
 
-        .disclaimer p {
-            color: #7A817C;
+    color: #29483F;
 
-            font-size: 13px;
+    padding: 14px 28px;
 
-            line-height: 1.8;
-        }
+    font-size: 12px;
 
+    letter-spacing: 2px;
 
-        .disclaimer a {
-            color: #29483F;
+    text-transform: uppercase;
 
-            border-bottom: 1px solid #D8A6A1;
-        }
+    transition: 0.3s ease;
+}
 
+.question-button:hover {
+    background: #FAF7F2;
+}
 
-        /* FOOTER */
 
-        footer {
-            background: #D8A6A1;
+/* =========================
+   DISCLAIMER
+========================= */
 
-            color: #29483F;
+.disclaimer {
+    max-width: 800px;
 
-            padding: 45px 25px;
+    margin: auto;
 
-            text-align: center;
-        }
+    padding: 55px 25px 70px;
 
+    text-align: center;
+}
 
-        footer strong {
-            font-size: 17px;
+.disclaimer p {
+    color: #7A817C;
 
-            letter-spacing: 2px;
-        }
+    font-size: 13px;
 
+    line-height: 1.8;
+}
 
-        footer p {
-            margin-top: 8px;
+.disclaimer a {
+    color: #29483F;
 
-            font-size: 14px;
-        }
+    border-bottom: 1px solid #D8A6A1;
+}
 
 
-        .footer-links {
-            margin-top: 20px;
+/* =========================
+   FOOTER
+========================= */
 
-            display: flex;
+footer {
+    background: #D8A6A1;
 
-            justify-content: center;
+    color: #29483F;
 
-            flex-wrap: wrap;
+    padding: 45px 25px;
 
-            gap: 20px;
-        }
+    text-align: center;
+}
 
+footer strong {
+    font-size: 17px;
 
-        .footer-links a {
-            color: #29483F;
+    letter-spacing: 2px;
+}
 
-            font-size: 12px;
+footer p {
+    color: #29483F;
 
-            letter-spacing: 1px;
+    margin-top: 8px;
 
-            text-transform: uppercase;
-        }
+    font-size: 14px;
+}
 
+.footer-links {
+    margin-top: 20px;
 
-        .footer-links a:hover {
-            color: #FAF7F2;
-        }
+    display: flex;
 
+    justify-content: center;
 
-        /* MOBILE */
+    flex-wrap: wrap;
 
-        @media(max-width:800px) {
+    gap: 20px;
+}
 
-            header {
-                padding: 20px 25px;
-            }
+.footer-links a {
+    color: #29483F;
 
+    font-size: 12px;
 
-            nav {
-                display: none;
-            }
+    letter-spacing: 1px;
 
+    text-transform: uppercase;
+}
 
-            .logo {
-                font-size: 17px;
-            }
+.footer-links a:hover {
+    color: #FAF7F2;
+}
 
 
-            .symptom-hero {
-                padding: 70px 25px 55px;
-            }
+/* =========================
+   TABLET
+========================= */
 
+@media(max-width:1000px) {
 
-            h1 {
-                font-size: 43px;
-            }
+    .symptom-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+}
 
-            .hero-intro {
-                font-size: 16px;
-            }
 
+/* =========================
+   MOBILE
+========================= */
 
-            .symptoms-section {
-                padding: 60px 20px 75px;
-            }
+@media(max-width:900px) {
 
+    header {
+        padding: 20px 25px;
 
-            .section-heading h2 {
-                font-size: 32px;
-            }
+        flex-direction: column;
 
+        gap: 15px;
+    }
 
-            .symptom-grid {
-                grid-template-columns: 1fr;
+    .logo {
+        font-size: 17px;
+    }
 
-                gap: 20px;
-            }
+    nav {
+        justify-content: center;
 
+        gap: 12px 18px;
+    }
 
-            .symptom-card {
-                min-height: auto;
+    nav a {
+        font-size: 11px;
+    }
 
-                padding: 30px 25px;
-            }
+    .symptom-hero {
+        padding: 70px 25px 60px;
+    }
 
+    .symptom-hero h1 {
+        font-size: 45px;
+    }
 
-            .help-section {
-                margin-top: 55px;
+    .hero-intro {
+        font-size: 16px;
+    }
 
-                padding: 40px 25px;
-            }
+    .symptoms-section {
+        padding: 70px 22px 80px;
+    }
 
+    .section-heading h2 {
+        font-size: 32px;
+    }
 
-            .help-section h2 {
-                font-size: 29px;
-            }
+    .symptom-grid {
+        grid-template-columns: 1fr;
 
+        gap: 20px;
+    }
 
-            .question-section {
-                padding: 70px 25px;
-            }
+    .symptom-card {
+        min-height: auto;
 
+        padding: 30px 25px;
+    }
 
-            .question-section h2 {
-                font-size: 31px;
-            }
+    .help-section {
+        margin-top: 55px;
 
+        padding: 40px 25px;
+    }
 
-            .footer-links {
-                gap: 12px 18px;
-            }
+    .help-section h2 {
+        font-size: 29px;
+    }
 
-        }
+    .urgent-section {
+        padding: 70px 25px;
+    }
 
-    </style>
+    .urgent-container h2 {
+        font-size: 32px;
+    }
+
+    .urgent-list {
+        padding: 25px 28px;
+    }
+
+    .question-section {
+        padding: 70px 25px;
+    }
+
+    .question-section h2 {
+        font-size: 32px;
+    }
+
+    .footer-links {
+        gap: 12px 18px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:500px) {
+
+    .symptom-hero h1 {
+        font-size: 40px;
+    }
+
+    .urgent-list {
+        padding: 22px 24px;
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -567,14 +698,15 @@
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
     <div class="logo">
         DR. ANUSHKA CHOUDHARY
     </div>
-
 
     <nav>
 
@@ -588,6 +720,8 @@
 
         <a href="symptoms.html">Symptoms</a>
 
+        <a href="treatments.html">Treatments</a>
+
         <a href="questions.html">Ask Dr. Anushka</a>
 
         <a href="contact.html">Contact</a>
@@ -598,7 +732,9 @@
 
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="symptom-hero">
 
@@ -606,23 +742,26 @@
         Dental Symptoms
     </div>
 
-
     <h1>
         What's bothering you?
     </h1>
 
-
     <p class="hero-intro">
-        Dental symptoms can be confusing. Explore common symptoms
-        below and learn what they may mean, what you can do,
+
+        Dental symptoms can be confusing.
+        Explore common symptoms below to understand
+        what they may mean, what you can watch for,
         and when it's a good idea to see a dentist.
+
     </p>
 
 </section>
 
 
 
-<!-- SYMPTOMS -->
+<!-- =========================
+     SYMPTOM GRID
+========================= -->
 
 <section class="symptoms-section">
 
@@ -635,16 +774,14 @@
                 Explore by Symptom
             </div>
 
-
             <h2>
                 Start with what you're experiencing.
             </h2>
 
-
             <p>
-                Choose a symptom to learn more. Each topic will
-                explain the common causes and important signs
-                to pay attention to.
+                Choose a symptom to learn more about common
+                causes, warning signs and when professional
+                dental evaluation may be needed.
             </p>
 
         </div>
@@ -668,8 +805,8 @@
 
                 <p>
                     From occasional discomfort to a persistent
-                    toothache, understand some common reasons
-                    a tooth may hurt.
+                    toothache, learn about common reasons a tooth
+                    may hurt.
                 </p>
 
                 <a
@@ -683,7 +820,7 @@
 
 
 
-            <!-- TOOTH SENSITIVITY -->
+            <!-- SENSITIVITY -->
 
             <article class="symptom-card">
 
@@ -745,7 +882,7 @@
             <article class="symptom-card">
 
                 <div class="symptom-icon">
-                    🦷
+                    ✨
                 </div>
 
                 <h3>
@@ -753,7 +890,7 @@
                 </h3>
 
                 <p>
-                    Tooth colour can vary naturally. Explore
+                    Tooth colour varies naturally. Explore
                     common reasons teeth may appear yellow
                     or darker over time.
                 </p>
@@ -811,8 +948,8 @@
                 </h3>
 
                 <p>
-                    Swollen or tender gums may be a sign that
-                    something needs attention.
+                    Swollen, tender or red gums may indicate
+                    irritation or an underlying gum problem.
                 </p>
 
                 <a
@@ -840,7 +977,8 @@
 
                 <p>
                     Adult teeth are not normally supposed to
-                    feel loose. Learn why this can happen.
+                    feel loose. Learn why this can happen
+                    and why it shouldn't be ignored.
                 </p>
 
                 <a
@@ -854,7 +992,7 @@
 
 
 
-            <!-- TOOTHACHE AT NIGHT -->
+            <!-- NIGHT TOOTHACHE -->
 
             <article class="symptom-card">
 
@@ -867,9 +1005,9 @@
                 </h3>
 
                 <p>
-                    If tooth pain becomes more noticeable at
-                    night, understanding the pattern can help
-                    you know when to seek dental care.
+                    If tooth pain becomes more noticeable
+                    at night, understanding the pattern can
+                    help you know when to seek dental care.
                 </p>
 
                 <a
@@ -924,8 +1062,8 @@
                 </h3>
 
                 <p>
-                    Many mouth ulcers heal on their own, but
-                    persistent or unusual ulcers deserve
+                    Many mouth ulcers heal on their own,
+                    but persistent or unusual ulcers deserve
                     professional attention.
                 </p>
 
@@ -939,11 +1077,14 @@
             </article>
 
 
+
         </div>
 
 
 
-        <!-- HELP BOX -->
+        <!-- =========================
+             IMPORTANT MESSAGE
+        ========================= -->
 
         <div class="help-section">
 
@@ -951,21 +1092,18 @@
                 Remember
             </div>
 
-
             <h2>
                 A symptom isn't a diagnosis.
             </h2>
 
-
             <p>
                 The same symptom can have different causes.
                 These pages are designed to help you understand
-                dental problems, not replace a clinical examination
-                or personalised dental advice.
+                dental problems, but they cannot replace a clinical
+                examination or personalised dental advice.
             </p>
 
         </div>
-
 
     </div>
 
@@ -973,7 +1111,70 @@
 
 
 
-<!-- QUESTION CTA -->
+<!-- =========================
+     WHEN TO SEEK URGENT CARE
+========================= -->
+
+<section class="urgent-section">
+
+    <div class="urgent-container">
+
+        <div class="eyebrow">
+            Don't Ignore These Signs
+        </div>
+
+        <h2>
+            When should you see a dentist promptly?
+        </h2>
+
+        <p>
+            Some dental problems should not be left to
+            "see if they get better." Consider seeking
+            prompt professional dental care if you experience:
+        </p>
+
+
+        <ul class="urgent-list">
+
+            <li>
+                Severe or persistent tooth pain
+            </li>
+
+            <li>
+                Facial or jaw swelling
+            </li>
+
+            <li>
+                Fever along with dental pain or swelling
+            </li>
+
+            <li>
+                Difficulty swallowing or breathing
+            </li>
+
+            <li>
+                A tooth that becomes loose unexpectedly
+            </li>
+
+            <li>
+                Bleeding that does not stop
+            </li>
+
+            <li>
+                A mouth ulcer or lesion that does not heal
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     QUESTIONS
+========================= -->
 
 <section class="question-section">
 
@@ -981,17 +1182,15 @@
         Still unsure?
     </div>
 
-
     <h2>
         Have a dental question?
     </h2>
 
-
     <p>
         If you can't find what you're looking for,
-        you can ask your question directly.
+        you can submit your question and suggest
+        a topic you'd like Dr. Anushka to explain.
     </p>
-
 
     <a
         href="questions.html"
@@ -1004,16 +1203,17 @@
 
 
 
-<!-- DISCLAIMER -->
+<!-- =========================
+     DISCLAIMER
+========================= -->
 
 <section class="disclaimer">
 
     <p>
         The information on this page is for general educational
-        purposes only and does not replace an in-person dental
+        purposes only. It does not replace an in-person dental
         examination, diagnosis or personalised professional advice.
     </p>
-
 
     <p style="margin-top: 12px;">
 
@@ -1027,7 +1227,9 @@
 
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -1035,11 +1237,9 @@
         DR. ANUSHKA CHOUDHARY
     </strong>
 
-
     <p>
         Dentistry, explained simply.
     </p>
-
 
     <div class="footer-links">
 
@@ -1050,6 +1250,8 @@
         <a href="guides.html">Visual Guides</a>
 
         <a href="symptoms.html">Symptoms</a>
+
+        <a href="treatments.html">Treatments</a>
 
         <a href="about.html">About</a>
 
