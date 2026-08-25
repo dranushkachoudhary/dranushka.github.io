@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,454 +12,740 @@
     <title>Dental Sealants Explained | Dr. Anushka Choudhary, BDS</title>
 
     <meta name="description"
-    content="Understand dental sealants in simple language. Learn what dental sealants are, how they work, who may benefit from them and why they are used as preventive dental care.">
+    content="Understand dental sealants in simple language. Learn what dental sealants are, how they work, who may benefit from them, how the procedure is done and how sealants help prevent cavities, explained by Dr. Anushka Choudhary, BDS.">
 
     <meta name="author" content="Dr. Anushka Choudhary">
 
     <meta name="robots" content="index, follow">
 
 
-    <style>
+<style>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* =========================
+   RESET
+========================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            background: #FAF7F2;
-            color: #29483F;
-            font-family: Arial, sans-serif;
-            line-height: 1.8;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    background: #FAF7F2;
+    color: #29483F;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+}
 
-        a {
-            text-decoration: none;
-        }
+a {
+    text-decoration: none;
+}
 
 
-        /* HEADER */
+/* =========================
+   HEADER
+========================= */
 
-        header {
-            padding: 20px 60px;
-            border-bottom: 1px solid #DDD8D2;
+header {
+    padding: 20px 40px;
 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    border-bottom: 1px solid #DDD8D2;
 
-            background: #FAF7F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+    background: #FAF7F2;
 
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
-        .logo {
-            font-size: 21px;
-            letter-spacing: 2px;
-            font-weight: bold;
-            color: #29483F;
-        }
+    gap: 30px;
+}
 
+.logo {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #29483F;
+    white-space: nowrap;
+}
 
-        nav {
-            display: flex;
-            gap: 30px;
-        }
+nav {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
 
+nav a {
+    color: #29483F;
 
-        nav a {
-            color: #29483F;
-            font-size: 13px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
+    font-size: 12px;
 
+    letter-spacing: 0.8px;
 
-        nav a:hover {
-            color: #D8A6A1;
-        }
+    text-transform: uppercase;
 
+    white-space: nowrap;
 
-        /* HERO */
+    transition: 0.3s ease;
+}
 
-        .hero {
-            max-width: 900px;
-            margin: auto;
+nav a:hover {
+    color: #D8A6A1;
+}
 
-            padding: 100px 25px 75px;
 
-            text-align: center;
-        }
+/* =========================
+   HERO
+========================= */
 
+.hero {
+    max-width: 900px;
 
-        .eyebrow {
-            color: #7F9C8D;
+    margin: auto;
 
-            font-size: 12px;
+    padding: 100px 25px 65px;
 
-            letter-spacing: 4px;
+    text-align: center;
+}
 
-            text-transform: uppercase;
+.eyebrow {
+    color: #7F9C8D;
 
-            margin-bottom: 20px;
-        }
+    font-size: 12px;
 
+    letter-spacing: 4px;
 
-        h1 {
-            font-family: Georgia, serif;
+    text-transform: uppercase;
 
-            font-size: 58px;
+    margin-bottom: 20px;
+}
 
-            line-height: 1.2;
+h1 {
+    font-family: Georgia, serif;
 
-            font-weight: 600;
+    font-size: 58px;
 
-            color: #5A4A48;
+    line-height: 1.15;
 
-            margin-bottom: 25px;
-        }
+    font-weight: 600;
 
+    color: #5A4A48;
 
-        .hero-intro {
-            max-width: 720px;
+    margin-bottom: 25px;
+}
 
-            margin: auto;
+.hero-intro {
+    max-width: 720px;
 
-            color: #5D6761;
+    margin: auto;
 
-            font-size: 18px;
+    color: #5D6761;
 
-            line-height: 1.9;
-        }
+    font-size: 18px;
 
+    line-height: 1.9;
+}
 
-        /* CONTENT */
+.article-meta {
+    margin-top: 25px;
 
-        .content-section {
-            background: #F1EEE8;
+    color: #7F9C8D;
 
-            padding: 80px 25px 100px;
-        }
+    font-size: 12px;
 
+    letter-spacing: 1px;
+}
 
-        .content-container {
-            max-width: 900px;
 
-            margin: auto;
-        }
+/* =========================
+   ARTICLE IMAGE
+========================= */
 
+.article-image {
+    max-width: 900px;
 
-        .content-box {
-            background: #FAF7F2;
+    margin: 0 auto 70px;
 
-            padding: 50px;
+    padding: 0 25px;
+}
 
-            margin-bottom: 30px;
-        }
+.article-image img {
+    display: block;
 
+    width: 100%;
 
-        .content-box h2 {
-            font-family: Georgia, serif;
+    height: 420px;
 
-            font-size: 34px;
+    object-fit: cover;
 
-            font-weight: normal;
+    object-position: center;
 
-            color: #5A4A48;
+    border-radius: 3px;
+}
 
-            margin-bottom: 20px;
-        }
 
+/* =========================
+   CONTENT
+========================= */
 
-        .content-box p {
-            color: #5D6761;
+.content-section {
+    background: #F1EEE8;
 
-            font-size: 16px;
+    padding: 80px 25px 100px;
+}
 
-            line-height: 1.9;
+.content-container {
+    max-width: 900px;
 
-            margin-bottom: 18px;
-        }
+    margin: auto;
+}
 
+.content-box {
+    background: #FAF7F2;
 
-        .content-box p:last-child {
-            margin-bottom: 0;
-        }
+    padding: 45px;
 
+    margin-bottom: 25px;
+}
 
-        /* LIST */
+.content-box h2 {
+    font-family: Georgia, serif;
 
-        .simple-list {
-            margin-top: 20px;
+    color: #5A4A48;
 
-            padding-left: 22px;
-        }
+    font-size: 34px;
 
+    font-weight: normal;
 
-        .simple-list li {
-            color: #5D6761;
+    line-height: 1.3;
 
-            font-size: 16px;
+    margin-bottom: 18px;
+}
 
-            line-height: 1.9;
+.content-box h3 {
+    font-family: Georgia, serif;
 
-            margin-bottom: 12px;
-        }
+    color: #5A4A48;
 
+    font-size: 24px;
 
-        /* HIGHLIGHT */
+    font-weight: normal;
 
-        .highlight {
-            background: #F8EDEC;
+    line-height: 1.4;
 
-            border-left: 4px solid #D8A6A1;
+    margin-top: 28px;
 
-            padding: 30px;
+    margin-bottom: 10px;
+}
 
-            margin: 30px 0;
-        }
+.content-box p {
+    color: #5D6761;
 
+    font-size: 16px;
 
-        .highlight strong {
-            display: block;
+    line-height: 1.9;
 
-            font-family: Georgia, serif;
+    margin-bottom: 18px;
+}
 
-            color: #5A4A48;
+.content-box p:last-child {
+    margin-bottom: 0;
+}
 
-            font-size: 23px;
 
-            margin-bottom: 10px;
-        }
+/* =========================
+   LIST
+========================= */
 
+.simple-list {
+    margin: 15px 0 10px 22px;
 
-        .highlight p {
-            margin-bottom: 0;
-        }
+    color: #5D6761;
+}
 
+.simple-list li {
+    margin-bottom: 12px;
 
-        /* CTA */
+    padding-left: 5px;
 
-        .question-section {
-            padding: 90px 25px;
+    font-size: 16px;
 
-            text-align: center;
+    line-height: 1.9;
+}
 
-            background: #FAF7F2;
-        }
 
+/* =========================
+   HIGHLIGHT
+========================= */
 
-        .question-section h2 {
-            font-family: Georgia, serif;
+.highlight {
+    background: #F1EEE8;
 
-            color: #5A4A48;
+    border-left: 4px solid #D8A6A1;
 
-            font-size: 38px;
+    padding: 28px 30px;
 
-            font-weight: normal;
+    margin: 30px 0;
+}
 
-            margin-bottom: 15px;
-        }
+.highlight strong {
+    display: block;
 
+    font-family: Georgia, serif;
 
-        .question-section p {
-            max-width: 650px;
+    color: #5A4A48;
 
-            margin: auto;
+    font-size: 23px;
 
-            color: #5D6761;
+    line-height: 1.4;
 
-            font-size: 16px;
+    margin-bottom: 10px;
+}
 
-            line-height: 1.9;
-        }
+.highlight p {
+    margin-bottom: 0;
 
+    color: #5D6761;
+}
 
-        .question-button {
-            display: inline-block;
 
-            margin-top: 28px;
+/* =========================
+   SEALANT BENEFITS
+========================= */
 
-            background: #29483F;
+.benefit-grid {
+    display: grid;
 
-            color: #FAF7F2;
+    grid-template-columns: repeat(3, 1fr);
 
-            padding: 14px 28px;
+    gap: 18px;
 
-            font-size: 12px;
+    margin-top: 30px;
+}
 
-            letter-spacing: 2px;
+.benefit-card {
+    background: #F1EEE8;
 
-            text-transform: uppercase;
+    padding: 25px 22px;
 
-            transition: 0.3s ease;
-        }
+    border-top: 3px solid #7F9C8D;
+}
 
+.benefit-card h3 {
+    margin-top: 0;
 
-        .question-button:hover {
-            background: #D8A6A1;
+    font-size: 21px;
 
-            color: #29483F;
-        }
+    margin-bottom: 10px;
+}
 
+.benefit-card p {
+    font-size: 14px;
 
-        /* DISCLAIMER */
+    line-height: 1.8;
 
-        .disclaimer {
-            max-width: 800px;
+    margin-bottom: 0;
+}
 
-            margin: auto;
 
-            padding: 20px 25px 75px;
+/* =========================
+   STEPS
+========================= */
 
-            text-align: center;
-        }
+.steps {
+    margin-top: 25px;
+}
 
+.step {
+    display: flex;
 
-        .disclaimer p {
-            color: #7A817C;
+    gap: 22px;
 
-            font-size: 13px;
+    padding: 24px 0;
 
-            line-height: 1.8;
-        }
+    border-bottom: 1px solid #DDD8D2;
+}
 
+.step:last-child {
+    border-bottom: none;
 
-        .disclaimer a {
-            color: #29483F;
+    padding-bottom: 0;
+}
 
-            border-bottom: 1px solid #D8A6A1;
-        }
+.step-number {
+    min-width: 42px;
 
+    height: 42px;
 
-        /* FOOTER */
+    display: flex;
 
-        footer {
-            background: #D8A6A1;
+    align-items: center;
 
-            color: #29483F;
+    justify-content: center;
 
-            padding: 45px 25px;
+    background: #D8A6A1;
 
-            text-align: center;
-        }
+    color: #29483F;
 
+    font-family: Georgia, serif;
 
-        footer strong {
-            font-size: 17px;
+    font-size: 15px;
+}
 
-            letter-spacing: 2px;
-        }
+.step-content h3 {
+    margin: 0 0 7px;
 
+    font-size: 22px;
+}
 
-        footer p {
-            margin-top: 8px;
+.step-content p {
+    margin-bottom: 0;
+}
 
-            font-size: 14px;
-        }
 
+/* =========================
+   FAQ
+========================= */
 
-        .footer-links {
-            margin-top: 20px;
+.faq-section {
+    margin-top: 30px;
+}
 
-            display: flex;
+.faq {
+    background: #F1EEE8;
 
-            justify-content: center;
+    padding: 25px 28px;
 
-            flex-wrap: wrap;
+    margin-bottom: 15px;
 
-            gap: 20px;
-        }
+    border-left: 3px solid #D8A6A1;
+}
 
+.faq h3 {
+    font-family: Georgia, serif;
 
-        .footer-links a {
-            color: #29483F;
+    color: #5A4A48;
 
-            font-size: 12px;
+    font-size: 21px;
 
-            letter-spacing: 1px;
+    font-weight: normal;
 
-            text-transform: uppercase;
-        }
+    line-height: 1.4;
 
+    margin-bottom: 10px;
+}
 
-        .footer-links a:hover {
-            color: #FAF7F2;
-        }
+.faq p {
+    color: #65706A;
 
+    font-size: 15px;
 
-        /* MOBILE */
+    line-height: 1.8;
 
-        @media(max-width:800px) {
+    margin-bottom: 0;
+}
 
-            header {
-                padding: 20px 25px;
-            }
 
+/* =========================
+   CTA
+========================= */
 
-            nav {
-                display: none;
-            }
+.question-section {
+    padding: 90px 25px;
 
+    text-align: center;
 
-            .logo {
-                font-size: 17px;
-            }
+    background: #29483F;
 
+    color: #FAF7F2;
+}
 
-            .hero {
-                padding: 70px 25px 55px;
-            }
+.question-section .eyebrow {
+    color: #D8A6A1;
+}
 
+.question-section h2 {
+    font-family: Georgia, serif;
 
-            h1 {
-                font-size: 43px;
-            }
+    color: #FAF7F2;
 
+    font-size: 38px;
 
-            .hero-intro {
-                font-size: 16px;
-            }
+    font-weight: normal;
 
+    line-height: 1.35;
 
-            .content-section {
-                padding: 60px 20px 75px;
-            }
+    margin-bottom: 15px;
+}
 
+.question-section p {
+    max-width: 650px;
 
-            .content-box {
-                padding: 30px 25px;
-            }
+    margin: auto;
 
+    color: #E7E4DE;
 
-            .content-box h2 {
-                font-size: 29px;
-            }
+    font-size: 16px;
 
+    line-height: 1.9;
+}
 
-            .question-section {
-                padding: 70px 25px;
-            }
+.question-button {
+    display: inline-block;
 
+    margin-top: 28px;
 
-            .question-section h2 {
-                font-size: 31px;
-            }
+    border: 1px solid #D8A6A1;
 
+    color: #FAF7F2;
 
-            .footer-links {
-                gap: 12px 18px;
-            }
+    padding: 14px 28px;
 
-        }
+    font-size: 12px;
 
-    </style>
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+.question-button:hover {
+    background: #D8A6A1;
+
+    color: #29483F;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-section {
+    text-align: center;
+
+    padding: 45px 25px;
+
+    background: #F1EEE8;
+}
+
+.back-button {
+    display: inline-block;
+
+    border: 1px solid #29483F;
+
+    color: #29483F;
+
+    padding: 13px 28px;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+.back-button:hover {
+    background: #29483F;
+
+    color: #FAF7F2;
+}
+
+
+/* =========================
+   DISCLAIMER
+========================= */
+
+.disclaimer {
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 55px 25px 75px;
+
+    text-align: center;
+}
+
+.disclaimer p {
+    color: #7A817C;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+.disclaimer a {
+    color: #29483F;
+
+    border-bottom: 1px solid #D8A6A1;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #D8A6A1;
+
+    color: #29483F;
+
+    padding: 45px 25px;
+
+    text-align: center;
+}
+
+footer strong {
+    font-size: 17px;
+
+    letter-spacing: 2px;
+}
+
+footer p {
+    margin-top: 8px;
+
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-top: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #29483F;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.footer-links a:hover {
+    color: #FAF7F2;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:800px) {
+
+    header {
+        padding: 20px 25px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .hero {
+        padding: 70px 25px 50px;
+    }
+
+    h1 {
+        font-size: 43px;
+    }
+
+    .hero-intro {
+        font-size: 16px;
+    }
+
+    .article-image {
+        margin-bottom: 50px;
+
+        padding: 0 20px;
+    }
+
+    .article-image img {
+        height: 260px;
+
+        object-fit: cover;
+    }
+
+    .content-section {
+        padding: 60px 20px 75px;
+    }
+
+    .content-box {
+        padding: 30px 25px;
+    }
+
+    .content-box h2 {
+        font-size: 29px;
+    }
+
+    .content-box h3 {
+        font-size: 22px;
+    }
+
+    .content-box p,
+    .simple-list li {
+        font-size: 15px;
+    }
+
+    .highlight {
+        padding: 23px 24px;
+    }
+
+    .highlight strong {
+        font-size: 21px;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        gap: 15px;
+    }
+
+    .step-number {
+        min-width: 38px;
+
+        height: 38px;
+    }
+
+    .question-section {
+        padding: 70px 25px;
+    }
+
+    .question-section h2 {
+        font-size: 31px;
+    }
+
+    .footer-links {
+        gap: 12px 18px;
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -468,7 +753,9 @@
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -501,7 +788,9 @@
 
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
@@ -525,11 +814,34 @@
 
     </p>
 
+
+    <div class="article-meta">
+        Dentistry · Preventive Care · August 2026
+    </div>
+
 </section>
 
 
 
-<!-- CONTENT -->
+<!-- =========================
+     ARTICLE IMAGE
+========================= -->
+
+<section class="article-image">
+
+    <img
+        src="sealant.jpg"
+        alt="Dental sealant being applied to the chewing surface of a tooth"
+        loading="lazy"
+    >
+
+</section>
+
+
+
+<!-- =========================
+     CONTENT
+========================= -->
 
 <section class="content-section">
 
@@ -569,6 +881,23 @@
             </p>
 
 
+            <div class="highlight">
+
+                <strong>
+                    Think of a sealant as an extra protective layer.
+                </strong>
+
+
+                <p>
+
+                    It covers vulnerable grooves on suitable teeth and
+                    helps make those areas less likely to trap plaque
+                    and food.
+
+                </p>
+
+            </div>
+
         </div>
 
 
@@ -605,6 +934,62 @@
             </p>
 
 
+            <div class="benefit-grid">
+
+
+                <div class="benefit-card">
+
+                    <h3>
+                        Protects grooves
+                    </h3>
+
+                    <p>
+
+                        Sealants cover deep pits and grooves where
+                        plaque and food may collect.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="benefit-card">
+
+                    <h3>
+                        Helps prevent decay
+                    </h3>
+
+                    <p>
+
+                        They can reduce the risk of cavities developing
+                        on suitable chewing surfaces.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="benefit-card">
+
+                    <h3>
+                        Preventive care
+                    </h3>
+
+                    <p>
+
+                        Sealants can be part of a broader strategy
+                        for maintaining good oral health.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
             <div class="highlight">
 
                 <strong>
@@ -621,7 +1006,6 @@
                 </p>
 
             </div>
-
 
         </div>
 
@@ -659,6 +1043,27 @@
             </p>
 
 
+            <ul class="simple-list">
+
+                <li>
+                    Children with newly erupted permanent molars.
+                </li>
+
+                <li>
+                    Teenagers with deep or difficult-to-clean grooves.
+                </li>
+
+                <li>
+                    Adults who have teeth with susceptible grooves.
+                </li>
+
+                <li>
+                    People who may have an increased risk of cavities
+                    in particular teeth.
+                </li>
+
+            </ul>
+
         </div>
 
 
@@ -679,29 +1084,185 @@
 
             <p>
 
-                The tooth is first cleaned and prepared. The tooth surface
-                is then treated so that the sealant can bond properly.
+                Sealant placement is generally a straightforward
+                preventive procedure. The tooth must first be clean
+                and appropriately prepared.
+
+            </p>
+
+
+            <div class="steps">
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        1
+                    </div>
+
+
+                    <div class="step-content">
+
+                        <h3>
+                            Cleaning
+                        </h3>
+
+
+                        <p>
+
+                            The tooth is cleaned carefully to remove
+                            plaque and debris from the grooves.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+
+                    <div class="step-content">
+
+                        <h3>
+                            Preparation
+                        </h3>
+
+
+                        <p>
+
+                            The tooth surface is prepared so that
+                            the sealant can bond properly.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+
+                    <div class="step-content">
+
+                        <h3>
+                            Sealant placement
+                        </h3>
+
+
+                        <p>
+
+                            The sealant material is carefully flowed
+                            into the grooves and pits of the tooth.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        4
+                    </div>
+
+
+                    <div class="step-content">
+
+                        <h3>
+                            Curing
+                        </h3>
+
+
+                        <p>
+
+                            A dental curing light may be used to
+                            harden the sealant material.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        5
+                    </div>
+
+
+                    <div class="step-content">
+
+                        <h3>
+                            Final check
+                        </h3>
+
+
+                        <p>
+
+                            Your dentist checks the sealant and makes
+                            sure the bite feels comfortable.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PAIN -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                A common concern
+            </div>
+
+
+            <h2>
+                Do dental sealants hurt?
+            </h2>
+
+
+            <p>
+
+                Sealant placement is generally comfortable and does
+                not normally require drilling into healthy tooth
+                structure simply to place the sealant.
 
             </p>
 
 
             <p>
 
-                The sealant material is carefully placed into the grooves
-                of the tooth. A dental curing light may then be used to
-                harden the material.
+                Your dentist will explain the procedure and let you
+                know what to expect before treatment.
 
             </p>
-
-
-            <p>
-
-                The procedure is generally quick and does not require
-                removal of healthy tooth structure simply to place the
-                sealant.
-
-            </p>
-
 
         </div>
 
@@ -733,12 +1294,29 @@
 
             <p>
 
-                Sealants can wear down or become damaged over time.
-                If this happens, your dentist can assess whether repair
-                or replacement is appropriate.
+                Sealants can wear down, chip or become damaged over
+                time. If this happens, your dentist can assess whether
+                repair or replacement is appropriate.
 
             </p>
 
+
+            <div class="highlight">
+
+                <strong>
+                    Sealants need to be monitored.
+                </strong>
+
+
+                <p>
+
+                    A sealant that has worn away or become damaged may
+                    no longer provide the intended protection, so regular
+                    dental examinations remain important.
+
+                </p>
+
+            </div>
 
         </div>
 
@@ -774,7 +1352,6 @@
                 remain important for maintaining oral health.
 
             </p>
-
 
         </div>
 
@@ -823,6 +1400,173 @@
 
             </ul>
 
+        </div>
+
+
+
+        <!-- FAQ -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                Common questions
+            </div>
+
+
+            <h2>
+                Dental sealant FAQs.
+            </h2>
+
+
+            <div class="faq-section">
+
+
+                <div class="faq">
+
+                    <h3>
+                        Are dental sealants only for children?
+                    </h3>
+
+                    <p>
+
+                        No. Sealants are commonly used in children and
+                        teenagers, but adults may also benefit when
+                        particular teeth have grooves that are susceptible
+                        to decay.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Do sealants replace brushing?
+                    </h3>
+
+                    <p>
+
+                        No. Sealants are an additional preventive measure.
+                        Brushing, cleaning between the teeth, appropriate
+                        fluoride use and regular dental care remain important.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        How long do dental sealants last?
+                    </h3>
+
+                    <p>
+
+                        Sealants can remain useful for years, but they
+                        can wear down or become damaged. Your dentist can
+                        check them during regular examinations and decide
+                        whether maintenance is needed.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Can a tooth with a sealant still get a cavity?
+                    </h3>
+
+                    <p>
+
+                        Yes. Sealants reduce the risk of decay on the
+                        surfaces they cover, but they do not make a tooth
+                        completely immune to cavities.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq">
+
+                    <h3>
+                        Are dental sealants the same as fillings?
+                    </h3>
+
+                    <p>
+
+                        No. Sealants are primarily preventive and are
+                        placed over suitable grooves and pits. Fillings
+                        are used to restore tooth structure affected by
+                        decay or other damage.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FINAL -->
+
+        <div class="content-box">
+
+            <div class="eyebrow">
+                Making the decision
+            </div>
+
+
+            <h2>
+                Are dental sealants right for you?
+            </h2>
+
+
+            <p>
+
+                Sealants can be a useful preventive treatment for
+                selected teeth, particularly when deep grooves make
+                cleaning difficult or the risk of decay is increased.
+
+            </p>
+
+
+            <p>
+
+                Your dentist can examine the teeth and determine whether
+                sealants would provide meaningful protection based on
+                your individual oral health and cavity risk.
+
+            </p>
+
+
+            <div class="highlight">
+
+                <strong>
+                    Prevention is easier when it starts early.
+                </strong>
+
+
+                <p>
+
+                    Sealants are one tool dentists can use to protect
+                    susceptible teeth, but they work best alongside
+                    consistent daily oral hygiene and regular dental care.
+
+                </p>
+
+            </div>
 
         </div>
 
@@ -833,7 +1577,9 @@
 
 
 
-<!-- CTA -->
+<!-- =========================
+     QUESTION CTA
+========================= -->
 
 <section class="question-section">
 
@@ -850,7 +1596,8 @@
     <p>
 
         If you want to understand whether sealants may be useful for
-        you or your child, you can ask your dental question directly.
+        you or your child, you can submit your general dental question
+        through the website.
 
     </p>
 
@@ -866,7 +1613,26 @@
 
 
 
-<!-- DISCLAIMER -->
+<!-- =========================
+     BACK TO TREATMENTS
+========================= -->
+
+<section class="back-section">
+
+    <a
+        href="treatments.html"
+        class="back-button"
+    >
+        ← Back to All Treatments
+    </a>
+
+</section>
+
+
+
+<!-- =========================
+     DISCLAIMER
+========================= -->
 
 <section class="disclaimer">
 
@@ -891,7 +1657,9 @@
 
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -933,4 +1701,3 @@
 </body>
 
 </html>
-```
