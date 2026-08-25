@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -137,6 +136,81 @@ h1 {
 
     font-size: 18px;
     line-height: 1.9;
+}
+
+
+/* =========================
+   ARTICLE IMAGE
+========================= */
+
+.article-image {
+    max-width: 900px;
+    margin: 0 auto 70px;
+    padding: 0 25px;
+
+    text-align: center;
+}
+
+
+/* CLICKABLE IMAGE */
+
+.article-image a {
+    display: block;
+
+    width: 100%;
+
+    cursor: zoom-in;
+}
+
+
+/* IMAGE ITSELF */
+
+.article-image img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-height: 650px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    margin: 0 auto;
+
+    border-radius: 3px;
+
+    box-shadow:
+        0 15px 40px rgba(41, 72, 63, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* HOVER EFFECT */
+
+.article-image a:hover img {
+    transform: scale(1.01);
+
+    box-shadow:
+        0 18px 45px rgba(41, 72, 63, 0.15);
+}
+
+
+/* CLICK MESSAGE */
+
+.image-caption {
+    margin-top: 12px;
+
+    color: #7A817C;
+
+    font-size: 12px;
+
+    letter-spacing: 0.5px;
 }
 
 
@@ -525,6 +599,38 @@ footer p {
         font-size: 16px;
     }
 
+
+    /* MOBILE IMAGE */
+
+    .article-image {
+        margin-bottom: 50px;
+
+        padding: 0 20px;
+    }
+
+    .article-image a {
+        width: 100%;
+    }
+
+    .article-image img {
+        width: 100%;
+
+        height: auto;
+
+        max-height: none;
+
+        object-fit: contain;
+
+        border-radius: 3px;
+    }
+
+    .image-caption {
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+
     .content-section {
         padding: 60px 20px 75px;
     }
@@ -627,6 +733,35 @@ footer p {
         pain, infection or other dental concerns.
 
     </p>
+
+</section>
+
+
+
+<!-- =========================
+     ARTICLE IMAGE
+========================= -->
+
+<section class="article-image">
+
+    <a
+        href="wisdom tooth.jpg"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open wisdom tooth image in full size"
+    >
+
+        <img
+            src="wisdom tooth.jpg"
+            alt="Wisdom tooth dental illustration showing wisdom teeth"
+        >
+
+    </a>
+
+
+    <div class="image-caption">
+        Click the image to view it in full size.
+    </div>
 
 </section>
 
@@ -1244,4 +1379,3 @@ footer p {
 </body>
 
 </html>
-```
