@@ -20,7 +20,10 @@
     <link rel="canonical"
         href="https://dranushkachoudhary.github.io/dranushka.github.io/blog.html">
 
-    <meta property="og:title" content="Dental Blog | Dr. Anushka Choudhary, BDS">
+    <!-- Open Graph -->
+
+    <meta property="og:title"
+        content="Dental Blog | Dr. Anushka Choudhary, BDS">
 
     <meta property="og:description"
         content="Simple, evidence-informed dental education for everyday questions about your teeth and gums.">
@@ -32,6 +35,8 @@
 
     <meta property="og:image"
         content="https://dranushkachoudhary.github.io/dranushka.github.io/tooth%20sensitivity%20article%20image.png">
+
+    <!-- Twitter -->
 
     <meta name="twitter:card" content="summary_large_image">
 
@@ -49,10 +54,19 @@
 
     <style>
 
+        /* =========================
+           RESET
+        ========================= */
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
         }
 
 
@@ -296,7 +310,9 @@
             background: white;
             border: 1px solid rgba(41, 72, 63, 0.08);
             overflow: hidden;
-            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease;
         }
 
 
@@ -467,7 +483,7 @@
 
 
         .guide-art::after {
-            content: "VISUAL\nGUIDES";
+            content: "VISUAL\A GUIDES";
             white-space: pre;
             text-align: center;
             font-family: Georgia, serif;
@@ -660,7 +676,7 @@
 
 
         /* =========================
-           MOBILE
+           TABLET / MOBILE
         ========================= */
 
         @media (max-width: 850px) {
@@ -669,13 +685,16 @@
                 padding: 18px 5%;
             }
 
+
             nav {
                 gap: 12px;
             }
 
+
             nav a:not(.nav-button) {
                 display: none;
             }
+
 
             .blog-hero {
                 grid-template-columns: 1fr;
@@ -683,56 +702,69 @@
                 gap: 35px;
             }
 
+
             .blog-hero h1 {
                 font-size: 55px;
             }
+
 
             .hero-card {
                 min-height: 280px;
                 padding: 35px;
             }
 
+
             .articles-section {
                 padding: 60px 5% 75px;
             }
 
+
             .section-heading {
                 display: block;
             }
+
 
             .section-heading h2 {
                 font-size: 38px;
                 margin-bottom: 12px;
             }
 
+
             .article-grid {
                 grid-template-columns: 1fr;
             }
+
 
             .article-image {
                 height: 270px;
             }
 
+
             .guides-section {
                 padding: 75px 5%;
             }
+
 
             .guides-layout {
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
 
+
             .guides-section h2 {
                 font-size: 43px;
             }
+
 
             .guide-art {
                 min-height: 280px;
             }
 
+
             .topics-section {
                 padding: 70px 5%;
             }
+
 
             .question-section {
                 margin: 0 5% 75px;
@@ -740,27 +772,33 @@
                 display: block;
             }
 
+
             .question-section h2 {
                 font-size: 35px;
             }
+
 
             .question-button {
                 display: inline-block;
                 margin-top: 25px;
             }
 
+
             .disclaimer {
                 padding: 0 5% 60px;
             }
+
 
             footer {
                 padding: 50px 5% 25px;
             }
 
+
             .footer-top {
                 grid-template-columns: 1fr;
                 gap: 35px;
             }
+
 
             .footer-bottom {
                 flex-direction: column;
@@ -769,36 +807,47 @@
         }
 
 
+        /* =========================
+           SMALL MOBILE
+        ========================= */
+
         @media (max-width: 480px) {
 
             .logo {
                 font-size: 20px;
             }
 
+
             .nav-button {
                 padding: 9px 13px;
                 font-size: 12px;
             }
 
+
             .blog-hero h1 {
                 font-size: 46px;
             }
+
 
             .hero-description {
                 font-size: 16px;
             }
 
+
             .article-content {
                 padding: 25px;
             }
+
 
             .article-content h3 {
                 font-size: 25px;
             }
 
+
             .article-image {
                 height: 235px;
             }
+
 
             .guides-section h2 {
                 font-size: 38px;
@@ -809,9 +858,12 @@
     </style>
 
 
-    <!-- WEBSITE / BLOG STRUCTURED DATA -->
+    <!-- =========================
+         BLOG STRUCTURED DATA
+    ========================= -->
 
     <script type="application/ld+json">
+
     {
         "@context": "https://schema.org",
         "@type": "Blog",
@@ -826,6 +878,7 @@
             "honorificSuffix": "BDS"
         }
     }
+
     </script>
 
 </head>
@@ -844,17 +897,28 @@
             Dr. Anushka Choudhary
         </a>
 
+
         <nav>
 
-            <a href="index.html">Home</a>
+            <a href="index.html">
+                Home
+            </a>
 
-            <a href="about.html">About</a>
+            <a href="about.html">
+                About
+            </a>
 
-            <a href="guides.html">Guides</a>
+            <a href="guides.html">
+                Guides
+            </a>
 
-            <a href="treatments.html">Treatments</a>
+            <a href="treatments.html">
+                Treatments
+            </a>
 
-            <a href="questions.html">Ask Dr. Anushka</a>
+            <a href="questions.html">
+                Ask Dr. Anushka
+            </a>
 
             <a href="contact.html" class="nav-button">
                 Contact
@@ -872,28 +936,39 @@
 
     <section class="blog-hero">
 
+
         <div>
 
             <div class="eyebrow">
                 Dental Blog
             </div>
 
+
             <h1>
                 Dentistry,<br>
                 <span>explained simply.</span>
             </h1>
 
+
             <p class="hero-description">
-                Clear, patient-friendly dental education for the questions
-                you actually search for — from sensitive teeth and bleeding
-                gums to scaling, yellow teeth and everyday oral health.
+
+                Clear, patient-friendly dental education for the
+                questions you actually search for — from sensitive
+                teeth and bleeding gums to scaling, yellow teeth
+                and everyday oral health.
+
             </p>
 
+
             <p class="hero-note">
-                Patient-friendly dental education · by Dr. Anushka Choudhary, BDS
+
+                Patient-friendly dental education ·
+                by Dr. Anushka Choudhary, BDS
+
             </p>
 
         </div>
+
 
 
         <div class="hero-card">
@@ -902,18 +977,24 @@
                 A little dental clarity
             </small>
 
+
             <h2>
                 Ask better questions.<br>
                 Understand your smile.
             </h2>
 
+
             <p>
-                No complicated terminology. No unnecessary fear.
-                Just simple explanations to help you understand
-                your oral health better.
+
+                No complicated terminology.
+                No unnecessary fear.
+                Just simple explanations to help you
+                understand your oral health better.
+
             </p>
 
         </div>
+
 
     </section>
 
@@ -925,69 +1006,102 @@
 
     <section class="articles-section">
 
+
         <div class="section-heading">
 
+
             <div>
+
                 <div class="eyebrow">
                     Latest articles
                 </div>
 
+
                 <h2>
                     Read, learn & understand
                 </h2>
+
             </div>
 
+
             <p>
+
                 Explore practical dental guides written to make
                 everyday oral-health questions easier to understand.
+
             </p>
 
+
         </div>
+
 
 
         <div class="article-grid">
 
 
-            <!-- ARTICLE 1 -->
+            <!-- =========================
+                 ARTICLE 1 — SCALING
+            ========================= -->
 
             <article class="article-card">
 
                 <a href="scaling.html">
 
+
                     <div class="article-image">
 
                         <img
-                            src="scaling image.png"
-                            alt="Dental scaling and teeth cleaning">
+                            src="scaling-image.jpg"
+                            alt="Dental scaling and teeth cleaning"
+                            loading="lazy">
 
                     </div>
 
+
                     <div class="article-content">
+
 
                         <div class="article-meta">
 
-                            <span>Oral Health</span>
+                            <span>
+                                Oral Health
+                            </span>
 
-                            <span>6 min read</span>
+                            <span>
+                                6 min read
+                            </span>
 
                         </div>
+
 
                         <h3>
                             Does Dental Scaling Damage Your Teeth?
                         </h3>
 
+
                         <p>
-                            Worried that professional teeth cleaning can
-                            weaken or damage your teeth? Here's what scaling
-                            actually does — and why your teeth may feel
-                            different afterwards.
+
+                            Worried that professional teeth cleaning
+                            can weaken or damage your teeth? Here's what
+                            scaling actually does — and why your teeth
+                            may feel different afterwards.
+
                         </p>
 
+
                         <span class="read-more">
-                            Read article <span>→</span>
+
+                            Read article
+
+                            <span>
+                                →
+                            </span>
+
                         </span>
 
+
                     </div>
+
 
                 </a>
 
@@ -995,45 +1109,69 @@
 
 
 
-            <!-- ARTICLE 2 -->
+            <!-- =========================
+                 ARTICLE 2 — BLEEDING GUMS
+            ========================= -->
 
             <article class="article-card">
 
                 <a href="gums-bleeding.html">
 
+
                     <div class="article-image">
 
                         <img
-                            src="bleeding gums image.png"
-                            alt="Bleeding gums while brushing">
+                            src="gums-bleeding-image (1).jpg"
+                            alt="Bleeding gums while brushing"
+                            loading="lazy">
 
                     </div>
 
+
                     <div class="article-content">
+
 
                         <div class="article-meta">
 
-                            <span>Gum Health</span>
+                            <span>
+                                Gum Health
+                            </span>
 
-                            <span>6 min read</span>
+                            <span>
+                                6 min read
+                            </span>
 
                         </div>
+
 
                         <h3>
                             Why Do My Gums Bleed When I Brush?
                         </h3>
 
+
                         <p>
-                            Bleeding gums aren't something you should simply
-                            ignore. Learn about the common causes, what you
-                            can do at home and when it's time to see a dentist.
+
+                            Bleeding gums aren't something you should
+                            simply ignore. Learn about the common causes,
+                            what you can do at home and when it's time
+                            to see a dentist.
+
                         </p>
 
+
                         <span class="read-more">
-                            Read article <span>→</span>
+
+                            Read article
+
+                            <span>
+                                →
+                            </span>
+
                         </span>
 
+
                     </div>
+
 
                 </a>
 
@@ -1041,46 +1179,69 @@
 
 
 
-            <!-- ARTICLE 3 -->
+            <!-- =========================
+                 ARTICLE 3 — YELLOW TEETH
+            ========================= -->
 
             <article class="article-card">
 
                 <a href="yellow-teeth.html">
 
+
                     <div class="article-image">
 
                         <img
-                            src="yellow teeth image.png"
-                            alt="Yellow teeth and tooth discoloration">
+                            src="teeth-yellowing-image.png"
+                            alt="Yellow teeth and tooth discoloration"
+                            loading="lazy">
 
                     </div>
 
+
                     <div class="article-content">
+
 
                         <div class="article-meta">
 
-                            <span>Cosmetic Dentistry</span>
+                            <span>
+                                Cosmetic Dentistry
+                            </span>
 
-                            <span>5 min read</span>
+                            <span>
+                                5 min read
+                            </span>
 
                         </div>
+
 
                         <h3>
                             Why Are My Teeth Yellow?
                         </h3>
 
+
                         <p>
-                            Tooth colour can naturally vary from person to
-                            person. Discover why teeth look yellow, which
-                            factors contribute to staining and what can
-                            actually help.
+
+                            Tooth colour can naturally vary from person
+                            to person. Discover why teeth look yellow,
+                            which factors contribute to staining and
+                            what can actually help.
+
                         </p>
 
+
                         <span class="read-more">
-                            Read article <span>→</span>
+
+                            Read article
+
+                            <span>
+                                →
+                            </span>
+
                         </span>
 
+
                     </div>
+
 
                 </a>
 
@@ -1088,46 +1249,69 @@
 
 
 
-            <!-- ARTICLE 4 -->
+            <!-- =========================
+                 ARTICLE 4 — TOOTH SENSITIVITY
+            ========================= -->
 
             <article class="article-card">
 
                 <a href="tooth-sensitivity.html">
 
+
                     <div class="article-image">
 
                         <img
                             src="tooth sensitivity article image.png"
-                            alt="Tooth sensitivity when drinking something cold">
+                            alt="Tooth sensitivity when drinking something cold"
+                            loading="lazy">
 
                     </div>
 
+
                     <div class="article-content">
+
 
                         <div class="article-meta">
 
-                            <span>Tooth Sensitivity</span>
+                            <span>
+                                Tooth Sensitivity
+                            </span>
 
-                            <span>6 min read</span>
+                            <span>
+                                6 min read
+                            </span>
 
                         </div>
+
 
                         <h3>
                             Why Do My Teeth Hurt When I Drink Something Cold?
                         </h3>
 
+
                         <p>
+
                             A sudden sharp pain from cold water or ice cream
                             can be a sign of tooth sensitivity. Learn what
                             causes it, what is normal and when you should
                             see a dentist.
+
                         </p>
 
+
                         <span class="read-more">
-                            Read article <span>→</span>
+
+                            Read article
+
+                            <span>
+                                →
+                            </span>
+
                         </span>
 
+
                     </div>
+
 
                 </a>
 
@@ -1146,35 +1330,53 @@
 
     <section class="guides-section">
 
+
         <div class="guides-layout">
 
+
             <div>
+
 
                 <div class="guides-label">
                     Learn visually
                 </div>
+
 
                 <h2>
                     Dental concepts,<br>
                     made visual.
                 </h2>
 
+
                 <p>
+
                     Sometimes a picture really is worth a thousand
                     dental terms. Explore simple visual guides designed
                     to make common dental concepts easier to understand.
+
                 </p>
 
-                <a href="guides.html" class="guide-button">
+
+                <a
+                    href="guides.html"
+                    class="guide-button">
+
                     Explore Visual Guides →
+
                 </a>
+
 
             </div>
 
 
-            <a href="guides.html" class="guide-art"
+
+            <a
+                href="guides.html"
+                class="guide-art"
                 aria-label="Explore Visual Guides">
+
             </a>
+
 
         </div>
 
@@ -1188,53 +1390,118 @@
 
     <section class="topics-section">
 
+
         <div class="eyebrow">
             Explore by topic
         </div>
+
 
         <h2>
             What are you curious about?
         </h2>
 
+
         <p>
+
             Browse common dental topics and start with the question
             that's on your mind.
+
         </p>
+
 
 
         <div class="topics">
 
-            <a href="symptoms.html" class="topic">
+
+            <a
+                href="tooth-sensitivity.html"
+                class="topic">
+
                 Tooth Sensitivity
+
             </a>
 
-            <a href="symptoms.html" class="topic">
+
+            <a
+                href="gums-bleeding.html"
+                class="topic">
+
                 Bleeding Gums
+
             </a>
 
-            <a href="symptoms.html" class="topic">
-                Cavities
+
+            <a
+                href="tooth-pain.html"
+                class="topic">
+
+                Tooth Pain
+
             </a>
 
-            <a href="treatments.html" class="topic">
+
+            <a
+                href="fillings.html"
+                class="topic">
+
+                Cavities & Fillings
+
+            </a>
+
+
+            <a
+                href="root-canal.html"
+                class="topic">
+
                 Root Canals
+
             </a>
 
-            <a href="treatments.html" class="topic">
+
+            <a
+                href="wisdom-teeth.html"
+                class="topic">
+
                 Wisdom Teeth
+
             </a>
 
-            <a href="treatments.html" class="topic">
+
+            <a
+                href="whitening.html"
+                class="topic">
+
                 Whitening
+
             </a>
 
-            <a href="guides.html" class="topic">
-                Oral Hygiene
-            </a>
 
-            <a href="guides.html" class="topic">
+            <a
+                href="bad-breath.html"
+                class="topic">
+
                 Bad Breath
+
             </a>
+
+
+            <a
+                href="gum-treatment.html"
+                class="topic">
+
+                Gum Treatment
+
+            </a>
+
+
+            <a
+                href="extraction.html"
+                class="topic">
+
+                Tooth Extraction
+
+            </a>
+
 
         </div>
 
@@ -1248,29 +1515,44 @@
 
     <section class="question-section">
 
+
         <div>
+
 
             <div class="eyebrow">
                 Still have a question?
             </div>
 
+
             <h2>
+
                 Your dental question<br>
                 deserves a clear answer.
+
             </h2>
 
+
             <p>
+
                 If you're wondering whether a symptom is normal,
                 what a dental treatment means, or what your next
                 step should be, explore the Ask Dr. Anushka section.
+
             </p>
+
 
         </div>
 
 
-        <a href="questions.html" class="question-button">
+
+        <a
+            href="questions.html"
+            class="question-button">
+
             Ask Dr. Anushka →
+
         </a>
+
 
     </section>
 
@@ -1282,7 +1564,10 @@
 
     <div class="disclaimer">
 
-        <strong>Medical Disclaimer:</strong>
+        <strong>
+            Medical Disclaimer:
+        </strong>
+
 
         The information provided on this website is intended for
         general educational purposes only. It is not a substitute
@@ -1300,70 +1585,90 @@
 
     <footer>
 
+
         <div class="footer-top">
 
 
             <div class="footer-brand">
 
+
                 <h2>
                     Dr. Anushka Choudhary
                 </h2>
 
+
                 <p>
-                    Dentistry, explained simply. Patient-friendly
-                    dental education to help you understand your
-                    teeth, gums and treatment options.
+
+                    Dentistry, explained simply.
+                    Patient-friendly dental education to help you
+                    understand your teeth, gums and treatment options.
+
                 </p>
+
 
             </div>
 
 
+
             <div class="footer-column">
+
 
                 <h3>
                     Explore
                 </h3>
 
+
                 <a href="index.html">
                     Home
                 </a>
+
 
                 <a href="about.html">
                     About
                 </a>
 
+
                 <a href="blog.html">
                     Dental Blog
                 </a>
+
 
                 <a href="guides.html">
                     Visual Guides
                 </a>
 
+
             </div>
 
 
+
             <div class="footer-column">
+
 
                 <h3>
                     Dental
                 </h3>
 
+
                 <a href="symptoms.html">
                     Symptoms
                 </a>
+
 
                 <a href="treatments.html">
                     Treatments
                 </a>
 
+
                 <a href="questions.html">
                     Ask Dr. Anushka
                 </a>
 
+
                 <a href="contact.html">
                     Contact
                 </a>
+
 
             </div>
 
@@ -1371,17 +1676,22 @@
         </div>
 
 
+
         <div class="footer-bottom">
+
 
             <span>
                 © 2026 Dr. Anushka Choudhary, BDS
             </span>
 
+
             <span>
                 Dentistry, Explained Simply
             </span>
 
+
         </div>
+
 
     </footer>
 
