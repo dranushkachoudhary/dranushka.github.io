@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Start Here | Dr. Anushka Choudhary, BDS</title>
+
+    <meta name="description"
+          content="New to Dr. Anushka's dental website? Start here to explore dental symptoms, treatments, visual guides, myths vs facts, dental articles and common questions.">
+
+    <meta name="keywords"
+          content="dental guide for patients, dental symptoms, dental treatments, dental myths, oral health guide, dentist explained, Dr Anushka Choudhary">
+
+    <link rel="canonical"
+          href="https://dranushkachoudhary.github.io/start-here.html">
+
+    <meta property="og:title"
+          content="Start Here | Dr. Anushka Choudhary, BDS">
+
+    <meta property="og:description"
+          content="A simple starting point for understanding your teeth, symptoms, treatments and everyday dental care.">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:url"
+          content="https://dranushkachoudhary.github.io/start-here.html">
+
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Start Here | Dr. Anushka Choudhary, BDS">
+
+    <meta name="twitter:description"
+          content="Your simple guide to exploring dental symptoms, treatments, articles and practical oral health information.">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #FAF7F2;
+            color: #29483F;
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 28px 7%;
+            border-bottom: 1px solid rgba(41,72,63,0.10);
+            background: #FAF7F2;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        nav {
+            display: flex;
+            gap: 22px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        nav a {
+            font-size: 13px;
+            color: #29483F;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #D8A6A1;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            max-width: 1200px;
+            margin: auto;
+            padding: 105px 7% 90px;
+            text-align: center;
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 11px;
+            color: #7F9C8D;
+            margin-bottom: 22px;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(44px, 7vw, 78px);
+            line-height: 1.05;
+            font-weight: normal;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .hero h1 span {
+            color: #D8A6A1;
+            font-style: italic;
+        }
+
+        .hero p {
+            max-width: 680px;
+            margin: 28px auto 0;
+            font-size: 17px;
+            color: #52655E;
+        }
+
+        /* =========================
+           INTRO STRIP
+        ========================= */
+
+        .intro-strip {
+            background: #29483F;
+            color: #FAF7F2;
+            padding: 28px 7%;
+            text-align: center;
+        }
+
+        .intro-strip p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 15px;
+        }
+
+        /* =========================
+           PATHWAYS
+        ========================= */
+
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 95px 7%;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 55px;
+        }
+
+        .section-heading .number {
+            font-family: Georgia, serif;
+            font-size: 15px;
+            color: #D8A6A1;
+            letter-spacing: 2px;
+        }
+
+        .section-heading h2 {
+            font-family: Georgia, serif;
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: normal;
+            line-height: 1.15;
+            margin: 10px 0 16px;
+        }
+
+        .section-heading p {
+            color: #64736D;
+            font-size: 15px;
+        }
+
+        .pathway-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .pathway {
+            background: #FFFFFF;
+            border: 1px solid rgba(41,72,63,0.10);
+            padding: 38px;
+            min-height: 245px;
+            transition: 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pathway:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 45px rgba(41,72,63,0.09);
+        }
+
+        .pathway-number {
+            position: absolute;
+            top: 22px;
+            right: 25px;
+            font-family: Georgia, serif;
+            font-size: 14px;
+            color: #D8A6A1;
+        }
+
+        .pathway-icon {
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+
+        .pathway h3 {
+            font-family: Georgia, serif;
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 12px;
+        }
+
+        .pathway p {
+            color: #64736D;
+            font-size: 14px;
+            max-width: 470px;
+            margin-bottom: 22px;
+        }
+
+        .pathway-link {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            color: #29483F;
+        }
+
+        .pathway-link:hover {
+            color: #D8A6A1;
+        }
+
+        /* =========================
+           SYMPTOMS
+        ========================= */
+
+        .symptoms-section {
+            background: #F0EAE2;
+        }
+
+        .symptoms-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 95px 7%;
+        }
+
+        .symptom-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .symptom-card {
+            background: #FAF7F2;
+            padding: 27px 25px;
+            border: 1px solid rgba(41,72,63,0.08);
+            transition: 0.3s ease;
+        }
+
+        .symptom-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .symptom-card span {
+            font-size: 21px;
+        }
+
+        .symptom-card h3 {
+            font-family: Georgia, serif;
+            font-size: 21px;
+            font-weight: normal;
+            margin: 12px 0 7px;
+        }
+
+        .symptom-card p {
+            color: #69756F;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .small-link {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-weight: bold;
+        }
+
+        /* =========================
+           EXPLORE SECTION
+        ========================= */
+
+        .explore {
+            background: #29483F;
+            color: #FAF7F2;
+        }
+
+        .explore-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 100px 7%;
+        }
+
+        .explore .section-heading p {
+            color: rgba(250,247,242,0.72);
+        }
+
+        .explore .section-heading .number {
+            color: #D8A6A1;
+        }
+
+        .explore .section-heading h2 {
+            color: #FAF7F2;
+        }
+
+        .explore-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .explore-card {
+            border: 1px solid rgba(250,247,242,0.18);
+            padding: 30px 25px;
+            transition: 0.3s ease;
+        }
+
+        .explore-card:hover {
+            background: rgba(250,247,242,0.07);
+            transform: translateY(-4px);
+        }
+
+        .explore-card span {
+            color: #D8A6A1;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .explore-card h3 {
+            font-family: Georgia, serif;
+            font-size: 24px;
+            font-weight: normal;
+            margin: 12px 0 9px;
+        }
+
+        .explore-card p {
+            font-size: 13px;
+            color: rgba(250,247,242,0.72);
+            margin-bottom: 17px;
+        }
+
+        .explore-card a {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+        }
+
+        /* =========================
+           QUESTIONS CTA
+        ========================= */
+
+        .question-section {
+            max-width: 950px;
+            margin: auto;
+            padding: 105px 7%;
+            text-align: center;
+        }
+
+        .question-section h2 {
+            font-family: Georgia, serif;
+            font-weight: normal;
+            font-size: clamp(34px, 5vw, 54px);
+            line-height: 1.15;
+        }
+
+        .question-section p {
+            max-width: 620px;
+            margin: 20px auto 30px;
+            color: #64736D;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 25px;
+            background: #D8A6A1;
+            color: #29483F;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background: #29483F;
+            color: #FAF7F2;
+        }
+
+        /* =========================
+           DISCLAIMER
+        ========================= */
+
+        .disclaimer {
+            background: #F0EAE2;
+            padding: 25px 7%;
+            text-align: center;
+            font-size: 12px;
+            color: #69756F;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #29483F;
+            color: #FAF7F2;
+            padding: 60px 7% 35px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(250,247,242,0.15);
+        }
+
+        .footer-brand h3 {
+            font-family: Georgia, serif;
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .footer-brand p {
+            max-width: 350px;
+            font-size: 13px;
+            color: rgba(250,247,242,0.65);
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 9px 35px;
+        }
+
+        .footer-links a {
+            font-size: 12px;
+            color: rgba(250,247,242,0.75);
+            transition: 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #D8A6A1;
+        }
+
+        .footer-bottom {
+            padding-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            font-size: 11px;
+            color: rgba(250,247,242,0.50);
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .pathway-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .symptom-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .explore-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-top {
+                flex-direction: column;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding: 75px 6% 65px;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .section,
+            .symptoms-inner,
+            .explore-inner,
+            .question-section {
+                padding-left: 6%;
+                padding-right: 6%;
+            }
+
+            .pathway {
+                padding: 30px 25px;
+            }
+
+            .symptom-grid,
+            .explore-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                gap: 12px 16px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .footer-links {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        DR. ANUSHKA CHOUDHARY
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Dental Blog</a>
+        <a href="guides.html">Visual Guides</a>
+        <a href="myths.html">Myths vs Facts</a>
+        <a href="symptoms.html">Symptoms</a>
+        <a href="treatments.html">Treatments</a>
+        <a href="questions.html">Ask Dr. Anushka</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="eyebrow">
+        A simple place to begin
+    </div>
+
+    <h1>
+        Not sure where to <span>start?</span>
+    </h1>
+
+    <p>
+        Dental information can feel overwhelming.
+        Start with what you're experiencing, what you want to understand,
+        or simply what you're curious about.
+    </p>
+
+</section>
+
+
+<div class="intro-strip">
+
+    <p>
+        <strong>Think of this page as your dental roadmap.</strong>
+        Choose a path below and explore at your own pace.
+    </p>
+
+</div>
+
+
+<!-- PATHWAYS -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <div class="number">01 — CHOOSE YOUR PATH</div>
+
+        <h2>
+            Where would you like to begin?
+        </h2>
+
+        <p>
+            You don't need to know the dental terminology.
+            Just choose what sounds closest to what you need.
+        </p>
+
+    </div>
+
+
+    <div class="pathway-grid">
+
+        <a href="symptoms.html" class="pathway">
+
+            <div class="pathway-number">01</div>
+
+            <div class="pathway-icon">🦷</div>
+
+            <h3>
+                Something is bothering me
+            </h3>
+
+            <p>
+                Explore common dental symptoms and understand
+                what they may mean, what to watch for and when
+                it may be time to see a dentist.
+            </p>
+
+            <div class="pathway-link">
+                Explore symptoms →
+            </div>
+
+        </a>
+
+
+        <a href="blog.html" class="pathway">
+
+            <div class="pathway-number">02</div>
+
+            <div class="pathway-icon">📖</div>
+
+            <h3>
+                I want to understand my dental health
+            </h3>
+
+            <p>
+                Read simple, evidence-informed articles about
+                everyday dental concerns, oral health and
+                questions patients commonly ask.
+            </p>
+
+            <div class="pathway-link">
+                Read the dental blog →
+            </div>
+
+        </a>
+
+
+        <a href="treatments.html" class="pathway">
+
+            <div class="pathway-number">03</div>
+
+            <div class="pathway-icon">🩺</div>
+
+            <h3>
+                I want to understand a treatment
+            </h3>
+
+            <p>
+                Learn what common dental treatments involve,
+                why they may be recommended and what patients
+                can generally expect.
+            </p>
+
+            <div class="pathway-link">
+                Explore treatments →
+            </div>
+
+        </a>
+
+
+        <a href="questions.html" class="pathway">
+
+            <div class="pathway-number">04</div>
+
+            <div class="pathway-icon">💬</div>
+
+            <h3>
+                I have a dental question
+            </h3>
+
+            <p>
+                Browse practical answers to questions patients
+                often ask about teeth, gums, dental procedures
+                and everyday oral care.
+            </p>
+
+            <div class="pathway-link">
+                Ask Dr. Anushka →
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- SYMPTOMS -->
+
+<section class="symptoms-section">
+
+    <div class="symptoms-inner">
+
+        <div class="section-heading">
+
+            <div class="number">02 — START WITH A SYMPTOM</div>
+
+            <h2>
+                What are you experiencing?
+            </h2>
+
+            <p>
+                If you came here because something feels different,
+                start with the symptom that sounds most familiar.
+            </p>
+
+        </div>
+
+
+        <div class="symptom-grid">
+
+
+            <a href="tooth-pain.html" class="symptom-card">
+
+                <span>🦷</span>
+
+                <h3>Tooth Pain</h3>
+
+                <p>
+                    Understanding common causes of toothache
+                    and when it deserves attention.
+                </p>
+
+                <div class="small-link">
+                    Read more →
+                </div>
+
+            </a>
+
+
+            <a href="tooth-sensitivity.html" class="symptom-card">
+
+                <span>❄️</span>
+
+                <h3>Tooth Sensitivity</h3>
+
+                <p>
+                    Why cold, hot or sweet foods may trigger
+                    a sharp sensation.
+                </p>
+
+                <div class="small-link">
+                    Read more →
+                </div>
+
+            </a>
+
+
+            <a href="gums-bleeding.html" class="symptom-card">
+
+                <span>🩸</span>
+
+                <h3>Bleeding Gums</h3>
+
+                <p>
+                    What bleeding while brushing can mean
+                    and why it shouldn't simply be ignored.
+                </p>
+
+                <div class="small-link">
+                    Read more →
+                </div>
+
+            </a>
+
+
+            <a href="yellow-teeth.html" class="symptom-card">
+
+                <span>✨</span>
+
+                <h3>Yellow Teeth</h3>
+
+                <p>
+                    Common reasons teeth may look yellow
+                    and what can influence tooth colour.
+                </p>
+
+                <div class="small-link">
+                    Read more →
+                </div>
+
+            </a>
+
+
+            <a href="bad-breath.html" class="symptom-card">
+
+                <span>🌿</span>
+
+                <h3>Bad Breath</h3>
+
+                <p>
+                    Possible oral causes and habits that
+                    can affect breath freshness.
+                </p>
+
+                <div class="small-link">
+                    Read more →
+                </div>
+
+            </a>
+
+
+            <a href="cavity-heal-on-its-own.html" class="symptom-card">
+
+                <span>🕳️</span>
+
+                <h3>Cavities</h3>
+
+                <p>
+                    Learn the difference between early tooth
+                    decay and an established cavity.
+                </p>
+
+                <div class="small-link">
+                    Read more →
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPLORE -->
+
+<section class="explore">
+
+    <div class="explore-inner">
+
+        <div class="section-heading">
+
+            <div class="number">03 — EXPLORE</div>
+
+            <h2>
+                Go a little deeper.
+            </h2>
+
+            <p>
+                Once you've found your starting point,
+                explore the rest of the website at your own pace.
+            </p>
+
+        </div>
+
+
+        <div class="explore-grid">
+
+
+            <div class="explore-card">
+
+                <span>01</span>
+
+                <h3>Visual Guides</h3>
+
+                <p>
+                    Dental concepts explained visually
+                    to make them easier to understand.
+                </p>
+
+                <a href="guides.html">
+                    Explore guides →
+                </a>
+
+            </div>
+
+
+            <div class="explore-card">
+
+                <span>02</span>
+
+                <h3>Myths vs Facts</h3>
+
+                <p>
+                    Common dental beliefs examined with
+                    simple explanations.
+                </p>
+
+                <a href="myths.html">
+                    Separate fact from myth →
+                </a>
+
+            </div>
+
+
+            <div class="explore-card">
+
+                <span>03</span>
+
+                <h3>Dental Blog</h3>
+
+                <p>
+                    Practical articles about common dental
+                    questions and concerns.
+                </p>
+
+                <a href="blog.html">
+                    Read the blog →
+                </a>
+
+            </div>
+
+
+            <div class="explore-card">
+
+                <span>04</span>
+
+                <h3>Treatments</h3>
+
+                <p>
+                    Understand common dental procedures
+                    before you walk into the clinic.
+                </p>
+
+                <a href="treatments.html">
+                    View treatments →
+                </a>
+
+            </div>
+
+
+            <div class="explore-card">
+
+                <span>05</span>
+
+                <h3>Symptoms</h3>
+
+                <p>
+                    Explore common signs and symptoms
+                    involving your teeth and gums.
+                </p>
+
+                <a href="symptoms.html">
+                    Explore symptoms →
+                </a>
+
+            </div>
+
+
+            <div class="explore-card">
+
+                <span>06</span>
+
+                <h3>Ask Dr. Anushka</h3>
+
+                <p>
+                    Browse practical answers to common
+                    patient questions.
+                </p>
+
+                <a href="questions.html">
+                    Ask a question →
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QUESTIONS -->
+
+<section class="question-section">
+
+    <div class="eyebrow">
+        Still unsure?
+    </div>
+
+    <h2>
+        You don't have to figure it all out yourself.
+    </h2>
+
+    <p>
+        If you can't find what you're looking for,
+        head over to the questions section and explore
+        common dental questions explained simply.
+    </p>
+
+    <a href="questions.html" class="button">
+        Ask Dr. Anushka
+    </a>
+
+</section>
+
+
+<!-- DISCLAIMER -->
+
+<div class="disclaimer">
+
+    <strong>Medical information:</strong>
+    The information on this website is intended for general
+    educational purposes and does not replace an in-person
+    dental examination, diagnosis or personalised treatment plan.
+
+    <br><br>
+
+    <a href="disclaimer.html">
+        Read the full disclaimer →
+    </a>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <h3>
+                    Dr. Anushka Choudhary, BDS
+                </h3>
+
+                <p>
+                    Dentistry, explained simply.
+                    A patient-friendly space for understanding
+                    teeth, gums, treatments and everyday oral health.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+
+                <a href="blog.html">Dental Blog</a>
+                <a href="guides.html">Visual Guides</a>
+
+                <a href="myths.html">Myths vs Facts</a>
+                <a href="symptoms.html">Symptoms</a>
+
+                <a href="treatments.html">Treatments</a>
+                <a href="questions.html">Ask Dr. Anushka</a>
+
+                <a href="contact.html">Contact</a>
+                <a href="disclaimer.html">Disclaimer</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div>
+                © 2026 Dr. Anushka Choudhary. All rights reserved.
+            </div>
+
+            <div>
+                Dentistry, Explained Simply.
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
